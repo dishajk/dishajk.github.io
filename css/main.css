@@ -38,7 +38,7 @@ header {
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 30%;
+  width: 25%;
   padding: 20px;
 }
 
@@ -52,7 +52,7 @@ nav ul {
 article {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 45%;
 }
 
 /* Clear floats after the columns */
