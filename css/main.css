@@ -48,7 +48,7 @@ header {
   /*margin-right: 16px;*/
   border: none;
   font-size: 17px;
-  background-color: lightblue;
+  color: lightblue
 }
 
 /* Clear floats after the columns */
