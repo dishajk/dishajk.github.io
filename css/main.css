@@ -64,17 +64,17 @@ footer {
   font-size: .8em;
 }
 a:link {
-  color: blue;
+  color: #587e76;
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: purple;
+  color: #587e76;
   background-color: transparent;
   text-decoration: none;
 }
 a:hover {
-  color: purple;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }
