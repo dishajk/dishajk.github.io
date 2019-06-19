@@ -43,9 +43,9 @@ header {
 
 .topnav input[type=text] {
   float: right;
-  padding: 14px;
-  margin-top: 8px;
-  margin-right: 16px;
+  padding: 6px;
+  /*margin-top: 8px;*/
+  /*margin-right: 16px;*/
   border: none;
   font-size: 17px;
   background-color: lightblue;
