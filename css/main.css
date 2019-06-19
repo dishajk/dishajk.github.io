@@ -64,12 +64,12 @@ footer {
   font-size: .8em;
 }
 a:link {
-  color: #587e76;
+  color: lightblue;
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: #587e76;
+  color: lightblue;
   background-color: transparent;
   text-decoration: none;
 }
