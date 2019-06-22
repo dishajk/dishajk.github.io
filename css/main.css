@@ -63,27 +63,27 @@ footer {
   font-size: .8em;
 }
 a:link {
-  color: lightblue;
+  color: darkblue;
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: lightblue;
+  color: darkblue;
   background-color: transparent;
   text-decoration: none;
 }
 a:hover {
-  color: white;
+  color: darkgreen;
   background-color: transparent;
   text-decoration: underline;
 }
 a:active {
-  color: yellow;
+  color: darkgreen;
   background-color: transparent;
   text-decoration: underline;
 }
 ul.posts { 
-    margin: 20px auto 40px; 
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
