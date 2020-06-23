@@ -37,7 +37,7 @@ header {
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #cc6666;
   color: white;
 }
 /* Clear floats after the columns */
