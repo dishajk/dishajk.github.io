@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -14,19 +15,13 @@ header {
   font-size: 15px;
   background-image: url("https://raw.githubusercontent.com/dishajk/dishajk.github.io/master/background_01.jpg");
   background-size: 100%;
-  color:white;
+  color:white
 }
 
-.header h1 {
-  font-size: 25px;
-}
-
-/*top navigation bar*/
 .topnav {
   overflow: hidden;
 }
 
-/*top navigation links*/
 .topnav a {
   float: right;
   text-align: center;
@@ -35,17 +30,16 @@ header {
   font-size: 17px;
   color: black
 }
-/*navigation button on hovering*/
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #cc6666;
+  background-color: #4CAF50;
   color: white;
 }
-
 /* Clear floats after the columns */
 section:after {
   content: "";
