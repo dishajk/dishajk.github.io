@@ -1,0 +1,97 @@
+body{
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #606354;
+	font-family: 'Catamaran', sans-serif;
+}
+/** header nav **/
+nav{
+	padding: 0;
+}
+#top-nav{
+	border-radius: 0;
+	border: 0;
+}
+#header-img{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+header{
+        font-family: 'Pompiere', cursive;
+}
+#header-img h1{
+	position: absolute;
+	top: 50%;
+  	left: 50px;
+  	transform: translate(0, -15%);
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+h2{
+        font-family: 'Pompiere', cursive;
+	text-shadow: 1px 1px 1px #D4BFD7;
+}
+h3{
+        font-family: 'Pompiere', cursive;
+}
+.navbar{
+	font-size: 24px;
+	padding-right: 18px;
+	padding-left: 18px;
+}
+.navbar-toggler{
+	float: right;
+}
+.nav-item, .dropdown-item{
+        font-family: 'Pompiere', cursive;
+	font-size: 22px;
+}
+#navbar-main{
+	margin-top:-10px;
+}
+#navbar-main a{
+	color: white;
+}
+#navbar-main a:hover{
+	color: #D4BFD7;
+	text-decoration: underline;
+	font-weight: bold;
+}
+#navbar-main a:active{
+	color: #9DB898;
+	text-decoration: overline;
+	background-color: transparent;
+}
+.card{
+	border: 0;
+}
+#main-home{
+	margin: 20px;
+}
+.card-text{
+	color: black;
+}
+footer{
+	color: black;
+}
+footer a{
+	color: black;
+	text-decoration: none;
+	border: 1px dashed black;
+	padding: 5px;
+}
+footer a:hover{
+	color: white;
+	border: 1px dashed white;
+}
+.list-group-item{
+	background-color: transparent;
+	border: 0;
+}
+#cv .container{
+	color: white;
+	width: 80%;
+}
