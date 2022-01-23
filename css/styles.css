@@ -32,10 +32,13 @@ header{
 }
 h2{
         font-family: 'Pompiere', cursive;
-	text-shadow: 1px 1px 1px #D4BFD7;
+	color: #9db898;
+	text-shadow: 1px 1px 1px white;
 }
 h3{
         font-family: 'Pompiere', cursive;
+	color: #d4bfd7;
+	text-shadow: 1px 1px 1px white;
 }
 .navbar{
 	font-size: 24px;
