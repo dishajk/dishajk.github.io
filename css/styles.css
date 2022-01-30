@@ -101,3 +101,10 @@ footer a:hover{
 .list-group-item{
 	color: white;
 }
+#btn-back-to-top {
+	color: #9DB898;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
