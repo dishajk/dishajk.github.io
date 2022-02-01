@@ -83,12 +83,13 @@ footer{
 footer a{
 	color: black;
 	text-decoration: none;
-	border: 1px dashed black;
 	padding: 5px;
 }
 footer a:hover{
 	color: white;
-	border: 1px dashed white;
+}
+footer img:hover{
+	transform: scale(1.5);
 }
 .list-group-item{
 	background-color: transparent;
