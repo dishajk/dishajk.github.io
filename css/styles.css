@@ -68,6 +68,11 @@ h3{
 	text-decoration: overline;
 	background-color: transparent;
 }
+a.nav-link.active{
+	border: 3px solid #D4BFD7;
+	border-radius: 15px;
+	font-weight: bold;
+}
 .card{
 	border: 0;
 }
@@ -113,8 +118,18 @@ footer img:hover{
 a.fw-bold{
 	color: white;
 	text-decoration: none;
+	font-weight: bold;
 }
 a.fw-bold:hover{
 	text-decoration: underline;
 }
 
+/* resources */
+#resources a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+#resources a:hover{
+	text-decoration: underline;
+}
