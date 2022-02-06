@@ -115,12 +115,13 @@ footer img:hover{
   display: none;
 }
 /* projects */
-a.fw-bold{
+li>a, a.fw-bold{
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
 }
-a.fw-bold:hover{
+li>a:hover, a.fw-bold:hover{
+	color: white;
 	text-decoration: underline;
 }
 
