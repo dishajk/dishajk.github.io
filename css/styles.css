@@ -115,6 +115,13 @@ footer img:hover{
   display: none;
 }
 /* projects */
+blockquote{
+	background-color: #6F7265;
+	border-radius:20px;
+}
+.blockquote-footer{
+	color: #9db898;
+}
 li>a, a.fw-bold{
 	color: white;
 	text-decoration: none;
