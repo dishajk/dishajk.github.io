@@ -1,7 +1,7 @@
 body{
 	font-size: 16px;
 	color: #ffffff;
-	background-color: #333333;
+	background-color: #606354;
 	font-family: 'Catamaran', sans-serif;
 }
 /** header nav **/
@@ -26,7 +26,6 @@ header{
 	top: 50%;
   	left: 50px;
   	transform: translate(0, -15%);
-	font-weight: bold;
 	color: white;
 	text-shadow: 1px 1px 2px black;
 }
@@ -71,7 +70,6 @@ h3{
 a.nav-link.active{
 	border: 3px solid #D4BFD7;
 	border-radius: 15px;
-	font-weight: bold;
 }
 .card{
 	border: 0;
