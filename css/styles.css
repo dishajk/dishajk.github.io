@@ -133,7 +133,7 @@ li>a:hover, a.fw-bold:hover{
 /* resources */
 #resources a{
 	color: white;
-	text-decoration: none;
+	text-decoration: underline;
 	font-weight: bold;
 }
 #resources a:hover{
