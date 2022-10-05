@@ -1,40 +1,44 @@
-//Get the button
-let buttontotop = document.getElementById("btn-back-to-top");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
+//ref: ychaikin/github
+//
+$(function (){
+	$("#navbarToggler").blur(function (event){
+		var screenWidth = window.innerWidth;
+		if (screenWidth < 768){
+			$("#navbarNav").collapse('hide');
+		}
+	});
+	$("#navbarToggle").click(function(event){
+		$(event.target).focus();
+	});
+});
+//routing
+//ref: mitchwadair/github
+//
+const route = (event) => {
+	event = event || window.event;
+	event.preventDefault();
+	window.history.pushState({}, "", event.target.href);
+	handleLocation();
 };
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    buttontotop.style.display = "block";
-  } else {
-    buttontotop.style.display = "none";
-  }
-}
-// When the user clicks on the button, scroll to the top of the document
-buttontotop.addEventListener("click", backToTop);
+const routes = {
+	"/": "/pages/home.html", 
+	"/about": "/pages/about.html",
+	"/projects": "/pages/projects.html",
+	"/blog": "/pages/underConst.html",
+	"/resources": "pages/underConst.html",
+	"/contact": "pages/contact.html",
+	404: "/pages/404.html"
+};
 
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+const handleLocation = async () => {
+	const path = window.location.pathname;
+	const route = routes[path] || route[404];
+	const html = await fetch(route).then((data) => data.text());
+	document.getElementById("main-content").innerHTML = html;
+};
 
-//collapse toggler
-$(function () { // Same as document.addEventListener("DOMContentLoaded"...
-  // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
-  $(".navbar-toggler").blur(function (event) {
-    var screenWidth = window.innerWidth;
-    if (screenWidth < 768) {
-      $("#navbar-main").collapse('hide');
-    }
-  });
+window.onpopstate = handleLocation;
+window.route = route;
 
-  $(".navbar-toggler").click(function (event) {
-    $(event.target).focus();
-  });
-});
+handleLocation();
