@@ -1,8 +1,8 @@
 body{
-	font-size: 16px;
-	background-color: #333333;
+	font-size: 17px;
+	background-color:  #333333;
 	font-family: 'Catamaran', sans-serif;
-	color: #cccccc;
+	color: #ffffff;
 }
 /*	Header		*/
 header{
@@ -64,7 +64,7 @@ a.nav-link.active{
 .list-group-item{
 	color: #cccccc;
 	border: 0;
-	background-color: #333333;
+	background-color: rgba(51, 51, 51, 0.5);
 }
 /*@media (min-width: 768px){
 	footer{
@@ -97,6 +97,9 @@ ol.sticky {
 #project-list{
 	background-image: url("../media/tilings.svg");
 	background-repeat: repeat;
+}
+#project-list ol{
+	background-color: transparent;
 }
 #underConstruction{
 	background-image: url("../media/sevenOverlappingCircles.svg");
