@@ -11,8 +11,11 @@ header{
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
+nav > .container{
+	background-color:  #333333;
+}
 #header-nav{
-	background-color: #333333;
+	padding-bottom:0;
 }
 h1, h2, h3{
 	font-family: 'Pompiere', cursive;
@@ -58,8 +61,11 @@ a.nav-link.active{
 	padding-bottom: 30px;
 	background-color: #333333;
 }
-#footer-nav{
+#main-content{
 	background-color: #333333;
+}
+#footer-nav{
+	background-color: #333333 ;
 }
 .list-group-item{
 	color: #cccccc;
@@ -101,12 +107,10 @@ ol.sticky {
 #project-list ol{
 	background-color: transparent;
 }
-#underConstruction{
-	background-image: url("../media/sevenOverlappingCircles.svg");
-	background-repeat: repeat;
-	height: 50vh;
-}
-#resource-list{
+.filler{
+	padding: 0;
 	background-image: url("../media/rhombitrihexagonal.svg");
 	background-repeat: repeat;
+	background-size: 85px auto;
+	height: 50vh;
 }
