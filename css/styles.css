@@ -3,6 +3,9 @@ body{
 	background-color:  #333333;
 	font-family: 'Catamaran', sans-serif;
 	color: #ffffff;
+	height: 100%;
+	margin:0;
+	padding:0;
 }
 /*	Header		*/
 header{
@@ -53,19 +56,14 @@ a.nav-link.active{
 	padding: 4px;
 	margin-bottom: 15px;
 }
-/*	Footer		*/
-.footer-box{
-	background-image: url("../media/background_01.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	padding-bottom: 30px;
-	background-color: #333333;
-}
 #main-content{
 	background-color: #333333;
+	box-sizing: border-box;
+	min-height:100%;
 }
-#footer-nav{
-	background-color: #333333 ;
+/*	Footer		*/
+.footer-box{
+	padding-bottom: 15px;
 }
 .list-group-item{
 	color: #cccccc;
