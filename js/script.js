@@ -10,7 +10,7 @@ $(function (){
 	$("#navbarToggle").click(function(event){
 		$(event.target).focus();
 	});
-});
+
 //routing
 //ref: mitchwadair/github
 //
@@ -28,6 +28,7 @@ const routes = {
 	"/blog": "/pages/underConst.html",
 	"/resources": "pages/underConst.html",
 	"/contact": "pages/contact.html",
+	"/origami": "pages/origami.html",
 	404: "/pages/404.html"
 };
 
@@ -42,3 +43,4 @@ window.onpopstate = handleLocation;
 window.route = route;
 
 handleLocation();
+});
