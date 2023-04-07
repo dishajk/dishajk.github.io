@@ -2,45 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
-	font-size: 17px;
-	background-color:  #333333;
+	font-size: 16px;
+	background-color:  #ccc;
 	font-family: 'Catamaran', sans-serif;
-	color: #ffffff;
+	color: #333;
 	height: 100%;
 	margin:0;
 	padding:0;
 }
 /*	Header		*/
-header{
-	padding-top: 100px;
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-nav > .container{
-	background-color:  #333333;
-}
 #header-nav{
-	padding-bottom:0;
+	padding:0;
+	background-color: #333;
 }
 h1, h2, h3{
 	font-family: 'Pompiere', cursive;
+}
+h1{
 	color: #cccccc;
 }
 a{
-	color: #cc99cc;
+	color: #336633;
 	text-decoration: none;
 }
 a:hover{
-	color: #99cc99;
+	color: #663366;
 	text-decoration: underline;
 }
 a.nav-link, a.nav-link:hover{
 	font-family: 'Pompiere', cursive;
-	color: #cccccc;
+	color: #333;
 }
 a.nav-link, a.nav-link:focus{
 	font-size: 1.5em;
-	color: #cccccc;
+	color: #ccc;
 }
 a.nav-link:hover{
 	font-size: 1.7em;
@@ -48,51 +43,44 @@ a.nav-link:hover{
 	text-decoration: underline;
 }
 a.nav-link.active{
-	color: #99cc99;
+	color: #663366;
 	font-weight: bold;
 	font-size: 1.5em;
 	text-decoration: overline 2px;;
 }
 .navbar-toggler{
-	color: #cccccc;
+	color: #333333;
 	padding: 4px;
 	margin-bottom: 15px;
 }
 #main-content{
-	background-color: #333333;
 	box-sizing: border-box;
-	min-height:100%;
 }
 /*	Footer		*/
+footer{
+	font-size: 80%;
+}
 .footer-box{
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 .list-group-item{
-	color: #cccccc;
+	color: #333;
 	border: 0;
-	background-color: rgba(51, 51, 51, 0.5);
+	background-color: transparent;
 }
-/*@media (min-width: 768px){
-	footer{
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-	}
-}*/
 i.bi{
 	transition: transform .2s;
-	vertical-align: baseline;
 }
 i.bi:hover{
 	transform: scale(1.5);
-	color: #99cc99;
+	color: #663366;
 }
 .blockquote{
 	font-size: 1rem;
-	color:#99cc99;
+	color:#663366;
 }
 h3{
-	color:#99cc99;
+	color:#663366;
 }
 ol.sticky {
   position: -webkit-sticky;
@@ -114,3 +102,4 @@ ol.sticky {
 	background-size: 85px auto;
 	height: 50vh;
 }
+
