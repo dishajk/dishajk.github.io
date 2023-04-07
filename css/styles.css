@@ -49,12 +49,38 @@ a.nav-link.active{
 	text-decoration: overline 2px;;
 }
 .navbar-toggler{
-	color: #333333;
+	color: #ccc;
 	padding: 4px;
-	margin-bottom: 15px;
 }
 #main-content{
 	box-sizing: border-box;
+}
+#aboutButton{
+transition: all 0.5s;
+  cursor: pointer;
+}
+#aboutButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#aboutButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#aboutButton:hover span {
+  padding-right: 25px;
+  color: #663366;
+  text-decoration: underline;
+}
+#aboutButton:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 /*	Footer		*/
 footer{
@@ -73,7 +99,7 @@ i.bi{
 }
 i.bi:hover{
 	transform: scale(1.5);
-	color: #663366;
+	color: #99cc99;
 }
 .blockquote{
 	font-size: 1rem;
