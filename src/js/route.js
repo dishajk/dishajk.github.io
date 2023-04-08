@@ -23,10 +23,14 @@
 			})
 			.state('projects', {
 				url: '/projects',
-				templateUrl: 'src/pages/updating.html'
+				templateUrl: 'src/pages/projects.html'
 			})
 			.state('blog', {
 				url: '/blog',
+				templateUrl: 'src/pages/underConstruction.html'
+			})
+			.state('origami', {
+				url: '/origami',
 				templateUrl: 'src/pages/underConstruction.html'
 			})
 			.state('resources', {
