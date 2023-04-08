@@ -82,6 +82,9 @@ transition: all 0.5s;
   opacity: 1;
   right: 0;
 }
+a.nav-link.activeTab{
+	color: #99cc99;
+}
 /*	Footer		*/
 footer{
 	font-size: 80%;
