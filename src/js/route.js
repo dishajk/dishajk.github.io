@@ -25,6 +25,18 @@
 				url: '/projects',
 				templateUrl: 'src/pages/projects.html'
 			})
+			.state('tex', {
+				url: '/projects#tex',
+				templateUrl: 'src/pages/projects.html#tex'
+			})
+			.state('web', {
+				url: '/projects#web',
+				templateUrl: 'src/pages/projects.html#web'
+			})
+			.state('codes', {
+				url: '/projects#codes',
+				templateUrl: 'src/pages/projects.html#codes'
+			})
 			.state('blog', {
 				url: '/blog',
 				templateUrl: 'src/pages/underConstruction.html'

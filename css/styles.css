@@ -85,6 +85,24 @@ transition: all 0.5s;
 a.nav-link.activeTab{
 	color: #99cc99;
 }
+
+/*	Projects	*/
+
+.blockquote{
+	font-size: 1rem;
+	color:#663366;
+}
+h3{
+	color:#663366;
+}
+#project-list{
+	background-image: url("../media/tilings.svg");
+	background-repeat: repeat;
+}
+#project-list ol{
+	background-color: transparent;
+}
+
 /*	Footer		*/
 footer{
 	font-size: 80%;
@@ -103,32 +121,5 @@ i.bi{
 i.bi:hover{
 	transform: scale(1.5);
 	color: #99cc99;
-}
-.blockquote{
-	font-size: 1rem;
-	color:#663366;
-}
-h3{
-	color:#663366;
-}
-ol.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top:0;
-  width: 100%;
-}
-#project-list{
-	background-image: url("../media/tilings.svg");
-	background-repeat: repeat;
-}
-#project-list ol{
-	background-color: transparent;
-}
-.filler{
-	padding: 0;
-	background-image: url("../media/rhombitrihexagonal.svg");
-	background-repeat: repeat;
-	background-size: 85px auto;
-	height: 50vh;
 }
 

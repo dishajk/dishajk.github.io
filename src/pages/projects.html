@@ -1,20 +1,25 @@
-<div class="container px-4">
+
+<div class="container-fluid row">
+	<aside class="col-md-3 col-lg-2">
 	<h2>Projects</h2>
-	<div class="row py-5">
-		<div class="col-sm-3 mb-5" id="project-list">
-			<ol class="list-group list-group-flush list-group-numbered sticky">
-	<li class="list-group-item"><a ui-sref="origami" title="origami">Origami</a></li>  
-	<li class="list-group-item"><a href="https://www.behance.net/dishajk" title="designs - Behance profile" target="_blank">Designs (mostly graphic) <i class="bi bi-box-arrow-up-right"></i></a></li>  
-<li class="list-group-item"><a href="#codes" title="codes">Codes</a></li>
-<li class="list-group-item"><a href="#web" title="web design">web design</a></li>
-<li class="list-group-item"><a href="#tex" title="latex">LaTeX</a></li>
+			<ol class="list-group list-group-flush list-group-numbered">
+	<li class="list-group-item"><a ui-sref="origami" title="origami">Origami
+			<i class="bi bi-box-arrow-up-right"></i>
+		</a></li>  
+	<li class="list-group-item"><a href="https://www.behance.net/dishajk" title="designs - Behance profile" target="_blank">Graphics
+			<i class="bi bi-box-arrow-up-right"></i>
+		</a></li>  
+<li class="list-group-item"><a ui-sref="codes" title="codes">Codes</a></li>
+<li class="list-group-item"><a ui-sref="web" title="web design">web design</a></li>
+<li class="list-group-item"><a ui-sref="tex" title="latex">LaTeX</a></li>
 <!--<li class="list-group-item">A third item</li>
 <li class="list-group-item">A fourth item</li>
 <li class="list-group-item">And a fifth one</li>-->
 </ol>
-	</div>
-	<div class="col-12 col-sm-9">
-<div id="codes" class="col">
+
+	</aside>
+	<div class="col">
+<div id="codes">
 	<h3>codes</h3>
 			<p>some of the codes I have written</p>
 			<ol class="list-group list-group-numbered">
@@ -38,7 +43,7 @@
 				</li>
 			</ol>
 			</div> <!--end of codes column-->
-<div id="web" class="col py-5">
+<div id="web" class="projectsPanel">
 				<h3>web design(?)</h3>
 				<p>Webpages that I designed and developed</p>
 			<ol class="list-group list-group-numbered" style="color: white;">
@@ -59,7 +64,7 @@
 
 			</ol>
 </div>
-<div id="tex" class="col py-5">
+<div id="tex" class="py-5">
 	<h3>LaTeX</h3>
 	
 <ol class="list-group list-group-numbered" style="color: white;">
@@ -83,7 +88,6 @@
 	</li>
 </ol>
 </div>
-	</div>
 	<blockquote class="blockquote d-flex align-items-end">
 		<p>I am in blood<br>
 		Stepped in so far that, should I wade no more,<br>
