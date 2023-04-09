@@ -52,6 +52,10 @@ a.nav-link.active{
 	color: #ccc;
 	padding: 4px;
 }
+#navbarNav{
+	width: 288px;
+background-color: rgb(51, 51, 51);
+}
 #main-content{
 	box-sizing: border-box;
 }
@@ -87,7 +91,8 @@ a.nav-link.activeTab{
 }
 
 /*	Projects	*/
-
+.projectsSidebar{
+}
 .blockquote{
 	font-size: 1rem;
 	color:#663366;

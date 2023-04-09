@@ -22,10 +22,16 @@
 						<h1>Disha Kuzhively</h1>
 					</a>
 					
-					<button id="navbarToggler" class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<i class="bi bi-menu-button-wide"></i>
+					<button id="navbarToggler" class="navbar-toggler me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						      <i class="bi bi-menu-button-wide"></i>
 					</button>
-					<div class="collapse navbar-collapse sticky" id="navbarNav">
+					<div class="offcanvas offcanvas-end" tabindex="-1"  id="navbarNav" aria-labelledby="navbarNavLabel">
+						      <div class="offcanvas-header">
+							      <button type="button" class="navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close">
+						      <i class="bi bi-x-lg"></i>
+							      </button>
+						      </div>
+
 						<ul class="navbar-nav align-items-end ms-auto me-4 ">
 							<li class="nav-item">
 								<a class="nav-link" ui-sref='home' ui-sref-active='activeTab'>Home</a>
@@ -34,7 +40,7 @@
 								<a class="nav-link" ui-sref="projects" ui-sref-active="activeTab">Projects</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" ui-sref="blog" ui-sref-active="activeTab" title="personal blog">Fieldnotes</a>
+								<a class="nav-link" ui-sref="blog" ui-sref-active title="personal blog">Fieldnotes</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" ui-sref="resources" ui-sref-active="activeTab">Resources</a>
@@ -98,7 +104,7 @@ Sunday 19 February 2023 12:59:39 PM IST
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/ajax-utils.js"></script>
 		<!-- Modules-->
-		<script src="js/script.js"></script>
+		<!--<script src="js/script.js"></script>-->
 		<script src="src/js/route.js"></script>
 	</body>
 </html>
