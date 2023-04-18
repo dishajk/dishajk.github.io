@@ -59,6 +59,9 @@ background-color: rgb(51, 51, 51);
 #main-content{
 	box-sizing: border-box;
 }
+#main-home{
+	max-width: 1000px;
+}
 #aboutButton{
 transition: all 0.5s;
   cursor: pointer;
