@@ -37,10 +37,6 @@
 				url: '/projects#codes',
 				templateUrl: 'src/pages/projects.html#codes'
 			})
-			.state('blog', {
-				url: '/blog',
-				templateUrl: 'src/pages/underConstruction.html'
-			})
 			.state('origami', {
 				url: '/origami',
 				templateUrl: 'src/pages/underConstruction.html'
@@ -48,6 +44,10 @@
 			.state('resources', {
 				url: '/resources',
 				templateUrl: 'src/pages/resources.html'
+			})
+			.state('blog', {
+				url: '/blog',
+				templateUrl: 'src/pages/fieldnotes.html'
 			});
 	}
 })();

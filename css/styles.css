@@ -130,4 +130,6 @@ i.bi:hover{
 	transform: scale(1.5);
 	color: #99cc99;
 }
-
+.blog-header{
+	background-color: blue;
+}
