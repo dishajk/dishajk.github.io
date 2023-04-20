@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" class="h-100" ng-app='djkBlog'>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Personal webpage of Disha Kuzhively">
+		<meta name="author" content="Disha Kuzhively">
+		<meta name="keywords" content="Disha, Kuzhively, Physics, Maths, NISER, HBNI, JNV, IMSc, Bangalore, Origami">
+		<title>Disha's Fieldnotes</title>
+		<link rel="icon" type="image/x-icon" href="/media/try.svg">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	</head>
+	<body class="filler d-flex flex-column h-100">
+		<!--*** header ***-->
+		<header>
+			<nav id="header-nav" class="navbar header-mask fixed-top px-5">
+					<a class="navbar-brand ms-4">
+						<h1>Fieldnotes</h1>
+					</a>
+					<a class="me-4" href="../index.html" title="home" id="homeButton">
+						<img src="/media/try.svg" height="50">
+					</a>
+			</nav>
+		</header>
+		<!--*** end of header ***-->
+
+		<!--*** home page content ***-->
+		<main id="blogSection" class="container-fluid">
+			<div class="row g-5 px-5" style="padding-top:5rem;">
+				<div class="col-md-8" >
+					
+				  <article class="blog-post">
+					<h2 class="blog-post-title mb-1">{{title}}</h2>
+					<p class="blog-post-meta">{{date}} by <a href="{{authorProfile}}">{{author}}</a></p>
+					{{content}}
+					<!-- only one post per page -->
+					<!-- url: fieldnotes/date/time -->
+
+				  </article>
+			
+				  <!-- <article class="blog-post">
+					<h2 class="blog-post-title mb-1">New feature</h2>
+					<p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+			
+					<p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+					<ul>
+					  <li>First list item</li>
+					  <li>Second list item with a longer description</li>
+					  <li>Third list item to close it out</li>
+					</ul>
+					<p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+				  </article> -->
+			
+				  <nav class="blog-pagination" aria-label="Pagination">
+					<a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+					<a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+				  </nav>
+			
+				</div>
+			
+				<div class="col-md-4">
+				  <div class="position-sticky" style="top: 3rem;">
+					<div class="p-4 mb-3 bg-body-tertiary rounded">
+					  <h4 class="fst-italic">About</h4>
+					  <p class="mb-0">
+						Over the years, I've shared a lot of my experiences and thoughts with friends. They've told me time and time again that I should write them down. I've been sharing them on my Facebook, Twitter, and Instagram, but I've decided to bring them all together on my personal blog from now on. So, feel free to check them out and let me know what you think. I'd love to hear your feedback! Thanks for taking the time to read my <em>Fieldnotes</em> and reflect on my musings.
+					</p>
+					</div>
+					
+					<div class="p-4">
+						<h4 class="fst-italic">Topics</h4>
+						<ol class="list-unstyled">
+						  <li><a href="#">{{topic}}</a></li>
+						</ol>
+					  </div>
+
+					<div class="p-4">
+					  <h4 class="fst-italic">Archives</h4>
+					  <ol class="list-unstyled mb-0">
+						<li><a href="#">{{year}}</a></li>
+						<!-- Dropdown into months for each year -->
+					  </ol>
+					</div>
+			
+					
+				  </div>
+				</div>
+			  </div>
+		</main>
+		<!--*** end of home page content***-->
+
+		<!--*** footer ***-->
+			<footer class="footer mt-auto py-1 flex-shrink-1">
+			<div id="footer-nav" class="text-center d-flex align-items-center">
+				<div class="flex-fill">
+				<span>Last updated on <time datetime="
+Wednesday 19 October 2022 12:37:46 PM IST
+">
+Sunday 19 February 2023 12:59:39 PM IST
+					</time></span>
+                                        </div>
+				<div class="flex-fill">
+					<span>&copy; 2019 Disha Kuzhively</span>
+                                        </div>
+					<div class="flex-fill list-group list-group-horizontal list-group-flush justify-content-center">
+                                                <a class="list-group-item" href="https://www.instagram.com/food_n_oats" target="_blank" title="food blog">
+							<i class="bi bi-instagram" aria-label="instgram food account"></i>
+                                                <a class="list-group-item" href="https://www.instagram.com/narwhaldragon" target="_blank" title="personal">
+							<i class="bi bi-instagram"></i>
+						</a>
+                                                <a class="list-group-item" href="https://www.github.com/dishajk" target="_blank" title="github">
+							<i class="bi bi-github"></i>
+						</a>
+                                                <a class="list-group-item" href="https://www.twitter.com/Dishajk" target="_blank" title="twitter">
+							<i class="bi bi-twitter"></i>
+						</a>
+			<!--	<a class="list-group-item" href="https://www.google.com/url?q=https://open.spotify.com/user/njp16egjmjqb808dgoe2gna1g" target="_blank">
+							<i class="bi bi-spotify"></i>
+						</a>
+                                                <a class="list-group-item" href="https://www.google.com/url?q=https://www.strava.com/athletes/37148300" target="_blank">
+							<i class="bi bi-strava"></i>
+						</a>-->
+                                        </div><!--end of social media handle-->
+			</div>
+  		</footer>
+		<!--***Libraries***-->
+
+		<script src="/lib/angular.min.js"></script>
+		<script src="/lib/angular-ui-router.min.js"></script>
+		<!-- jQuery -->
+		<script src=".js/jquery-3.6.0.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/ajax-utils.js"></script>
+		<!-- Modules-->
+		<!--<script src="js/script.js"></script>-->
+		<!-- <script src="/src/js/route.js"></script> -->
+	</body>
+</html>

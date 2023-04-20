@@ -140,3 +140,10 @@ i.bi:hover{
 .blog-header{
 	background-color: blue;
 }
+#blogSection{
+	background-color: #e6e6e6;
+}
+#homeButton:hover{
+	transition: transform .2s;
+	transform: scale(1.5);
+}
