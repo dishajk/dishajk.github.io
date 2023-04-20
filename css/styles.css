@@ -57,6 +57,7 @@ a.nav-link.active{
 background-color: rgb(51, 51, 51);
 }
 #main-content{
+	padding-top: 5rem;
 	box-sizing: border-box;
 }
 #main-home{
@@ -94,8 +95,15 @@ a.nav-link.activeTab{
 }
 
 /*	Projects	*/
-.projectsSidebar{
+@media screen and (min-width: 768px) {
+	.projectsSidebar{
+		position: fixed;
+		left:0;
+		background-image: url("../media/tilings.svg");
+	}
 }
+	/*  */
+
 .blockquote{
 	font-size: 1rem;
 	color:#663366;
@@ -104,7 +112,6 @@ h3{
 	color:#663366;
 }
 #project-list{
-	background-image: url("../media/tilings.svg");
 	background-repeat: repeat;
 }
 #project-list ol{
