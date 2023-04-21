@@ -12,6 +12,14 @@
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/styles.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+		<script>
+			MathJax = {
+			  tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']]
+			  }
+			};
+		</script>
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body class="filler d-flex flex-column h-100">
 		<!--*** header ***-->
@@ -36,12 +44,14 @@
 					<h2 class="blog-post-title mb-1">{{title}}</h2>
 					<p class="blog-post-meta">{{date}} by <a href="{{authorProfile}}">{{author}}</a></p>
 					{{content}}
+
 					<!-- only one post per page -->
 					<!-- url: fieldnotes/date/time -->
-
+					When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+					$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 				  </article>
 			
-				  <!-- <article class="blog-post">
+				  <article class="blog-post">
 					<h2 class="blog-post-title mb-1">New feature</h2>
 					<p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
 			
@@ -52,7 +62,7 @@
 					  <li>Third list item to close it out</li>
 					</ul>
 					<p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-				  </article> -->
+				  </article>
 			
 				  <nav class="blog-pagination" aria-label="Pagination">
 					<a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
@@ -131,11 +141,11 @@ Sunday 19 February 2023 12:59:39 PM IST
 		<script src="/lib/angular.min.js"></script>
 		<script src="/lib/angular-ui-router.min.js"></script>
 		<!-- jQuery -->
-		<script src=".js/jquery-3.6.0.min.js"></script>
+		<script src="/js/jquery-3.6.0.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
 		<script src="/js/ajax-utils.js"></script>
 		<!-- Modules-->
 		<!--<script src="js/script.js"></script>-->
-		<!-- <script src="/src/js/route.js"></script> -->
+		<script src="/src/js/djkBlog.js"></script>
 	</body>
 </html>
