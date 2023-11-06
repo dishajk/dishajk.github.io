@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Projects
+  link: /projects.html
+- name: Fieldnotes
+  link: /fieldnotes.html
+- name: Resources
+  link: /resources.html
+- name: Contact me
+  link: /contact.html
