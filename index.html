@@ -1,108 +1,135 @@
-<!doctype html>
-<html lang="en" class="h-100" ng-app='djk'>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Personal webpage of Disha Kuzhively">
-		<meta name="author" content="Disha Kuzhively">
-		<meta name="keywords" content="Disha, Kuzhively, Physics, Maths, NISER, HBNI, JNV, IMSc, Bangalore, Origami">
-		<title>Disha Kuzhively</title>
-		<link rel="icon" type="image/x-icon" href="/media/try.svg">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-	</head>
-	<body class="filler d-flex flex-column h-100">
-		<!--*** header ***-->
-		<header>
-			<nav id="header-nav" class="navbar navbar-expand-lg header-mask fixed-top px-5">
-					<a class="navbar-brand ms-4" ui-sref='home'>
-						<h1>Disha Kuzhively</h1>
-					</a>
-					<button id="navbarToggler" class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						      <i class="bi bi-menu-button-wide"></i>
-					</button>
-					<div class="collapse navbar-collapse" tabindex="-1"  id="navbarNav" aria-labelledby="navbarNavLabel">
-						      <!-- <div class="offcanvas-header">
-							      <button type="button" class="navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close">
-						      <i class="bi bi-x-lg"></i>
-							      </button>
-						      </div> -->
-							  <!-- <div class="offcanvas-body"> -->
-								<ul class="navbar-nav align-items-end ms-auto me-4">
-									<li class="nav-item">
-										<a class="nav-link" ui-sref='home' ui-sref-active='activeTab'>Home</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" ui-sref="projects" ui-sref-active="activeTab">Projects</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" ui-sref="blog" ui-sref-active="activeTab" title="personal blog">Fieldnotes</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" ui-sref="resources" ui-sref-active="activeTab">Resources</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" ui-sref="contact" ui-sref-active='activeTab'>Contact me</a>
-									</li>
-								</ul>
-							  <!-- </div> -->
-					</div>
-			</nav>
-		</header>
-		<!--*** end of header ***-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disha Kuzhively - Personal Webpage</title>
 
-		<!--*** home page content ***-->
-		<main id="main-content" class="container-fluid py-5 mt-5">
-		<ui-view></ui-view>
-		</main>
-		<!--*** end of home page content***-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column">
+    <header id="header" class="px-4">
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Disha Kuzhively</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <ion-icon name="menu-outline" class="navbar-toggler-icon"></ion-icon>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/" style="color: #99cc99;">
+              Home
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/projects.html" >
+              Projects
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/fieldnotes.html" >
+              Fieldnotes
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/resources.html" >
+              Resources
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html" >
+              Contact me
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+</nav>
+    </header>
+    <main class="mt-5">
+                <section class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 ps-5">
+                    <p class="lead" data-aos="fade-right">
+                    Hi, I'm Disha.<br>Welcome to my personal webpage!
+                    </p>
+                </div>
+                <div class="col-md-5 pe-5 text-center" data-aos="fade-in">
+                    <img src="/assets/media/try.svg" alt="picture of my face" style="width:200px; height:auto;">
+				        <p class="figure-caption mt-4 ms-4">&copy; Rupayan Biswas
+				        </p>
+                </div>
+            </div>
+        </section>
+        <section class="container px-5">
+            <h2 data-aos="slide-right">
+                <a data-bs-toggle="collapse" href="#aboutMe" role="button" aria-expanded="false" aria-controls="aboutMe">
+                    about me    
+                </a>
+                </h2>
+                <div class="collapse" id="aboutMe">
+                    <p>
+                        I work at the Centre for Science Communication and Outreach at IMSc Chennai. (If you're at IMSc, feel free to check out what I've been up to by clicking <a href="http://sas64.imsc.res.in/disha">here</a>). I am also one of the editors for the student-run magazine, <a href="https://commuzinebystudents.wordpress.com/" target="_blank">Commuzine</a>.
+                    </p>
+                        <p >
+                            I completed my master's in Physics with a minor in Mathematics at the National Institute of Science Education and Research (NISER) in Bhubaneswar. My master's thesis was on Deuteron Production in Relativistic Heavy Ion Collision.
+                        </p>
+                        
+                            <p>
+                                During the Covid-19 pandemic, I taught Physics and Mathematics online to high school and first-year engineering students. This experience interested me in the pedagogical research on mathematics and science education.
+                            </p>
+                            <p>
+                                In the past, I had the opportunity to visit and work at the Tata Institute of Fundamental Research (TIFR) in Mumbai in 2018 and the Inter-University Accelerator Centre (IUAC) in New Delhi in the summer of 2016.
+                            </p>
+                            <p>
+                                In college, I served in various leadership roles, such as the student-in-charge of the nature club, OorNa, and the literary club, LitC. I also served as a member of the Disciplinary Action Committee and the Election Commission of NISER Students’ Gymkhana. Additionally, I was the Mess Secretary and the President of the Hostel Executive Committee at NISER.
+                            </p>
+                            <p>
+                                I grew up in Bangalore and attended JNV Bangalore Urban for my schooling. I participated in Archery during my school days and competed in the 2008 and 2011 SGFI (School Games Federation of India). I also enjoyed quizzing and was a semi-finalist in the 2009 TerraQuiz programme of the National Geographic channel.
+                            </p>
+                            <p>
+                                I enjoy cooking (and eating, of course!). In the footer, you can check out my 'food-instagram' account and pictures of my crocheting, knitting, and embroidery projects in my 'main-instagram' account.
+                            </p>
+                            <p>By the way, I designed this webpage myself! Since school, I've been interested in web design and have learned HTML, CSS, and JavaScript. Now, it is another hobby of mine!
+                            </p>
+                            <p>
+                                Lastly, I am interested in politics, particularly the issues surrounding caste and gender in India.
+                            </p>
+                             <p>Feel free to write to me if you want to ask me anything <a href="mailto:dishajk.21@gmail.com" alt="mail I D djkuzhively at gmail dot com"><ion-icon name="mail" class="align-middle"></ion-icon></a>.</p>
+                </div>
 
-		<!--*** footer ***-->
-			<footer class="footer mt-auto py-1 flex-shrink-1">
-			<div id="footer-nav" class="text-center d-flex align-items-center">
-				<div class="flex-fill">
-				<span>Last updated on <time datetime="
-					Tuesday 09 May 2023 05:07:00 PM IST
-">
-Tuesday 09 May 2023 05:07:00 PM IST
-					</time></span>
-                                        </div>
-				<div class="flex-fill">
-					<span>&copy; 2019 Disha Kuzhively</span>
-                                        </div>
-					<div class="flex-fill list-group list-group-horizontal list-group-flush justify-content-center">
-                                                <a class="list-group-item" href="https://www.instagram.com/food_n_oats" target="_blank" title="food blog">
-							<i class="bi bi-instagram" aria-label="instgram food account"></i>
-                                                <a class="list-group-item" href="https://www.instagram.com/narwhaldragon" target="_blank" title="personal">
-							<i class="bi bi-instagram"></i>
-						</a>
-                                                <a class="list-group-item" href="https://www.github.com/dishajk" target="_blank" title="github">
-							<i class="bi bi-github"></i>
-						</a>
-                                                <a class="list-group-item" href="https://www.twitter.com/Dishajk" target="_blank" title="twitter">
-							<i class="bi bi-twitter"></i>
-						</a>
-			<!--	<a class="list-group-item" href="https://www.google.com/url?q=https://open.spotify.com/user/njp16egjmjqb808dgoe2gna1g" target="_blank">
-							<i class="bi bi-spotify"></i>
-						</a>
-                                                <a class="list-group-item" href="https://www.google.com/url?q=https://www.strava.com/athletes/37148300" target="_blank">
-							<i class="bi bi-strava"></i>
-						</a>-->
-                                        </div><!--end of social media handle-->
-			</div>
-  		</footer>
-		<!--***Libraries***-->
-
-		<script src="lib/angular.min.js"></script>
-		<script src="lib/angular-ui-router.min.js"></script>
-		<!-- jQuery -->
-		<script src="js/jquery-3.6.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/ajax-utils.js"></script>
-		<!-- Modules-->
-		<!--<script src="js/script.js"></script>-->
-		<script src="src/js/route.js"></script>
-	</body>
+        </section>
+    </main>
+    <footer id="footer" class="px-4 mt-auto">
+        <hr>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around">
+            <span>Last updated on Sun 5 Nov 17:49:09 IST 2023</span>
+            <span>&copy;2019 Disha Kuzhively</span>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://github.com/dishajk" target="_blank"><ion-icon class="align-middle" name="logo-github"></ion-icon></a>
+                </li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/food_n_oats" target="_blank"><ion-icon class="align-middle" name="logo-instagram"></ion-icon></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/narwhaldragon" target="_blank"><ion-icon class="align-middle" name="logo-instagram"></ion-icon></a></li>
+                <li class="list-inline-item"><a href="https://twitter.com/Dishajk" target="_blank"><ion-icon class="align-middle" name="logo-twitter"></ion-icon></a></li>
+            </ul>
+        </div>        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
 </html>
