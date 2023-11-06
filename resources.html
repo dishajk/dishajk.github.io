@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="container">
+    <h1>Resources</h1>
+    <p>I enjoy making lists.  I'll keep updating this one as and when I find new and interesting things. This list was last updates on Mon  6 Nov 04:55:10 IST 2023.</p>
+    <ol>
+        {% for resource in site.resources %}
+          <li>
+            <h2>{{ resource.name }}</h2>
+            {{ resource.content}}
+          </li>
+        {% endfor %}
+      </ol>
+</div>

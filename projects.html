@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="container">
+    <h2>Projects</h2>
+
+    <ol class="d-flex flex-column-reverse">
+        {% for project in site.projects %}
+          <li>
+            <h2>{{ project.name }}</h2>
+            {{ project.content}}
+          </li>
+        {% endfor %}
+      </ol>
+</div>

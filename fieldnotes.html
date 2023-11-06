@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="text-center" data-aos="fade-down">
+    <h1>Fieldnotes</h1>
+    <p>personal blog of Disha Kuzhively</p>
+    <hr>
+    </div>
+    <section>
+        <ul>
+            {% for post in site.posts %}
+              <li>
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <time>{{ post.date | date_to_string }}</time>
+                <!-- {{ post.excerpt }} -->
+              </li>
+            {% endfor %}
+          </ul>
+    </section>
+</div>

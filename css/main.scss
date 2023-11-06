@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Pompiere&display=swap');
+
+$colorLight: #cccccc;
+$colorDark: #333333;
+$colorHighlight:#99cc99;
+$colorHighlight2:#663366;
+body{
+    background-color: #cccccc;
+    font-family: 'Catamaran', sans-serif;
+    min-height: 100vh;
+    font-size: 20px;
+    header{
+        background-color: $colorDark;
+        nav{
+            .nav-link:visited, .navbar-brand, .navbar-toggler-icon, .nav-link, .nav-link.disabled{
+                color: $colorLight;
+                font-family: 'Pompiere', sans-serif;
+            }
+            .nav-link:focus, .nav-link:active, .nav-link:hover, .navbar-brand:hover{
+                color: $colorHighlight;
+            }
+            .navbar-brand{
+                font-size: 250%;
+            }
+            .nav-link{
+                font-size: 140%;
+            }
+      }
+    }
+    main{
+        .lead{
+            font-size: 130%;
+        }
+        h1, h2{
+            font-family: 'Pompiere', sans-serif;
+            color: $colorHighlight2;
+        }
+        h1{
+            font-size: 220%;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 180%;
+        }
+        ion-icon{
+            color: $colorHighlight2;
+            font-size: larger;
+        }
+        a{
+            color: $colorHighlight2;
+        }
+    }
+    footer{
+        ul{
+            list-style: none;
+            a{
+                color: $colorDark;
+            }
+            a:hover{
+                color: $colorHighlight2;
+            }
+        }
+    }
+}
