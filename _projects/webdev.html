@@ -2,23 +2,23 @@
 name: Web Design and Development
 date: 2023-08-06
 ---
-<p>Webpages that I designed and developed</p>
-    <ol class="list-group list-group-numbered">
-        <li>
-            Personal webpage of <a href="https://www.imsc.res.in/~padmanath/index.html#/" target="_blank">Padmanath M</a>
-        </li>
-        <li class="align-items-start">
-            <a href="https://www.imsc.res.in/triveni/2023/">Webpage</a>  for the 2023 edition of the Science at the Sabha 
-        </li>
-        <li class="align-items-start">	<a href="https://www.imsc.res.in/nsm2023/" target="_blank">Webpage</a> for the Neutron Star Meeting
-        </li>
-        <li class="align-items-start">	<a href="https://www.imsc.res.in/~balfest" target="_blank">Webpage</a> for Bal-Fest - Conference
-                </li>
-                <li class="align-items-start">
-                    <a href="https://www.imsc.res.in/imsc60" target="_blank" title="imsc60 webpage">IMSc60 webpage</a> celebrating the Diamond Jubilee of IMSc.
-                </li>
-                <li class="align-items-start">
-                    Personal webpage of <a href="https://hytejasvi.github.io/" target="_blank">Tejasvi H Y</a>
-                </li>
-
-    </ol>
+<section>
+<p>Webpages that I designed and/or developed</p>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-stretch" data-aos="fade-up">
+        {% assign sortedWebDev = site.data.webDev | sort: 'date' | reverse %}
+        {% for item in sortedWebDev %}
+        <div class="col webDev shadow-sm" >
+            <a class="lead" href="{{ item.weburl }}" target="_blank">{{ item.webName }}</a>
+            <p>{{ item.description }}</p>
+            <p>for {{ item.client }}</p>
+            <p>
+                {% for tech in item.techUsed %}
+                <i class="fa-brands fa-{{ tech }}"></i>
+                {% endfor %}                
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</section>

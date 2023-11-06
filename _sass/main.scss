@@ -12,11 +12,11 @@ body{
     header{
         background-color: $colorDark;
         nav{
-            .nav-link:visited, .navbar-brand, .navbar-toggler-icon, .nav-link, .nav-link.disabled{
+            .nav-link:visited, .navbar-brand, .navbar-brand:visited, .navbar-toggler-icon, .nav-link, .nav-link.disabled{
                 color: $colorLight;
                 font-family: 'Pompiere', sans-serif;
             }
-            .nav-link:focus, .nav-link:active, .nav-link:hover, .navbar-brand:hover{
+            .nav-link:focus, .nav-link:active, .nav-link:hover, .navbar-brand:focus, .navbar-brand:hover{
                 color: $colorHighlight;
             }
             .navbar-brand{
@@ -28,6 +28,9 @@ body{
       }
     }
     main{
+        section{
+            margin-bottom: 3rem;
+        }
         .lead{
             font-size: 130%;
         }
@@ -35,6 +38,7 @@ body{
             font-family: 'Pompiere', sans-serif;
             font-size: 180%;
             color: $colorHighlight2;
+            margin-bottom: 2rem;
         }
         h1{
             color: $colorHighlight2;
@@ -58,6 +62,32 @@ body{
                 color: $colorHighlight2;
                 font-family: 'Pompiere', sans-serif;
             }
+        }
+        .webDev{
+            a{
+                text-decoration: none;
+            }
+            p{
+                margin-bottom: 4px;
+            }
+        }
+        .nav-link{
+            color: $colorHighlight;
+            background-color: $colorDark;
+            border: 1px solid $colorHighlight;
+        }
+        .nav-tabs .nav-link.active{
+            color: $colorHighlight2;
+            background-color: $colorHighlight;
+            outline-color: $colorHighlight2;
+            outline-style: solid;
+        }
+        .nav-link:hover{
+            color: $colorHighlight;
+            background-color: $colorDark;
+        }
+        .nav-tabs{
+            border-color: $colorHighlight2;
         }
     }
     footer{
