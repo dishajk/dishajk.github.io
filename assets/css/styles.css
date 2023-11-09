@@ -8,11 +8,11 @@ body {
 body header {
   background-color: #333333;
 }
-body header nav .nav-link:visited, body header nav .navbar-brand, body header nav .navbar-toggler-icon, body header nav .nav-link, body header nav .nav-link.disabled {
+body header nav .nav-link:visited, body header nav .navbar-brand, body header nav .navbar-brand:visited, body header nav .navbar-toggler-icon, body header nav .nav-link, body header nav .nav-link.disabled {
   color: #cccccc;
   font-family: "Pompiere", sans-serif;
 }
-body header nav .nav-link:focus, body header nav .nav-link:active, body header nav .nav-link:hover, body header nav .navbar-brand:hover {
+body header nav .nav-link:focus, body header nav .nav-link:active, body header nav .nav-link:hover, body header nav .navbar-brand:focus, body header nav .navbar-brand:hover {
   color: #99cc99;
 }
 body header nav .navbar-brand {
@@ -21,6 +21,9 @@ body header nav .navbar-brand {
 body header nav .nav-link {
   font-size: 140%;
 }
+body main section {
+  margin-bottom: 3rem;
+}
 body main .lead {
   font-size: 130%;
 }
@@ -28,6 +31,7 @@ body main h2 {
   font-family: "Pompiere", sans-serif;
   font-size: 180%;
   color: #663366;
+  margin-bottom: 2rem;
 }
 body main h1 {
   color: #663366;
@@ -49,6 +53,33 @@ body main a {
 body main .fieldnote h1 {
   color: #663366;
   font-family: "Pompiere", sans-serif;
+}
+body main .webDev a {
+  text-decoration: none;
+}
+body main .webDev p {
+  margin-bottom: 4px;
+}
+body main .nav-link {
+  color: #99cc99;
+  background-color: #333333;
+  border: 1px solid #99cc99;
+}
+body main .nav-tabs .nav-link.active {
+  color: #663366;
+  background-color: #99cc99;
+  outline-color: #663366;
+  outline-style: solid;
+}
+body main .nav-link:hover {
+  color: #99cc99;
+  background-color: #333333;
+}
+body main .nav-tabs {
+  border-color: #663366;
+}
+body footer {
+  font-size: 85%;
 }
 body footer ul {
   list-style: none;
