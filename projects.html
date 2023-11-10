@@ -5,7 +5,7 @@ layout: default
     <h2>Projects</h2>
     {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
 
-    <nav>
+    <nav class="mb-3">
       <div class="nav nav-tabs justify-content-around" id="nav-tab" role="tablist">
         {% for project in sortedProjects %}
         <button class="nav-link {% if forloop.index == 1 %} active{% endif %}" id="nav-{{ forloop.index }}-tab" data-bs-toggle="tab" data-bs-target="#nav-{{ forloop.index }}" type="button" role="tab" aria-controls="nav-{{ forloop.index }}" aria-selected="{% if forloop.index == 1 %}true{% else %}false{% endif %}">{{ project.name }}</button>
