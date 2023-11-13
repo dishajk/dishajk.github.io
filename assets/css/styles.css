@@ -60,23 +60,19 @@ body main .webDev a {
 body main .webDev p {
   margin-bottom: 4px;
 }
-body main .nav-link {
-  color: #99cc99;
-  background-color: #333333;
-  border: 1px solid #99cc99;
+body main .nav-tabs {
+  border-color: #99cc99;
+}
+body main .nav-tabs .nav-link {
+  color: #663366;
+  border-color: #99cc99;
+}
+body main .nav-tabs .nav-link:hover {
+  border-color: #663366;
 }
 body main .nav-tabs .nav-link.active {
-  color: #663366;
-  background-color: #99cc99;
-  outline-color: #663366;
-  outline-style: solid;
-}
-body main .nav-link:hover {
-  color: #99cc99;
-  background-color: #333333;
-}
-body main .nav-tabs {
-  border-color: #663366;
+  background-color: #663366;
+  color: #cccccc;
 }
 body footer {
   font-size: 85%;
