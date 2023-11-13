@@ -71,23 +71,19 @@ body{
                 margin-bottom: 4px;
             }
         }
-        .nav-link{
-            color: $colorHighlight;
-            background-color: $colorDark;
-            border: 1px solid $colorHighlight;
-        }
-        .nav-tabs .nav-link.active{
-            color: $colorHighlight2;
-            background-color: $colorHighlight;
-            outline-color: $colorHighlight2;
-            outline-style: solid;
-        }
-        .nav-link:hover{
-            color: $colorHighlight;
-            background-color: $colorDark;
-        }
         .nav-tabs{
-            border-color: $colorHighlight2;
+            border-color: $colorHighlight;
+            .nav-link{
+                color: $colorHighlight2;
+                border-color: $colorHighlight;
+            }
+            .nav-link:hover{
+                border-color: $colorHighlight2;
+            }
+            .nav-link.active{
+                background-color: $colorHighlight2;
+                color: $colorLight;
+            }
         }
     }
     footer{
