@@ -1,3 +1,12 @@
+- weburl: "http://sas64.imsc.res.in/disha/chari2023/"
+  webName: "IWM visitor program"
+  description: "work in progress"
+  techUsed:
+    - html5
+    - sass
+    - bootstrap
+  client: "Sanoli Gun, IMSc"
+  date: 2023-11-13
 - weburl: "https://commuzinebystudents.wordpress.com/"
   webName: "Commuzine"
   description: "e-magazine"
