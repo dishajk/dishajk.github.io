@@ -5,6 +5,13 @@ layout: default
 ---
 <div class="container">
     <h2>Projects</h2>
+
+    <div class="container text-center mb-5">
+      <div class="row row-cols-lg-5 d-flex justify-content-around">
+        <div class="col bg-light border nav nav-tabs justify-content-around">Do animating Canvas </div>
+        <div class="col bg-light border">Hello</div>
+      </div>
+    </div>
     {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
 
     <nav class="mb-3">
