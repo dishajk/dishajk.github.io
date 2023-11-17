@@ -1,8 +1,7 @@
 ---
-name: Web Design and Development
-date: 2023-11-14
+layout: projects
+title: Web Design and Development
 ---
-<section>
 <p>Webpages that I designed and/or developed</p>
 <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-stretch" data-aos="fade-up">
@@ -11,8 +10,11 @@ date: 2023-11-14
         <div class="col webDev shadow-sm" >
             <a class="lead" href="{{ item.weburl }}" target="_blank">{{ item.webName }}</a>
             <p>{{ item.description }}</p>
-            <p>for {{ item.client }}</p>
-            <p>
+                {% if item.client %}            
+                <p>
+                    for {{ item.client }}</p>
+                <p>
+                {% endif %}
                 {% for tech in item.techUsed %}
                 <i class="fa-brands fa-{{ tech }}"></i>
                 {% endfor %}                
@@ -21,4 +23,3 @@ date: 2023-11-14
         {% endfor %}
     </div>
 </div>
-</section>

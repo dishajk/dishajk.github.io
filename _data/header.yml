@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: Projects
-  link: /projects.html
+  link: /projects
 - name: Fieldnotes
   link: /fieldnotes.html
 - name: Resources

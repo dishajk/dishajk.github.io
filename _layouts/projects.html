@@ -11,17 +11,23 @@
     <link href="/assets/css/lightbox.min.css" rel="stylesheet">
     <link href="/assets/css/styles.css" rel="stylesheet">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/try.svg">
-    <link rel="icon" type="image/png" href="/assets/media/try.svg" sizes="32x32">
-    <link rel="icon" type="image/png" href="/assets/media/try.svg" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/try.svg">
+    <link rel="icon" type="image/png" href="assets/media/try.svg" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/media/try.svg" sizes="16x16">
 </head>
 <body class="d-flex flex-column">
     <header id="header" class="px-4">
         {% include header.html %}
     </header>
-    <main class="mt-5">
-        {{ content }}
-    </main>
+    <main class="mt-5 container">
+        <div class="mb-3">
+        <a href="/projects" >
+        <i class="fa-regular fa-thumbs-up fa-rotate-270 fa-xl"></i><span>Back to Projects</span></a>
+        </div>
+        <section class="mb-2">
+            {{ content }}
+        </section>
+        </main>
     <footer id="footer" class="px-4 mt-auto">
         {% include footer.html %}        
     </footer>

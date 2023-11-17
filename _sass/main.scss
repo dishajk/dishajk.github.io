@@ -4,6 +4,10 @@ $colorLight: #cccccc;
 $colorDark: #333333;
 $colorHighlight:#99cc99;
 $colorHighlight2:#663366;
+$tile: sevenOverlappingCircles, rhombitrihexagonal, tilings;
+$key: random(3);
+$bgtile: nth($tile, $key); 
+
 body{
     background-color: #cccccc;
     font-family: 'Catamaran', sans-serif;
@@ -56,6 +60,24 @@ body{
         }
         a{
             color: $colorHighlight2;
+        }
+        .project-tab{
+            min-height: 160px;
+            border-radius: 6px;
+            background-image: url('/assets/media/#{$bgtile}.svg');
+            background-color: $colorHighlight2;
+            background-repeat: repeat;
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: $colorLight;
+                font-family: 'Pompiere', sans-serif;
+                font-size: 180%;
+                font-weight: 600;
+                padding: 10px;
+                text-transform: uppercase;
+            }
         }
         .fieldnote{
             h1{

@@ -1,4 +1,12 @@
-- weburl: "http://sas64.imsc.res.in/disha/chari2023/"
+- weburl: "https://venusunshine.com/"
+  webName: "Venu Sunshine"
+  description: "real estate"
+  techUsed:
+    - html5
+    - sass
+    - bootstrap
+  date: 2023-11-11
+- weburl: "https://www.imsc.res.in/outreach/iwmvisitorprogram2023/"
   webName: "IWM visitor program"
   description: "work in progress"
   techUsed:
@@ -13,9 +21,7 @@
   techUsed:
     - html5
     - wordpress
-  client: "public"
   date: 2023-10-30
-
 - weburl: "https://www.imsc.res.in/~padmanath/index.html#/"
   webName: "Padmanath M"
   description: "personal webpage"

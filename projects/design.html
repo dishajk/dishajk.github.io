@@ -1,6 +1,7 @@
 ---
 name: Digital Art
 date: 2023-11-02
+layout: projects
 ---
 <section>
     <div class="container">
@@ -30,8 +31,8 @@ date: 2023-11-02
           {% assign posters = site.data.posters | sort: 'posterDate' | reverse %}
           {% for item in posters %}
           <div class="col-md-4 p-2 float-start">
-            <a href="assets/design/{{ item.posterLink }}" data-lightbox="posters">
-            <img src="assets/design/{{ item.posterLink }}" class="card-img-top " alt="{{ item.description }}">
+            <a href="/assets/design/{{ item.posterLink }}" data-lightbox="posters">
+            <img src="/assets/design/{{ item.posterLink }}" class="card-img-top " alt="{{ item.description }}">
             </a>
             <small class="text-body-secondary">{{ item.posterDate | date_to_string}}</small>
           </div>
