@@ -50,6 +50,21 @@ body main ion-icon {
 body main a {
   color: #663366;
 }
+body main .project-nav {
+  background-image: url("/assets/media/sevenOverlappingCircles.svg");
+  background-color: #663366;
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+}
+body main .project-nav .nav-link {
+  color: #cccccc;
+  font-family: "Pompiere", sans-serif;
+  font-size: 150%;
+}
+body main .project-nav .nav-link:hover {
+  color: #99cc99;
+}
 body main .project-tab {
   min-height: 160px;
   border-radius: 6px;
