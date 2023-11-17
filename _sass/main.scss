@@ -61,6 +61,21 @@ body{
         a{
             color: $colorHighlight2;
         }
+        .project-nav{
+            background-image: url('/assets/media/#{$bgtile}.svg');
+            background-color: $colorHighlight2;
+            background-repeat: repeat;
+            display: flex;
+            align-items: center;
+            .nav-link{
+                color: $colorLight;
+                font-family: 'Pompiere', sans-serif;
+                font-size: 150%;
+            }
+            .nav-link:hover{
+                color: $colorHighlight;
+            }
+        }
         .project-tab{
             min-height: 160px;
             border-radius: 6px;
