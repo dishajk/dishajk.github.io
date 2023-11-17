@@ -1,3 +1,12 @@
+- weburl: "https://github.com/dishajk/hbniaccess"
+  webName: HBNIaccess
+  description: "half-finished, abandoned project"
+  date: 2022-11-28
+  client: "IMSc"
+  techUsed:
+    - html5
+    - css3
+    - angular
 - weburl: "https://venusunshine.com/"
   webName: "Venu Sunshine"
   description: "real estate"
