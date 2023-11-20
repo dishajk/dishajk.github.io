@@ -10,14 +10,23 @@ This is the repository for Disha Kuzhively's personal webpage and blog. It is bu
 ## Directory Structure
 
 ├── _config.yml       # Jekyll configuration file
+
 ├── _posts            # Blog posts in Markdown format
+
 ├── _layouts          # HTML layouts for different sections
+
 ├── _includes         # Reusable HTML components
+
 ├── _sass             # Sass stylesheets
+
 ├── assets            # Static assets (CSS, images, JavaScript)
+
 ├── projects          # Subdirectory for project pages
+
 ├── _data             # YAML files for data (e.g., navigation, project info)
+
 ├── _site             # Auto-generated site (ignored by Git)
+
 └── ...               # Other directories and files
 
 ## Dependencies
