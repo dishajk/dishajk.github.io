@@ -67,4 +67,5 @@ This is the repository for Disha Kuzhively's personal webpage and blog. It is bu
 
 ### Building and Running
 
+`bundle install`
 `bundle exec jekyll serve --livereload`
