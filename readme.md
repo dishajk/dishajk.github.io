@@ -8,23 +8,6 @@ This is the repository for Disha Kuzhively's personal webpage and blog. It is bu
 - [Customization](#customization)
 
 ## Directory Structure
-Great! It looks like you have a navigation bar in your Jekyll project's header. This is a good starting point for your README file. Let's structure it by including information about the key components, configuration, and how to update the site. Feel free to modify and expand on the following template:
-
-markdown
-
-# Your Project Name - README
-
-## Overview
-Briefly describe your personal webpage/blog, its purpose, and the key features it offers.
-
-## Table of Contents
-- [Directory Structure](#directory-structure)
-- [Dependencies](#dependencies)
-- [Configuration](#configuration)
-- [Updating the Site](#updating-the-site)
-- [Customization](#customization)
-
-## Directory Structure
 
 ├── _config.yml       # Jekyll configuration file
 ├── _posts            # Blog posts in Markdown format
