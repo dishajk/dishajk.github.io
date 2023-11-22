@@ -61,6 +61,8 @@ This is the repository for Disha Kuzhively's personal webpage and blog. It is bu
 
 ### Project Page
 
+#### Origami
+   - add modelname.html to `_origami`
 - Navigate to the projects directory.
 - Create a new HTML file for your project.
 - Add content to the project page.

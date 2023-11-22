@@ -1,0 +1,20 @@
+---
+date: 2023-11-22
+layout: projects
+title: Origami
+---
+<div class="container pt-5">
+    <h2>Origami</h2>
+    <div class="container text-center mb-5">
+      <div class="row row-cols-lg-4 d-flex justify-content-around">
+        {% for model in site.origami %}
+        <div class="col border justify-content-around">
+          <a href="{{model.url}}">
+            <img src="{{ model.heroimg }}" alt="{{ model.name }},  {{ model.type }}" class="figure-img img-fluid rounded origami">
+            {{ model.name }}
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+</div>

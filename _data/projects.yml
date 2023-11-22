@@ -1,7 +1,8 @@
 - name: Teaching and Learning Resources
   link: /tbu.html
 - name: Origami
-  link: /projects/origami.html
+  link: /projects/origami
+  date: 2023-11-22
 - name: Physics
   link: /tbu.html
 - name: Web Design and Development
