@@ -59,6 +59,7 @@ body{
             font-family: 'Pompiere', sans-serif;
             font-size: calc(1.414 * 20px);
             a{
+                border-bottom: $colorHighlight2 solid 1px;
                 text-decoration: none;
             }
         }
