@@ -48,6 +48,7 @@ body main h4 {
   font-size: 28.28px;
 }
 body main h4 a {
+  border-bottom: #663366 solid 1px;
   text-decoration: none;
 }
 body main ion-icon {
