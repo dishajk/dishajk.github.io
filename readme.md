@@ -40,6 +40,7 @@ This is the repository for Disha Kuzhively's personal webpage and blog. It is bu
 
 ## Content Organization
 
+   - _includes/about.html : about me content in the landing page
    - _posts: Blog posts written in Markdown format. Follow the naming convention YYYY-MM-DD-post-title.md.
    - projects: Subdirectory for project pages. Organize project pages in a structured manner.
 
@@ -71,3 +72,6 @@ This is the repository for Disha Kuzhively's personal webpage and blog. It is bu
 
 `bundle install`
 `bundle exec jekyll serve --livereload`
+
+### Reference
+
