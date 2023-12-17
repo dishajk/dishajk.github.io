@@ -16,31 +16,38 @@ body header nav .nav-link:focus, body header nav .nav-link:active, body header n
   color: #99cc99;
 }
 body header nav .navbar-brand {
-  font-size: 250%;
+  font-size: 52.36px;
 }
 body header nav .nav-link {
-  font-size: 140%;
+  font-size: 28.28px;
 }
 body main section {
   margin-bottom: 3rem;
 }
 body main .lead {
-  font-size: 130%;
-}
-body main h2 {
-  font-family: "Pompiere", sans-serif;
-  font-size: 180%;
-  color: #663366;
-  margin-top: 2rem;
+  font-size: 28.28px;
 }
 body main h1 {
   color: #663366;
   font-family: "Pompiere", sans-serif;
 }
+body main h2 {
+  font-family: "Pompiere", sans-serif;
+  font-size: 32.36px;
+  color: #663366;
+  margin-top: 2rem;
+}
 body main h3 {
   font-weight: bold;
 }
 body main h3 a {
+  text-decoration: none;
+}
+body main h4 {
+  font-family: "Pompiere", sans-serif;
+  font-size: 28.28px;
+}
+body main h4 a {
   text-decoration: none;
 }
 body main ion-icon {
@@ -51,7 +58,7 @@ body main a {
   color: #663366;
 }
 body main .project-nav {
-  background-image: url("/assets/media/rhombitrihexagonal.svg");
+  background-image: url("/assets/media/tilings.svg");
   background-color: #663366;
   background-repeat: repeat;
   display: flex;
@@ -60,7 +67,7 @@ body main .project-nav {
 body main .project-nav .nav-link {
   color: #cccccc;
   font-family: "Pompiere", sans-serif;
-  font-size: 150%;
+  font-size: 28.28px;
 }
 body main .project-nav .nav-link:hover {
   color: #99cc99;
@@ -68,7 +75,7 @@ body main .project-nav .nav-link:hover {
 body main .project-tab {
   min-height: 160px;
   border-radius: 6px;
-  background-image: url("/assets/media/rhombitrihexagonal.svg");
+  background-image: url("/assets/media/tilings.svg");
   background-color: #663366;
   background-repeat: repeat;
   display: flex;
@@ -78,7 +85,7 @@ body main .project-tab a {
   text-decoration: none;
   color: #cccccc;
   font-family: "Pompiere", sans-serif;
-  font-size: 180%;
+  font-size: 32.36px;
   font-weight: 600;
   padding: 10px;
   text-transform: uppercase;
@@ -108,7 +115,7 @@ body main .nav-tabs .nav-link.active {
   color: #cccccc;
 }
 body footer {
-  font-size: 85%;
+  font-size: 14.14px;
 }
 body footer ul {
   list-style: none;
