@@ -1,6 +1,6 @@
-- weburl: "https://www.imsc.res.in/imsc60/ar100/"
+- weburl: "https://www.imsc.res.in/ar100/"
   webName: "Alladi Ramakrishnan Centenary"
-  description: "wip"
+  description: "Conference webpage"
   date: 2023-11:20
   client: "IMSc"
   techUsed:
