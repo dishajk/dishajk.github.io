@@ -1,6 +1,7 @@
 ---
 layout: projects
 title: Web Design and Development
+date: Sun 17 Dec 11:10:05 IST 2023
 ---
 <p>Webpages that I designed and/or developed</p>
 <div class="container">
@@ -22,5 +23,5 @@ title: Web Design and Development
         </div>
         {% endfor %}
     </div>
-    <span class="fs-6">Last updated on {{ "now" | date: "%d %B, %Y" }}</span>
+    <span class="fs-6">Last updated on {{ page.date | date: "%d %B, %Y" }}</span>
 </div>
