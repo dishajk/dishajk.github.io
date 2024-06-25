@@ -70,9 +70,12 @@ This is the repository for Disha Kuzhively's personal webpage and blog. It is bu
 
 ### Building and Running
 
-`bundle install`
-`bundle exec jekyll serve --livereload`
-`rsync -r --exclude='readme.md' _site/ ../dishajk.github.io`
+```
+bundle install
+bundle exec jekyll serve --livereload
+bundle exec jekyll serve --livereload --drafts
+rsync -r --exclude='readme.md' _site/ ../dishajk.github.io
+```
 
 ### Reference
 
