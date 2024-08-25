@@ -59,7 +59,7 @@ body main a {
   color: #663366;
 }
 body main .project-nav {
-  background-image: url("/assets/media/tilings.svg");
+  background-image: url("/assets/media/sevenOverlappingCircles.svg");
   background-color: #663366;
   background-repeat: repeat;
   display: flex;
@@ -76,7 +76,7 @@ body main .project-nav .nav-link:hover {
 body main .project-tab {
   min-height: 160px;
   border-radius: 6px;
-  background-image: url("/assets/media/tilings.svg");
+  background-image: url("/assets/media/sevenOverlappingCircles.svg");
   background-color: #663366;
   background-repeat: repeat;
   display: flex;
