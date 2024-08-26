@@ -1,17 +1,14 @@
+- name: ICTS Log
+  link: /projects/ictsLog.html
 - name: Teaching and Learning Resources
-  link: /projects/resources.html
-  date: 2023-12-17
+  link: /projects/teachingresources.html
 - name: Origami
-  link: /projects/origami
-  date: 2023-11-22
-- name: Physics
-  link: /tbu.html
-- name: Web Design and Development
-  link: /projects/webdev.html
-  date: 2023-11-20
+  link: /projects/origami.html
+# - name: Physics
+#   link: /tbu.html
 - name: Codes
   link: /projects/codes.html
-  date: 2022-01-22
 - name: Digital Art
-  date: 2023-11-02
-  link: /projects/design.html
+  link: /projects/designs.html
+- name: Web Design and Development
+  link: /projects/webdev.html

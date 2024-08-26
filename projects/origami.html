@@ -7,11 +7,11 @@ date: Nov 22, 2023
     <h2>Origami</h2>
     <div class="container text-center mb-5">
       <div class="row row-cols-lg-4 d-flex justify-content-around">
-        {% for model in site.origami %}
+        {% for fold in site.origami %}
         <div class="col border justify-content-around">
-          <a href="{{model.url}}">
-            <img src="{{ model.heroimg }}" alt="{{ model.name }},  {{ model.type }}" class="figure-img img-fluid rounded origami">
-            {{ model.name }}
+          <a href="{{fold.url}}">
+            <img src="{{ fold.heroimg }}" alt="{{ fold.name }},  {{ fold.type }}" class="figure-img img-fluid rounded origami">
+            {{ fold.name }}
           </a>
         </div>
         {% endfor %}

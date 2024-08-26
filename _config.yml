@@ -3,5 +3,23 @@ url: https://dishajk.github.io
 
 collections:
   resources:
-  projects:
+  designs:
   origami:
+    output: true
+  teaching:
+
+defaults:
+- scope:
+    path: ""
+    type: "origami"
+  values:
+    layout: "fold"
+- scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "fieldnote"
+- scope:
+    path: ""
+  values:
+    layout: "default"

@@ -2,7 +2,7 @@
 name: "Dodecahedron"
 type: modular
 heroimg: "/assets/origami/dodecahedron.png"
-layout: projects
+layout: fold
 ---
 
-Hi
+This model was made using PHiZZ units.

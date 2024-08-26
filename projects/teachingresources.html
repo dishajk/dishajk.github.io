@@ -5,12 +5,16 @@ layout: projects
 ---
 <section>
     <div class="container">
-        <h4>Talk/Lecture Slides</h4>
+      <h4>Talk/Lecture Slides</h4>          
         <div class="d-flex flex-wrap clearfix">
           <ol>
-            <li>
-              <a href="https://drive.google.com/file/d/1r6_YLWQi9RvcaPsMq6myBF0XlQTaGA1K/view?usp=sharing" target="_blank">How to Solve It? &agrave; la P&oacute;lya</a>, Summer School for Women in Physics 2024, ICTS, June 6, 2024.
-            </li>
+          {% for resource in site.teaching %}
+            {% if resource.categories contains "Talk/Lecture Slides" %}
+          <li>
+            {{ resource.content}}
+          </li>
+          {% endif %}
+        {% endfor %} 
           </ol>
         </div>
         <h4>Printables</h4>
