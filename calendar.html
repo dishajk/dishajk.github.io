@@ -14,6 +14,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/try.svg">
     <link rel="icon" type="image/png" href="/assets/media/try.svg" sizes="32x32">
     <link rel="icon" type="image/png" href="/assets/media/try.svg" sizes="16x16">
+
 </head>
 <body class="d-flex flex-column">
     <header id="header" class="px-4">
@@ -56,21 +57,24 @@
 </nav>
     </header>
     <main>
-        <div class="container">
+        <!-- FullCalendar CSS -->
+<div class="container">
     <p>This is my calendar, kindly refer to it when making plans involving me. I try to keep it as updated as possible. I make an effort to maintain it as accurately as possible. However, before finalizing any plans, kindly confirm with me to avoid any confusion or inconvenience.</p>
-    <p>The events in this calendar are shown in the <span id="timeZone"></span> timezone</p>
-    <iframe id="calendar" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKolkata&bgcolor=%23cccccc&showTitle=0&showPrint=0&mode=AGENDA&showTabs=0&showCalendars=0&showNav=0&src=ZGlzaGEuamtAaWN0cy5yZXMuaW4&color=%23039BE5" style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
+    <p>You are in the <span id="timeZone"></span> timezone.</p>
+</div>
+<div class="container">
+    <span>Last updated on 02 September, 2024</span>
 </div>
 <script>
-    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    document.getElementById('timeZone').innerText = userTimezone;
-    const calendar = document.getElementById('calendar');
-    const calendarSrc = "https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=${userTimezone}&bgcolor=%23ffffff&showTitle=0&showPrint=0&showCalendars=0&src=ZGlzaGEuamtAaWN0cy5yZXMuaW4&src=aWN0cy5yZXMuaW5fMjN1OTBjaHFwcGl2MTBhb2oybTJicWNqZHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=aWN0cy5yZXMuaW5fOTFmZTRvc3NhcW92b2M4NzdmY2U0NjhxNmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=aWN0cy5yZXMuaW5fYnRqYmoyNjA5amEwZmplNWE0aDdjcmdjamNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZGlzaGFqay4yMUBnbWFpbC5jb20&color=%23039BE5&color=%23AD1457&color=%23E4C441&color=%23616161&color=%23AD1457"
-    calendar.setAttribute('src', calendarSrc)
-</script>
-<div class="container">
-<span>Last updated on 21 April, 2024</span>
-</div>
+    document.addEventListener('DOMContentLoaded', function() {
+      const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      document.getElementById('timeZone').innerText = userTimezone;
+  
+    });
+  </script>
     </main>
     <footer id="footer" class="px-4 mt-auto">
         <hr>
