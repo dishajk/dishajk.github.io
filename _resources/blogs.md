@@ -15,8 +15,7 @@ name: Blogs
     </li>
     <li><a href="https://forbetterscience.com/" target="_blank">For Better Science</a> - Dr Leonid Schneider's blog. There's a lot of drama in academia (formal way to put that would be 'lack of integrity and ethics') and he writes about it. My favorite is <em>Student, Meet Bus</em> - story from namma Bengaluru.
     </li>
-    <li><a href="https://sahel13.github.io/thestudentwatch/" target="_blank">The Student Watch</a> - website run by Sahel Iqbal, platform for students to vent about issues they face in Indian educational institutes as an Indian. (Ignore the use of BLM images, the analogous ones from our country are graphic and ugly.)
-    </li>
+    <!-- <li><a href="https://sahel13.github.io/thestudentwatch/" target="_blank">The Student Watch</a> - website run by Sahel Iqbal, platform for students to vent about issues they face in Indian educational institutes as an Indian. (Ignore the use of BLM images, the analogous ones from our country are graphic and ugly.) </li> -->
     <li><a href="https://engineuring.wordpress.com/" target="_blank">engineuring</a> Alexandra Elbakyan's blog. Sci-Hub.
     </li>
 </ul>
