@@ -1,3 +1,15 @@
+
+ __      __           _                 ___  
+ \ \    / /          (_)               |__ \ 
+  \ \  / /__ _ __ ___ _  ___  _ __ ______ ) |
+   \ \/ / _ \ '__/ __| |/ _ \| '_ \______/ / 
+    \  /  __/ |  \__ \ | (_) | | | |    / /_ 
+     \/ \___|_|  |___/_|\___/|_| |_|   |____|
+                                             
+All projects come under the same umbrella. Projects can be external links or internal blog. Some fieldnotes are also projects
+
+new collection: projects
+
 This is the repository for Disha Kuzhively's personal webpage and blog. It is built using Jekyll and features a navigation bar, blog posts, projects, and other sections.
 
 ## Table of Contents
