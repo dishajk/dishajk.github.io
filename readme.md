@@ -6,6 +6,11 @@
     \  /  __/ |  \__ \ | (_) | | | |    / /_ 
      \/ \___|_|  |___/_|\___/|_| |_|   |____|
                                              
+There will be two 'collections' 
+
+1. posts
+2. projects
+
 All projects come under the same umbrella. Projects can be external links or internal blog. Some fieldnotes are also projects
 
 new collection: projects
