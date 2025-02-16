@@ -6,10 +6,16 @@
     \  /  __/ |  \__ \ | (_) | | | |    / /_ 
      \/ \___|_|  |___/_|\___/|_| |_|   |____|
                                              
-There will be two 'collections' 
+There will be following 'collections' 
 
 1. posts
 2. projects
+    Projects have the following variables in the frontmatter
+      1. name
+      2. date
+      3. type (Poster, Animation, )
+      4. tools (Canva, Blender)
+3. resources
 
 All projects come under the same umbrella. Projects can be external links or internal blog. Some fieldnotes are also projects
 

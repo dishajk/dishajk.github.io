@@ -1,0 +1,9 @@
+---
+name: Chandrayan Livetelecast
+date: 2023-08-22
+type: Poster
+tools: Canva
+---
+<a href="/assets/design/telecast2023.png" data-lightbox="posters">
+<img src="/assets/design/telecast2023.png" class="card-img-top " alt="{{ item.description }}">
+</a>

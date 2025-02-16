@@ -2,18 +2,10 @@ domain: dishajk.github.io
 url: https://dishajk.github.io
 
 collections:
+  projects:
   resources:
-  designs:
-  origami:
-    output: true
-  teaching:
 
 defaults:
-- scope:
-    path: ""
-    type: "origami"
-  values:
-    layout: "fold"
 - scope:
     path: ""
     type: "posts"
@@ -23,3 +15,6 @@ defaults:
     path: ""
   values:
     layout: "default"
+
+exclude:
+  - oldStuff
