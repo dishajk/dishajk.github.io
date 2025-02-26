@@ -5,5 +5,5 @@ type: Poster
 tools: Canva, Google Drawings, Krita
 ---
 <a href="/assets/design/akrCentenaryv2.1.jpg" data-lightbox="posters">
-<img src="/assets/design/akrCentenaryv2.1.jpg" class="card-img-top " alt="{{ item.description }}">
+<img src="/assets/design/akrCentenaryv2.1.jpg" class="card-img-top " alt="Conference poster">
 </a>

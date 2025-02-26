@@ -1,29 +1,4 @@
-- weburl: "https://www.imsc.res.in/ar100/"
-  webName: "Alladi Ramakrishnan Centenary"
-  description: "Conference webpage"
-  date: 2023-11:20
-  client: "IMSc"
-  techUsed:
-    - html5
-    - sass
-    - bootstrap
-- weburl: "https://github.com/dishajk/hbniaccess"
-  webName: HBNIaccess
-  description: "half-finished, abandoned project"
-  date: 2022-11-28
-  client: "IMSc"
-  techUsed:
-    - html5
-    - css3
-    - angular
-- weburl: "https://venusunshine.com/"
-  webName: "Venu Sunshine"
-  description: "real estate"
-  techUsed:
-    - html5
-    - sass
-    - bootstrap
-  date: 2023-11-11
+
 - weburl: "https://www.imsc.res.in/outreach/iwmvisitorprogram2023/"
   webName: "IWM visitor program"
   description: "event cancelled, abandoned project"
