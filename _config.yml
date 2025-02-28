@@ -3,6 +3,7 @@ url: https://dishajk.github.io
 
 collections:
   projects:
+    sort_by: date
   resources:
 
 defaults:

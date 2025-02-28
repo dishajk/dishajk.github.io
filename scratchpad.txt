@@ -1,0 +1,26 @@
+    <!-- {% assign sorted_projects = site.projects | sort: "date" | reverse %} -->
+    <!-- {% for project in sorted_projects %} -->
+    <!-- {{ project.name }} -->
+      <!-- {{ project.date | date_to_string}} -->
+      <!-- {{ project.tools | join: ", " }} -->
+      <!-- {% if project.type == "Poster" %}
+        <div class="col-md-4 p-2 float-start">
+        {{ project.content | markdownify }}
+        </div>
+      {% else %}
+        {{ project.content | markdownify }}
+      {% endif %} -->
+
+    <!-- {% assign sortedPro = site.data.projects | sort: 'date' | reverse %}
+
+    <div class="container text-center mb-5">
+      <div class="row row-cols-lg-5 d-flex justify-content-around">
+        {% for project in site.data.projects %}
+        <div class="col border justify-content-around project-tab">
+          <a href="{{ project.link }}">
+            {{ project.name }}
+          </a>
+        </div>
+        {% endfor %} -->
+      <!-- </div> -->
+    <!-- </div> -->

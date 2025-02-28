@@ -1,9 +1,9 @@
 ---
-name: HBNI Access
-date: 2022-11-28
+name: IWM visitor program
+date: 2023-11-13
 type: Web Design and Development
-tools: [html, css, angular]
+tools: [html, sass, bootstrap]
 ---
-<a href="https://github.com/dishajk/hbniaccess" target="_blank">HBNI Access</a>
+<a href="https://www.imsc.res.in/outreach/iwmvisitorprogram2023/" target="_blank">IWM visitor program</a>
 
-half-finished, abandoned project done for IMSc
+event cancelled, abandoned project
