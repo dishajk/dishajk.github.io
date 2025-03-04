@@ -1,8 +1,8 @@
 ---
 name: Commuzine
 date: 2023-10-30
-type: [Web Design and Development, Editing]
-tools: [html, wordpress]
+categories: [Web Design and Development, Editing]
+tools: [HTML, WordPress]
 ---
 <a href="https://commuzinebystudents.wordpress.com/" target="_blank">Commuzine</a>
 

@@ -1,3 +1,10 @@
+    {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+    {% assign types = "" %}
+    {% for project in sorted_projects %}
+    {{ project.type }}
+    {% endfor %}
+
+
     <!-- {% assign sorted_projects = site.projects | sort: "date" | reverse %} -->
     <!-- {% for project in sorted_projects %} -->
     <!-- {{ project.name }} -->

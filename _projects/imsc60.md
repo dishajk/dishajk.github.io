@@ -1,7 +1,7 @@
 ---
 name: IMSc60
 date: 2022-09-01
-type: Web Design and Development
+categories: [Web Design and Development]
 tools: [html, css, bootstrap, javascript]
 ---
 <a href="https://www.imsc.res.in/imsc60" target="_blank">IMSc60</a>

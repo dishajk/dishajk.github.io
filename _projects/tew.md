@@ -1,7 +1,7 @@
 ---
 name: TEW Linear Algebra
 date: 2022-12-30
-type: Poster
+categories: Poster
 tools: Krita, Scribus
 ---
 <a href="/assets/design/tewPoster_v1.1.png" data-lightbox="posters">

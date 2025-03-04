@@ -1,7 +1,7 @@
 ---
 name: Shubashree Desikan
 date: 2023-11-03
-type: Poster
+categories: Poster
 tools: Canva
 ---
 <a href="/assets/design/Shubashree2.jpg" data-lightbox="posters">

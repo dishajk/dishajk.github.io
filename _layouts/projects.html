@@ -1,11 +1,13 @@
 ---
 layout: default
+permalink: /projects/:title/
 ---
-        <ul class="nav justify-content-center container-fluid project-nav mb-3">
-            {% for project in site.data.projects %}
+<ul class="nav justify-content-center container-fluid project-nav mb-3">
+            {% assign categories = site.projects | map: "categories" | uniq | sort: "date" | reverse %}
+            {% for category in categories %}
             <li class="nav-item">
-                <a class="nav-link" href="{{ project.link }}">
-                    {{ project.name}}
+                <a class="nav-link" href="{{ site.baseurl }}/projects/{{ category | slugify }}/">
+                    {{ category }}
                 </a>
             </li>
             {% endfor %}

@@ -1,7 +1,7 @@
 ---
 name: Baryon-baryon scattering
 date: 2023-11-02
-type: Animation 
+categories: Animation 
 tools: Blender
 ---
 <div class="container">

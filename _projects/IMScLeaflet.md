@@ -1,7 +1,7 @@
 ---
 name: IMSc Leaflet
 date: 2022-12-30
-type: Poster
+categories: Poster
 tools: Krita
 ---
 <a href="/assets/design/1leaflet.png" data-lightbox="posters">

@@ -1,7 +1,7 @@
 ---
 name: Balfest
 date: 2022-12-30
-type: Poster
+categories: Poster
 tools: Krita, Scribus
 ---
 <a href="/assets/design/balfestPoster_v1.2.png" data-lightbox="posters">

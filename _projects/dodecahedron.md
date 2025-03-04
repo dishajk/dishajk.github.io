@@ -1,7 +1,7 @@
 ---
 name: Dodecahedron
 date: 2022-10-16
-type: Origami
+categories: Origami
 tools: Square paper
 heroimg: "/assets/origami/dodecahedron.png"
 layout: fold

@@ -1,7 +1,7 @@
 ---
 name: Pascals Triangle
 date: 2024-01-13
-type: Learning and Teaching Resource
+categories: [Learning and Teaching Resources]
 tools: TeX
 ---
 Tringular array of bubbles that can be used to construct the Pascal's triangle and the Sierpin&#769;ski triangle by coloring mod 2.

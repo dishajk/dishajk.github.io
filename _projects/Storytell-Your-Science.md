@@ -1,7 +1,7 @@
 ---
 name: Storytell Your Science
 date: 2023-11-02
-type: Poster
+categories: Poster
 tools: Canva
 ---
 <a href="/assets/design/StorytellYourScience3.jpg" data-lightbox="posters">

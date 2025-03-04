@@ -1,7 +1,7 @@
 ---
 name: AKR Centenary
 date: 2023-09-05
-type: Poster
+categories: Poster
 tools: Canva, Google Drawings, Krita
 ---
 <a href="/assets/design/akrCentenaryv2.1.jpg" data-lightbox="posters">

@@ -1,7 +1,7 @@
 ---
 name: Lab-Hopping
 date: 2023-11-02
-type: Poster
+categories: Poster
 tools: Canva
 ---
 <a href="/assets/design/Lab-Hopping2.jpg" data-lightbox="posters">

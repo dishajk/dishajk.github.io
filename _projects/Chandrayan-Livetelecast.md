@@ -1,7 +1,7 @@
 ---
 name: Chandrayan Livetelecast
 date: 2023-08-22
-type: Poster
+categories: Poster
 tools: Canva
 ---
 <a href="/assets/design/telecast2023.png" data-lightbox="posters">
