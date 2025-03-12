@@ -1,0 +1,48 @@
+---
+layout: project
+---
+
+<h1>{{ page.title }}</h1>
+{% if page.title == "Poster" %}
+    <div class="d-flex flex-wrap clearfix">
+        {% assign projects = page.projects | sort: "date" | reverse %}
+        {% for project in projects %}
+        <div class="col-md-4 p-2 float-start">
+            {{ project.content }}
+            <small class="text-body-secondary">made using {{ project.tools | join: ", " }}</small>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+  <ol>
+    {% assign projects = page.projects | sort: "date" | reverse %}
+    {% for project in projects %}
+
+    <li>
+        {% if project.data.outputPage %}
+        <a href="{{ project.url }}">{{ project.data.name }}</a>
+        {% else %}        
+        {% if page.title != "Web Design and Development" %}
+        <h4>
+            {% if page.title == "Codes" or page.title == "Editing" %}
+            <a href="{{project.webUrl}}" target="_blank" title="{{ project.data.name }}">
+            {% endif %}
+                {{ project.name }}
+            {% if page.title == "Codes" or page.title == "Editing" %}
+            </a>
+            {% endif %}
+        </h4>
+        {% endif %}
+
+        {% if page.title == "Codes" %}
+            <small class="text-body-secondary">language: {{ project.tools | join: ", " }}</small>  
+        {% endif %}
+            {{ project.content }}
+        {% if page.title == "Animation" or page.title == "Web Design and Development" %}
+            <small class="text-body-secondary">made using {{ project.tools | join: ", " }}</small>
+        {% endif %}
+        {% endif %}
+    </li>
+    {% endfor %}
+    </ol>
+{% endif %}

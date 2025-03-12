@@ -3,18 +3,25 @@ url: https://dishajk.github.io
 
 collections:
   projects:
+    output: true
+    permalink: /projects/:name/
   resources:
 
 defaults:
-- scope:
-    path: ""
-    type: "posts"
-  values:
-    layout: "fieldnote"
-- scope:
-    path: ""
-  values:
-    layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:   
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "fieldnote"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 exclude:
   - oldStuff
