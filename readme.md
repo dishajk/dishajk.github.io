@@ -13,8 +13,9 @@ There will be following 'collections'
     Projects have the following variables in the frontmatter
       1. name
       2. date
-      3. type (Poster, Animation, )
+      3. categories (Poster, Animation, )
       4. tools (Canva, Blender)
+      5. outputPage (true or false)
 3. resources
 
 All projects come under the same umbrella. Projects can be external links or internal blog. Some fieldnotes are also projects

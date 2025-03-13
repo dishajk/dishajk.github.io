@@ -2,7 +2,7 @@
 title: Sick, Stuck, and Thinking
 layout: fieldnote
 type: blog
-tags: Health, Rest, ADHD, Work-Life Balance, Maths, Tiling, Mental Health, Self-Care, Reflection, Daily Life, Productivity, Personal Growth, Rants, Cooking, Domestic Work, Community
+tags: [Health, Rest, ADHD, Work-Life Balance, Maths, Tiling, Mental Health, Self-Care, Reflection, Daily Life, Productivity, Personal Growth, Rants, Cooking, Domestic Work, Community]
 ---
 
 Writing requires sitting down. Reading a math research paper also requires sitting down. This probably explains why I haven’t managed to do either in the past several months.

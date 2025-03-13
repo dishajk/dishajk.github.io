@@ -23,5 +23,10 @@ defaults:
     values:
       layout: "default"
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 exclude:
   - oldStuff

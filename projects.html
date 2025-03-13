@@ -10,7 +10,7 @@ layout: default
     <div class="container text-center mb-5">
         <div class="row row-cols-lg-5 d-flex justify-content-around">
             {% for category in categories %}
-          <div class="col border justify-content-around project-tab">
+          <div class="col border justify-content-center project-tab" data-aos="flip-up" data-aos-duration="{{ forloop.index | times: 350 }}">
             <a href="{{ site.baseurl }}/projects/{{ category | slugify }}/">{{ category }}</a>
           </div>
           {% endfor %}

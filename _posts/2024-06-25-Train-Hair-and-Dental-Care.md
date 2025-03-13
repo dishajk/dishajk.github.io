@@ -2,7 +2,7 @@
 title: Train, Hair, and Dental Care
 layout: fieldnote
 type: blog
-tags: Travel Experiences, Train Travel, Vande Bharat Express, Shatabdi Express, Chennai, Personal Reflections, Dental Care, Hair Care, In-Flight Reading, Movie Reviews
+tags: [Travel Experiences, Train Travel, Vande Bharat Express, Shatabdi Express, Chennai, Personal Reflections, Dental Care, Hair Care, In-Flight Reading, Movie Reviews]
 categories: Travel Lifestyle
 ---
 I can read on a flight but not on a train. I can't type what is on my mind; I have to write it down. Too many thoughts make me feel constipated mentally. I am travelling on the Vande Bharat for the first time. It’s a bit more congested compared to the Shatabdi. I prefer the Shatabdi when I make my special trips to Chennai. Why trips to Chennai? As of now, for love and to see my dentist.
