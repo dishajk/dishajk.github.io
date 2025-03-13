@@ -6,7 +6,7 @@ $colorDark: #333333;
 $colorHighlight:#99cc99;
 $colorHighlight2:#663366;
 body{
-    background-color: #cccccc;
+    background-color: $colorLight;
     font-family: 'Catamaran', sans-serif;
     min-height: 100vh;
     font-size: 20px;
@@ -27,7 +27,7 @@ body{
                 font-size: 140%;
             }
       }
-    }
+    }   
     main{
         .lead{
             font-size: 130%;
