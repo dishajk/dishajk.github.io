@@ -1,0 +1,2 @@
+All educational content in Projects(codes, problem sets, explanations, diagrams, talk slides) in this repository is licensed under the 
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
