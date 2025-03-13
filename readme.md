@@ -101,7 +101,8 @@ bundle exec jekyll serve --livereload
 
 bundle exec jekyll serve --livereload --drafts
 
-rsync -r --exclude='readme.md' _site/ ../dishajk.github.io
+rsync -av --exclude='readme.md' --filter='protect readme.md' --filter='protect .git/' --filter='protect .gitignore' --filter='protect CONTENT-LICENSE.md' --delete _site/ ../dishajk.github.io/
+
 ```
 
 ### Reference
