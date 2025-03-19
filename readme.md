@@ -1,6 +1,6 @@
-# My Website  
+# Personal Website
 
-This repository contains the source code and content for [dishajk.github.io](https://dishajk.github.io).  
+This repository contains the source code and content for [dishajk.github.io](https://dishajk.github.io). The site is buit using Jekyll. Bootstrap is the CSS framework used.
 
 ## Licensing  
 
