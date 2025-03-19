@@ -1,5 +1,23 @@
+title: "Fieldnotes of Disha Kuzhively"
+description: "This site has Disha's portfolio in mathematics outreach and education, her blog, calendar, and contact details, along with curated resources for students, educators, and those navigating mental health challenges. It is a space for learning, connection, and collaboration."
 domain: dishajk.github.io
-url: https://dishajk.github.io
+url: "https://dishajk.github.io"
+baseurl: ""
+
+author:
+  name: "Disha Kuzhively"
+  email: "dishajk21@gmail.com"
+  twitter: "Dishajk"
+
+social:
+  name: "Disha Kuzhively"
+  links: 
+    - https://twitter.com/Dishajk
+    - https://www.instagram.com/food_n_oats
+    - https://www.strava.com/athletes/37148300
+
+webmaster_verifications:
+  google: "jchbd4xZ3i8jw6Orvhs5_g08gPg-Agekq20Hvs_-UmQ"
 
 collections:
   projects:
@@ -22,6 +40,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      image: "/assets/media/try.svg"
 
 plugins:
   - jekyll-feed

@@ -101,6 +101,8 @@ bundle exec jekyll serve --livereload
 
 bundle exec jekyll serve --livereload --drafts
 
+JEKYLL_ENV=production bundle exec jekyll build
+
 rsync -av --exclude='readme.md' --filter='protect readme.md' --filter='protect .git/' --filter='protect .gitignore' --filter='protect CONTENT-LICENSE.md' --delete _site/ ../dishajk.github.io/
 
 ```
