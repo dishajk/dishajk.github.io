@@ -14,15 +14,14 @@ When I called a colleague, she could tell from my voice that my excitement was c
 How do I "rest"? How do I "take a break"? I remember a psychiatrist asking me this question many years ago, jotting down notes, and prescribing more medication after hearing my answer. For me, taking a break means doing things I haven’t gotten around to in a while.
 
 I can’t sew—sewing requires focus and steady eyes. Crocheting is out too, as most of my works-in-progress need eyes and focus. Instead, I created TikZ graphics to generate aperiodic monotiles of the type Tile(a, b), where a and b are any real non-negative numbers. I even wrote one for the Spectre tile. Spectres are probably already available, but I wanted one where I could customize the curve connecting vertices.
-
-![Tile(root(2),1) because why not](/assets/blogImages/turtle1root2.png)
-
-*Tile(sqrt(2),1) because why not* 
-
-![spectre](/assets/blogImages/spectre.png)
-
-*spectre*
-
+<figure class="float-start">
+<img src="/assets/blogImages/turtle1root2.png" width="auto" height="200" alt="Tile(root(2),1) because why not">
+<figcaption>Tile(\(\sqrt{2}\),1) because why not</figcaption>
+</figure>
+<figure class="float-end">
+<img src="/assets/blogImages/spectre.png" width="auto" height="200" alt="spectre">
+<figcaption>spectre</figcaption>
+</figure>
 Now that I’m writing this down, I realize it’s probably been done before. I should reach out to Smith et al. to check. I also decided to work on a GUI where you can input a and b, and the program generates the monotile. But that kind of work demands a healthy mind—one that doesn’t confuse squares with cubes or Sudoku with Rubik’s cubes.
 
 I watched Fantastic Mr. Fox. I loved it, though I think I would have enjoyed it more if it weren’t for George Clooney’s voice. There’s something about it that makes me feel like he doesn’t care enough. But Mr. Fox does care—maybe not as much as Mrs. Fox, but he does.

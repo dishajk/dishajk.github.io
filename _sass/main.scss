@@ -4,6 +4,10 @@ $colorLight: #cccccc;
 $colorDark: #333333;
 $colorHighlight:#99cc99;
 $colorHighlight2:#663366;
+
+$colorFieldnote1: #66333A;
+$colorFieldnote2: #665733;
+
 $tile: sevenOverlappingCircles, rhombitrihexagonal, tilings;
 $key: random(3);
 $bgtile: nth($tile, $key); 
@@ -107,6 +111,15 @@ body{
             h1{
                 color: $colorHighlight2;
                 font-family: 'Pompiere', sans-serif;
+            }
+            .color1{
+                color: $colorFieldnote1;
+            }
+            .color2{
+                color: $colorFieldnote2;
+            }
+            figure{
+                margin: 1em;
             }
         }
         .webDev{
