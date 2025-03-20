@@ -59,7 +59,7 @@ body main a {
   color: #663366;
 }
 body main .project-nav {
-  background-image: url("/assets/media/rhombitrihexagonal.svg");
+  background-image: url("/assets/media/sevenOverlappingCircles.svg");
   background-color: #663366;
   background-repeat: repeat;
   display: flex;
@@ -76,7 +76,7 @@ body main .project-nav .nav-link:hover {
 body main .project-tab {
   min-height: 160px;
   border-radius: 6px;
-  background-image: url("/assets/media/rhombitrihexagonal.svg");
+  background-image: url("/assets/media/sevenOverlappingCircles.svg");
   background-color: #663366;
   background-repeat: repeat;
   display: flex;
@@ -94,6 +94,15 @@ body main .project-tab a {
 body main .fieldnote h1 {
   color: #663366;
   font-family: "Pompiere", sans-serif;
+}
+body main .fieldnote .color1 {
+  color: #66333A;
+}
+body main .fieldnote .color2 {
+  color: #665733;
+}
+body main .fieldnote figure {
+  margin: 1em;
 }
 body main .webDev a {
   text-decoration: none;
