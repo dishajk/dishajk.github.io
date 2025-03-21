@@ -3,6 +3,8 @@ name: Blogs
 ---
 
 <ul>
+    <li><a href="https://medium.com/@javedvpjaved" target="_blank">Javed's blog</a> - blogger helped me understand why capital punishment is problematic and many other things.
+    </li>
     <li><a href="https://tejuice.wordpress.com/" target="_blank">Tejus' blog</a> - blogger helped me survive the last years of college.
     </li>
     <li><a href="https://numberlandadventures.blogspot.com/" target="_blank">Alice's Adventures in Numberland</a> by Prof. Alice Silverberg - helped me cope with the sexism and misogyny in STEM.

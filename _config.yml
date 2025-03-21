@@ -41,6 +41,8 @@ defaults:
       layout: "default"
       image: "/assets/media/try.svg"
 
+permalink: /fieldnotes/:year-:month-:day-:title:output_ext
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
