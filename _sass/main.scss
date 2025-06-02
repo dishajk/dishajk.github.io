@@ -8,8 +8,8 @@ $colorHighlight2:#663366;
 $colorFieldnote1: #66333A;
 $colorFieldnote2: #665733;
 
-$tile: sevenOverlappingCircles, rhombitrihexagonal, tilings;
-$key: random(3);
+$tile: sevenOverlappingCircles, rhombitrihexagonal, tilings, ibnTulun;
+$key: random(4);
 $bgtile: nth($tile, $key); 
 
 body{
@@ -75,9 +75,9 @@ body{
             color: $colorHighlight2;
         }
         .project-nav{
-            background-image: url('/assets/media/#{$bgtile}.svg');
+            // background-image: url('/assets/media/#{$bgtile}.svg');
             background-color: $colorHighlight2;
-            background-repeat: repeat;
+            // background-repeat: repeat;
             display: flex;
             align-items: center;
             .nav-link{
@@ -92,9 +92,9 @@ body{
         .project-tab{
             min-height: 160px;
             border-radius: 6px;
-            background-image: url('/assets/media/#{$bgtile}.svg');
+            // background-image: url('/assets/media/#{$bgtile}.svg');
             background-color: $colorHighlight2;
-            background-repeat: repeat;
+            // background-repeat: repeat;
             display: flex;
             align-items: center;
             a{
