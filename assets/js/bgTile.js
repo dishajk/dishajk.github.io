@@ -4,11 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
       'sevenOverlappingCircles',
       'rhombitrihexagonal',
       'tilings',
-      'ibnTulun'
+      'ibnTulun',
+      'star-and-rhombus'
     ];
-  
-    const colorHighlight2 = '#663366';
-  
+    
     const randomIndex = Math.floor(Math.random() * bgTiles.length);
     const chosenTile = bgTiles[randomIndex];
     const background = `url('/assets/media/${chosenTile}.svg')`;
