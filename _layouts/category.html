@@ -19,8 +19,28 @@ layout: project
     {% for project in projects %}
 
     <li>
-        {% if project.data.outputPage %}
-        <a href="{{ project.url }}">{{ project.data.name }}</a>
+        {% if project.path contains '_posts/' %}
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-0 mt-4 fst-italic fw-medium"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+                <time>{{ project.date | date_to_string }}</time>
+                <p class="card-text mb-auto">{{ project.excerpt }}</p>
+                <a href="{{ project.url }}" class="icon-link gap-1 icon-link-hover stretched-link">
+                  See more
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">        
+                {% assign first_image = project.content | split:'<img ' %}
+                {% if first_image.size > 1 %}
+                <img class="bd-placeholder-img" width="auto" height="250" {{ first_image[1] | split:'>' | first }}>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% elsif project.data.outputPage %}
+          <a href="{{ project.url }}">{{ project.data.name }}</a>
+        
         {% else %}        
         {% if page.title != "Web Design and Development" %}
         <h4>

@@ -1,10 +1,13 @@
 ---
 layout: default
 ---
-<div class="fieldnote">
+<div class="fieldnote px-sm-5">
     <h2><a href="/fieldnotes.html">Fieldnotes</a></h2>
     <h1 class="text-center">{{ page.title }}</h1>
     <p class="text-center">{{ page.date | date_to_string }}</p>
+    {% if page.type == "project" %}
+    <small class="text-body-secondary">tools used: {{ page.tools | join: ", " }}</small>  
+    {% endif %}
     {{ content }}
     <p class="fw-light fs-6 fst-italic lh-1">I am still figuring out how to code the comments section; if you have any comments, you will have to write to me. Also, unlike popular social media websites, you won’t be checking my blog regularly. You can leave your email address with me; that way, each time I write one, you will receive an email notification with a link to the new blog post.</p>
 </div>

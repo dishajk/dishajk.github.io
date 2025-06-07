@@ -2,7 +2,7 @@
 layout: default
 ---
 <ul class="nav justify-content-center container-fluid project-nav mb-3">
-    {% assign categories = site.projects | map: "categories" | uniq | sort: "date" | reverse %}
+    {% assign categories = project_categories | map: "categories" | uniq | sort: "date" | reverse %}
     {% for category in categories %}
     <li class="nav-item">
         <a class="nav-link" href="{{ site.baseurl }}/projects/{{ category | slugify }}/">
