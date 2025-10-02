@@ -18,7 +18,30 @@ layout: default
             </div>
         </section>
         <section class="container px-5">
+          <div class="row d-flex">
+            <div class="col-md-5 ps-5">
             {% include about.html %}
-            <h2 data-aos="fade-right"><a href="/now.html">what am I doing now?</a></h2>
             <h2 data-aos="fade-up"><a href="/calendar.html">my calendar</a></h2>
+            </div>
+            <div class="col-md-7 ps-5">
+              {% assign all_projects = site.projects | sort: "date" | reverse %}
+              {% assign all_posts = site.posts | where: "type", "project" | sort: "date" | reverse %}
+
+              {% assign combined = all_projects | concat: all_posts %}
+              {% assign latest = combined | sort: "date" | last %}
+
+              {% if latest %}
+                <blockquote>
+                  <small>{{ latest.date | date: "%B %d, %Y" }}</small>
+                  <a href="{{ latest.url }}">
+                  <p>
+                  {{ latest.title }}
+                  </p>
+                </a>
+                </blockquote>
+              {% endif %}
+
+            </div>
+          </div>
+
         </section>

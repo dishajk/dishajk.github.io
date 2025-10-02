@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+gem "google-protobuf", "~> 4.26"
+
 gem "jekyll"
 # gem "rails"
 

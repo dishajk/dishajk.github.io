@@ -1,7 +1,0 @@
----
-name: Alladi Ramakrishnan Centenary
-date: 2023-11-20
-categories: [Web Design and Development]
-tools: [html, sass, bootstrap]
----
-<a href="https://www.imsc.res.in/ar100/" target="_blank">Alladi Ramakrishnan Centenary</a>
