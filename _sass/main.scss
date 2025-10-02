@@ -1,3 +1,5 @@
+@use "sass:math";
+@use "sass:list";
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Pompiere&display=swap');
 
 $colorLight: #cccccc;
@@ -9,8 +11,8 @@ $colorFieldnote1: #66333A;
 $colorFieldnote2: #665733;
 
 $tile: sevenOverlappingCircles, rhombitrihexagonal, tilings, ibnTulun;
-$key: random(4);
-$bgtile: nth($tile, $key); 
+$key: math.random(4);
+$bgtile: list.nth($tile, $key); 
 
 body{
     background-color: #cccccc;
@@ -76,9 +78,9 @@ body{
         }
      
         .project-nav{
-            // background-image: url('/assets/media/#{$bgtile}.svg');
+            background-image: url('/assets/media/#{$bgtile}.svg');
             background-color: $colorHighlight2;
-            // background-repeat: repeat;
+            background-repeat: repeat;
             display: flex;
             align-items: center;
             .nav-link{
@@ -93,9 +95,9 @@ body{
         .project-tab{
             min-height: 160px;
             border-radius: 6px;
-            // background-image: url('/assets/media/#{$bgtile}.svg');
+            background-image: url('/assets/media/#{$bgtile}.svg');
             background-color: $colorHighlight2;
-            // background-repeat: repeat;
+            background-repeat: repeat;
             display: flex;
             align-items: center;
             a{
