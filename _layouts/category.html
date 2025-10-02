@@ -1,7 +1,15 @@
 ---
-layout: project
+layout: default
 ---
-
+<div class="mb-3 project-nav">
+  <nav class="nav d-flex justify-content-center"> 
+    {% assign categories = site.projects | map: "categories" | uniq | sort: "date" | reverse %}
+      {% for category in site.project_categories %}
+      <a class="nav-link" href="{{ site.baseurl }}/projects/{{ category | slugify }}/">{{ category }}</a> 
+      {% endfor %}
+  </nav> 
+</div>
+<div class="px-4">
 <h1>{{ page.title }}</h1>
 {% if page.title == "Poster" %}
     <div class="d-flex flex-wrap clearfix">
@@ -66,3 +74,4 @@ layout: project
     {% endfor %}
     </ol>
 {% endif %}
+</div>
