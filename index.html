@@ -25,7 +25,7 @@ layout: default
             </div>
             <div class="col-md-7 ps-5">
               {% assign all_projects = site.projects | sort: "date" | reverse %}
-              {% assign all_posts = site.posts | where: "type", "project" | sort: "date" | reverse %}
+              {% assign all_posts = site.posts | sort: "date" | reverse %}
 
               {% assign combined = all_projects | concat: all_posts %}
               {% assign latest = combined | sort: "date" | last %}
