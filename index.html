@@ -3,45 +3,46 @@ date: Sun 17 Dec 11:10:05 IST 2023
 title: Home
 layout: default
 ---
-        <section class="container mt-3">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-7 ps-5">
-                    <p class="lead" data-aos="fade-right">
-                    Hi, I'm Disha.<br>Welcome to my personal webpage!
-                    </p>
-                </div>
-                <div class="col-md-5 pe-5 text-center" data-aos="fade-in">
-                    <img src="/assets/media/try.svg" alt="picture of my face" style="width:200px; height:auto;">
-				        <p class="figure-caption mt-4 ms-4">&copy; Rupayan Biswas
-				        </p>
-                </div>
-            </div>
-        </section>
-        <section class="container px-5">
-          <div class="row d-flex">
-            <div class="col-md-5 ps-5">
-            {% include about.html %}
-            <h2 data-aos="fade-up"><a href="/calendar.html">my calendar</a></h2>
-            </div>
-            <div class="col-md-7 ps-5">
-              {% assign all_projects = site.projects | sort: "date" | reverse %}
-              {% assign all_posts = site.posts | sort: "date" | reverse %}
+<section class="container mt-3">
+  <div class="row d-flex align-items-center">
+    <div class="col-md-7 ps-5">
+      <p class="lead" data-aos="fade-right">
+        Hi, I'm Disha.<br>Welcome to my personal webpage!
+      </p>
+    </div>
+    <div class="col-md-5 pe-5 text-center" data-aos="fade-in">
+      <img src="/assets/media/try.svg" alt="picture of my face" style="width:200px; height:auto;">
+      <p class="figure-caption mt-4 ms-4">&copy; Rupayan Biswas
+      </p>
+    </div>
+  </div>
+</section>
+<section class="container px-5">
+  <div class="row d-flex">
+        <div class="col-md-7 ps-5">
+      {% assign all_projects = site.projects | sort: "date" | reverse %}
+      {% assign all_posts = site.posts | sort: "date" | reverse %}
 
-              {% assign combined = all_projects | concat: all_posts %}
-              {% assign latest = combined | sort: "date" | last %}
+      {% assign combined = all_projects | concat: all_posts %}
+      {% assign latest = combined | sort: "date" | last %}
 
-              {% if latest %}
-                <blockquote>
-                  <small>{{ latest.date | date: "%B %d, %Y" }}</small>
-                  <a href="{{ latest.url }}">
-                  <p>
-                  {{ latest.title }}
-                  </p>
-                </a>
-                </blockquote>
-              {% endif %}
+      {% if latest %}
+      <blockquote>
+        <small>{{ latest.date | date: "%B %d, %Y" }}</small>
+        <a href="{{ latest.url }}">
+          <p>
+            {{ latest.title }}
+          </p>
+        </a>
+      </blockquote>
+      {% endif %}
 
-            </div>
-          </div>
+    </div>
+    <div class="col-md-12 ps-5">
+      {% include about.html %}
+      <h2 data-aos="fade-up"><a href="/calendar.html">my calendar</a></h2>
+    </div>
 
-        </section>
+  </div>
+
+</section>

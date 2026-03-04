@@ -1,5 +1,5 @@
 ---
-name: Dodecahedron
+title: Dodecahedron
 date: 2022-10-16
 categories: Origami
 tools: Square paper

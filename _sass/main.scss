@@ -4,95 +4,122 @@
 
 $colorLight: #cccccc;
 $colorDark: #333333;
-$colorHighlight:#99cc99;
-$colorHighlight2:#663366;
+$colorHighlight: #99cc99;
+$colorHighlight2: #663366;
 
 $colorFieldnote1: #66333A;
 $colorFieldnote2: #665733;
 
 $tile: sevenOverlappingCircles, rhombitrihexagonal, tilings, ibnTulun;
 $key: math.random(4);
-$bgtile: list.nth($tile, $key); 
+$bgtile: list.nth($tile, $key);
 
-body{
+body {
     background-color: #cccccc;
     font-family: 'Catamaran', sans-serif;
     min-height: 100vh;
     font-size: 20px;
-    header{
+
+    header {
         background-color: $colorDark;
-        nav{
-            .nav-link:visited, .navbar-brand, .navbar-brand:visited, .navbar-toggler-icon, .nav-link, .nav-link.disabled{
+
+        nav {
+
+            .nav-link:visited,
+            .navbar-brand,
+            .navbar-brand:visited,
+            .navbar-toggler-icon,
+            .nav-link,
+            .nav-link.disabled {
                 color: $colorLight;
                 font-family: 'Pompiere', sans-serif;
             }
-            .nav-link:focus, .nav-link:active, .nav-link:hover, .navbar-brand:focus, .navbar-brand:hover{
+
+            .nav-link:focus,
+            .nav-link:active,
+            .nav-link:hover,
+            .navbar-brand:focus,
+            .navbar-brand:hover {
                 color: $colorHighlight;
             }
-            .navbar-brand{
+
+            .navbar-brand {
                 font-size: calc(2.618 * 20px);
             }
-            .nav-link{
+
+            .nav-link {
                 font-size: calc(1.414 * 20px);
             }
-      }
+        }
     }
-    main{
-        section{
+
+    main {
+        section {
             margin-bottom: 3rem;
         }
-        .lead{
+
+        .lead {
             font-size: calc(1.414 * 20px);
         }
-       
-        h1{
+
+        h1 {
             color: $colorHighlight2;
             font-family: 'Pompiere', sans-serif;
         }
-        h2{
+
+        h2 {
             font-family: 'Pompiere', sans-serif;
             font-size: calc(1.618 * 20px);
             color: $colorHighlight2;
             margin-top: 2rem;
         }
-        h3{
+
+        h3 {
             font-weight: bold;
-            a{
+
+            a {
                 text-decoration: none;
             }
         }
-        h4{
+
+        h4 {
             font-family: 'Pompiere', sans-serif;
             font-size: calc(1.414 * 20px);
-            a{
+
+            a {
                 border-bottom: $colorHighlight2 solid 1px;
                 text-decoration: none;
             }
         }
-        ion-icon{
+
+        ion-icon {
             color: $colorHighlight2;
             font-size: larger;
         }
-        a{
+
+        a {
             color: $colorHighlight2;
         }
-     
-        .project-nav{
+
+        .project-nav {
             background-image: url('/assets/media/#{$bgtile}.svg');
             background-color: $colorHighlight2;
             background-repeat: repeat;
             display: flex;
             align-items: center;
-            .nav-link{
+
+            .nav-link {
                 color: $colorLight;
                 font-family: 'Pompiere', sans-serif;
                 font-size: calc(1.414 * 20px);
             }
-            .nav-link:hover{
+
+            .nav-link:hover {
                 color: $colorHighlight;
             }
         }
-        .project-tab{
+
+        .project-tab {
             min-height: 160px;
             border-radius: 6px;
             background-image: url('/assets/media/#{$bgtile}.svg');
@@ -100,7 +127,8 @@ body{
             background-repeat: repeat;
             display: flex;
             align-items: center;
-            a{
+
+            a {
                 text-decoration: none;
                 color: $colorLight;
                 font-family: 'Pompiere', sans-serif;
@@ -110,54 +138,79 @@ body{
                 text-transform: uppercase;
             }
         }
-        .fieldnote{
-            h1{
+
+        .fieldnote {
+            h1 {
                 color: $colorHighlight2;
                 font-family: 'Pompiere', sans-serif;
             }
-            .color1{
+
+            .color1 {
                 color: $colorFieldnote1;
             }
-            .color2{
+
+            .color2 {
                 color: $colorFieldnote2;
             }
-            figure{
+
+            figure {
                 margin: 1em;
             }
         }
-        .webDev{
-            a{
+
+        .webDev {
+            a {
                 text-decoration: none;
             }
-            p{
+
+            p {
                 margin-bottom: 4px;
             }
         }
-        .nav-tabs{
+
+        .nav-tabs {
             border-color: $colorHighlight;
-            .nav-link{
+
+            .nav-link {
                 color: $colorHighlight2;
                 border-color: $colorHighlight;
             }
-            .nav-link:hover{
+
+            .nav-link:hover {
                 border-color: $colorHighlight2;
             }
-            .nav-link.active{
+
+            .nav-link.active {
                 background-color: $colorHighlight2;
                 color: $colorLight;
             }
         }
     }
-    footer{
+
+    footer {
+        padding-top: 10vh;
         font-size: calc(0.707 * 20px);
-        ul{
+
+        ul {
             list-style: none;
-            a{
+
+            a {
                 color: $colorDark;
             }
-            a:hover{
+
+            a:hover {
                 color: $colorHighlight2;
             }
         }
+    }
+
+    .bottom-panel {
+        position: relative;
+        min-height: 15vh;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        background-color: $colorDark;
     }
 }

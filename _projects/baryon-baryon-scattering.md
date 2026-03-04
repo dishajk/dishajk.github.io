@@ -1,5 +1,5 @@
 ---
-name: Baryon-baryon scattering
+title: Baryon-baryon scattering
 date: 2023-11-02
 categories: Animation 
 tools: Blender

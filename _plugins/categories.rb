@@ -5,14 +5,20 @@ module Jekyll
     def generate(site)
       categories = Hash.new { |hash, key| hash[key] = [] }
 
-      # Collect from _projects collection
+      # Process _projects collection
       site.collections["projects"].docs.each do |project|
+
+        # Prevent internal page generation if external URL exists
+        if project.data["url"]
+          project.data["output"] = false
+        end
+
         project.data["categories"]&.each do |category|
           categories[category] << project
         end
       end
 
-      # Collect from _posts if type: project
+      # Process _posts with type: project
       site.posts.docs.each do |post|
         next unless post.data["type"] == "project"
 
@@ -21,20 +27,20 @@ module Jekyll
         end
       end
 
-      # Sort categories by the most recent project date (descending)
+      # Sort categories by most recent project date
       sorted_categories = categories.sort_by do |_, projects|
         latest_date = projects.map { |p| p.data["date"] || Time.at(0) }.max
         -latest_date.to_i
       end.to_h
 
-      # Store sorted category names for use in templates
-      site.data["project_categories"] = sorted_categories.keys
+      site.config["project_categories"] = sorted_categories.keys
 
-      # Prevent duplicate category pages
+      # Generate category pages
       existing_pages = site.pages.map { |p| p.url }
 
       sorted_categories.each do |category, projects|
         category_path = "/projects/#{Jekyll::Utils.slugify(category)}/index.html"
+
         unless existing_pages.include?(category_path)
           site.pages << CategoryPage.new(site, site.source, category, projects)
         end
@@ -51,8 +57,9 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, "_layouts"), "category.html")
-      self.data["title"] = "#{category}"
-      self.data["category"] = category  # Ensure {{ page.category }} works
+
+      self.data["title"] = category
+      self.data["category"] = category
       self.data["projects"] = projects
     end
   end

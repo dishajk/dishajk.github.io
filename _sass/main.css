@@ -8,11 +8,20 @@ body {
 body header {
   background-color: #333333;
 }
-body header nav .nav-link:visited, body header nav .navbar-brand, body header nav .navbar-brand:visited, body header nav .navbar-toggler-icon, body header nav .nav-link, body header nav .nav-link.disabled {
+body header nav .nav-link:visited,
+body header nav .navbar-brand,
+body header nav .navbar-brand:visited,
+body header nav .navbar-toggler-icon,
+body header nav .nav-link,
+body header nav .nav-link.disabled {
   color: #cccccc;
   font-family: "Pompiere", sans-serif;
 }
-body header nav .nav-link:focus, body header nav .nav-link:active, body header nav .nav-link:hover, body header nav .navbar-brand:focus, body header nav .navbar-brand:hover {
+body header nav .nav-link:focus,
+body header nav .nav-link:active,
+body header nav .nav-link:hover,
+body header nav .navbar-brand:focus,
+body header nav .navbar-brand:hover {
   color: #99cc99;
 }
 body header nav .navbar-brand {
@@ -59,7 +68,9 @@ body main a {
   color: #663366;
 }
 body main .project-nav {
+  background-image: url("/assets/media/ibnTulun.svg");
   background-color: #663366;
+  background-repeat: repeat;
   display: flex;
   align-items: center;
 }
@@ -74,7 +85,9 @@ body main .project-nav .nav-link:hover {
 body main .project-tab {
   min-height: 160px;
   border-radius: 6px;
+  background-image: url("/assets/media/ibnTulun.svg");
   background-color: #663366;
+  background-repeat: repeat;
   display: flex;
   align-items: center;
 }
@@ -121,6 +134,7 @@ body main .nav-tabs .nav-link.active {
   color: #cccccc;
 }
 body footer {
+  padding-top: 10vh;
   font-size: 14.14px;
 }
 body footer ul {
@@ -131,4 +145,13 @@ body footer ul a {
 }
 body footer ul a:hover {
   color: #663366;
+}
+body .bottom-panel {
+  position: relative;
+  min-height: 15vh;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333333;
 }/*# sourceMappingURL=main.css.map */

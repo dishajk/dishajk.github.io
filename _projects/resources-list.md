@@ -1,5 +1,5 @@
 ---
-name: I enjoy making lists
+title: I enjoy making lists
 date: Sat 21 Dec 00:13:30 IST 2024
 categories: [Resources]
 tools: [Web browsing]
