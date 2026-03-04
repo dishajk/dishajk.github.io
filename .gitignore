@@ -1,2 +1,5 @@
-assets/lightbox2-2.11.4.zip
+.bundle/
+readme.md
+_site/
+*.zip
 assets/lightbox2-2.11.4/

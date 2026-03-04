@@ -1,0 +1,15 @@
+---
+layout: fieldnote
+type: blog
+---
+I want to write. I want to publish the drafts without worrying about angering people, without worrying about the angry people hurting my career. What's the worst that can happen? I will lose my job and have no 'monthly income'. I shouldn't be scared of that. My friend once pointed out that if that's my bottom, then it's not such a bad one because I have been there, and I did pretty well. I monetised all my skills, did every odd job I could get my hands on, and paid my bills on time! In the worst-case scenarios, friends helped. Friends helped a lot.
+
+My friend also says that they will have difficulty helping me if I got in the situation in the first place by saying or doing things I could have avoided. My friend has a point. You see when I call out the bullshit of people in power when their position is threatened even slightly so, they get back at you, and most often, they try to hurt you 'kith and kin'. In an academic setup, that would be 'hurting' your office mates or people you are seen working with. I don't want to cause myself or people associated with me any trouble. I have, therefore, been quiet. Very, very quiet. I tell myself that I will write it down here and there and publish it when I retire or after I am dead.
+
+![The egos of people in positions of power are so fragile and threatened by something as small as a tweet of a person who has barely 36 views.](https://imgs.xkcd.com/comics/defensive_profile.png)
+
+When covid happened, I almost died. I regretted things I didn't say. I regretted not being honest and lying to keep everyone around me comfortable and happy. I decided to start being honest. The first of them was telling my mom that I do not believe in god and will not go to church or read the bible. I think it scares her and worries her that I won't make it to heaven. She tries to change my mind even today; it's been more than three years. I don't think she'll ever stop trying to bring me back into the folds of church.
+
+Now the second thing- calling out bullshit when I see it. I am not comfortable being a bystander. I have been sick of it. Of course, I know that me calling out shit is not going to change the world. Dare I even hope! The bare minimum it can do is get it out of my head. I intend to do at least that - clear my head. Pretending that things are fine when they are not is exhausting. Maybe after I take stuff out of my head and put them on paper (screen?) I will no longer be expected to put on an act?
+
+I am going to publish before I die.

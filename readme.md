@@ -1,24 +1,111 @@
-# Personal Website
 
-This repository contains the source code and content for [dishajk.github.io](https://dishajk.github.io). The site is buit using Jekyll. Bootstrap is the CSS framework used.
+ __      __           _                 ___  
+ \ \    / /          (_)               |__ \ 
+  \ \  / /__ _ __ ___ _  ___  _ __ ______ ) |
+   \ \/ / _ \ '__/ __| |/ _ \| '_ \______/ / 
+    \  /  __/ |  \__ \ | (_) | | | |    / /_ 
+     \/ \___|_|  |___/_|\___/|_| |_|   |____|
+                                             
+There will be following 'collections' 
 
-## Licensing  
+1. posts
+2. projects
+    Projects have the following variables in the frontmatter
+      1. name
+      2. date
+      3. categories (Poster, Animation, )
+      4. tools (Canva, Blender)
+      5. outputPage (true or false)
+3. resources
 
-This project has different licenses for different types of content:  
+All projects come under the same umbrella. Projects can be external links or internal blog. Some fieldnotes are also projects
 
-### 1. Code (MIT License)  
-The source code of this website is licensed under the [MIT License](LICENSE). This means you are free to use, modify, and distribute the code, provided that you include the original license notice.  
+new collection: projects
 
-### 2. Educational Content (CC BY-NC-SA 4.0)  
-All educational materials, such as talk slides, printables, problem sets, and explanatory articles, are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
+This is the repository for Disha Kuzhively's personal webpage and blog. It is built using Jekyll and features a navigation bar, blog posts, projects, and other sections.
 
-This means you can:  
-- Share and adapt the content, **as long as** you give appropriate credit, do not use it for commercial purposes, and distribute any modified content under the same license.  
+## Table of Contents
+- [Directory Structure](#directory-structure)
+- [Dependencies](#dependencies)
+- [Configuration](#configuration)
+- [Updating the Site](#updating-the-site)
+- [Customization](#customization)
 
-### 3. Blog Content (All Rights Reserved)  
-All blog posts published on the website (Fieldnotes) are **copyrighted** under "All Rights Reserved." You may not reproduce, distribute, or modify any blog content without explicit written permission from the author.  
+## Directory Structure
 
-## Contribution  
-- You are welcome to contribute improvements to the **code** under the terms of the MIT License.  
-- Contributions to the **educational content** should follow the CC BY-NC-SA terms.  
-- No contributions to the blog content **Fieldnotes** are currently accepted.
+├── _config.yml       # Jekyll configuration file
+
+├── _posts            # Blog posts in Markdown format
+
+├── _layouts          # HTML layouts for different sections
+
+├── _includes         # Reusable HTML components
+
+├── _sass             # Sass stylesheets
+
+├── assets            # Static assets (CSS, images, JavaScript)
+
+├── projects          # Subdirectory for project pages
+
+├── _data             # YAML files for data (e.g., navigation, project info)
+
+├── _site             # Auto-generated site (ignored by Git)
+
+└── ...               # Other directories and files
+
+## Dependencies
+
+- Jekyll
+- Bootstrap
+
+## Configuration
+
+- Edit `_config.yml` for global site configuration. Jekyll configuration file. Update site settings, navigation, and other options here.
+
+## Content Organization
+
+   - _includes/about.html : about me content in the landing page
+   - _posts: Blog posts written in Markdown format. Follow the naming convention YYYY-MM-DD-post-title.md.
+   - projects: Subdirectory for project pages. Organize project pages in a structured manner.
+
+## Customization
+
+- Modify styles in the `_sass/main.scss` directory.
+- Customize the header by editing `_includes/header.html`.
+- _foldername is called a collection, update the config file when a new collection is added
+- Customize the _data directory for additional data files.
+- Update styles in the _sass directory for custom styling.
+
+## Adding New Content
+
+### Blog Post
+
+- Navigate to the _posts directory.
+- Create a new Markdown file using the format YYYY-MM-DD-post-title.md.
+- Write your blog post using Markdown syntax.
+
+### Project Page
+
+#### Origami
+   - add modelname.html to `_origami`
+- Navigate to the projects directory.
+- Create a new HTML file for your project.
+- Add content to the project page.
+
+### Building and Running
+
+```
+bundle install
+
+bundle exec jekyll serve --livereload
+
+bundle exec jekyll serve --livereload --drafts
+
+JEKYLL_ENV=production bundle exec jekyll build
+
+rsync -av --exclude='readme.md' --exclude='templates/' --filter='protect readme.md' --filter='protect .git/' --filter='protect .gitignore' --filter='protect CONTENT-LICENSE.md' --delete _site/ ../dishajk.github.io/
+
+```
+
+### Reference
+

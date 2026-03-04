@@ -1,0 +1,27 @@
+---
+layout: projects
+title: Web Design and Development
+date: Sun 17 Dec 11:10:05 IST 2023
+---
+<p>Webpages that I designed and/or developed</p>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-stretch" data-aos="fade-up">
+        {% assign sortedWebDev = site.data.webDev | sort: 'date' | reverse %}
+        {% for item in sortedWebDev %}
+        <div class="col webDev shadow-sm" >
+            <a class="lead" href="{{ item.weburl }}" target="_blank">{{ item.webName }}</a>
+            <p>{{ item.description }}</p>
+                {% if item.client %}            
+                <p>
+                    for {{ item.client }}</p>
+                <p>
+                {% endif %}
+                {% for tech in item.techUsed %}
+                <i class="fa-brands fa-{{ tech }}"></i>
+                {% endfor %}                
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+    <span class="fs-6">Last updated on {{ page.date | date: "%d %B, %Y" }}</span>
+</div>
