@@ -1,11 +1,11 @@
 ---
+name: I enjoy making lists
 date: Sat 21 Dec 00:13:30 IST 2024
-title: Resources
-layout: default
+categories: [Resources]
+tools: [Web browsing]
 ---
 <div class="container pt-5">
-    <h1>Resources</h1>
-    <p>I enjoy making lists.  I'll keep updating this one as and when I find new and interesting things.</p>
+    <p>I'll keep updating this one as and when I find new and interesting things.</p>
     <ol>
         {% for resource in site.resources %}
           <li>

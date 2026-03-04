@@ -28,7 +28,7 @@ module Jekyll
       end.to_h
 
       # Store sorted category names for use in templates
-      site.config["project_categories"] = sorted_categories.keys
+      site.data["project_categories"] = sorted_categories.keys
 
       # Prevent duplicate category pages
       existing_pages = site.pages.map { |p| p.url }

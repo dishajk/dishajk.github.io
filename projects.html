@@ -17,8 +17,9 @@ layout: default
       </div>
 
 {% assign all_tools = "" | split: "" %}
-
-{% assign sorted_projects = site.projects | sort: "date" | reverse %}
+{% assign project_posts = site.posts | where: "type", "project" %}
+{% assign all_projects = site.projects | concat: project_posts %}
+{% assign sorted_projects = all_projects | sort: "date" | reverse %}
 <span>An incomplete list of tools used so far: </span>
 {% for project in sorted_projects %}
   {% if project.tools %}
