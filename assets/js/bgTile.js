@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.bottom-panel').forEach(function (el) {
       el.style.maskImage = background;
       el.style.maskRepeat = 'repeat';
-      el.style.maskSize = '60px';
+      el.style.maskSize = 'clamp(30px, 8vw, 60px)';
       el.style.webkitMaskImage = background;
       el.style.webkitMaskRepeat = 'repeat';
-      el.style.webkitMaskSize = '60px';
+      el.style.webkitMaskSize = 'clamp(60px, 9vw, 100px)';
 
     });
     
