@@ -9,7 +9,7 @@ module Jekyll
       site.collections["projects"].docs.each do |project|
 
         # Prevent internal page generation if external URL exists
-        if project.data["url"]
+        if project.data["external_url"]
           project.data["output"] = false
         end
 

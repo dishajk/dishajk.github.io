@@ -3,6 +3,13 @@ title: Projects
 layout: default
 ---
 <div class="container pt-5">
+  <h2>Projects</h2>
+              {% for category in site.project_categories %}
+              <p><a href="/projects/{{ category | slugify }}/">{{ category }}</a></p>
+              <pre>{{ category | jsonify }}</pre>
+              {% endfor %}
+</div>
+<div class="container pt-5">
     <h2>Projects</h2>
     <!-- {% assign categories = site.projects | map: "categories" | uniq | sort: "date" | reverse %} -->
     
