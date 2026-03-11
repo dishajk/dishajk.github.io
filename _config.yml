@@ -19,7 +19,6 @@ webmaster_verifications:
 
 collections:
   projects:
-    output: true
     permalink: /projects/:name/
   resources:
 

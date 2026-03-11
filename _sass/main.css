@@ -46,15 +46,18 @@ body main h2 {
   color: #663366;
   margin-top: 2rem;
 }
+body main h2 a {
+  text-decoration: none;
+}
 body main h3 {
-  font-weight: bold;
+  font-size: 28.28px;
+  font-family: "Pompiere", sans-serif;
 }
 body main h3 a {
   text-decoration: none;
 }
 body main h4 {
-  font-family: "Pompiere", sans-serif;
-  font-size: 28.28px;
+  font-size: 22.88px;
 }
 body main h4 a {
   border-bottom: #663366 solid 1px;
@@ -67,8 +70,11 @@ body main ion-icon {
 body main a {
   color: #663366;
 }
+body main .project-tab {
+  --bs-border-color: $colorDark;
+}
 body main .project-nav {
-  background-image: url("/assets/media/tilings.svg");
+  background-image: url("/assets/media/ibnTulun.svg");
   background-color: #663366;
   background-repeat: repeat;
   display: flex;
@@ -82,16 +88,15 @@ body main .project-nav .nav-link {
 body main .project-nav .nav-link:hover {
   color: #99cc99;
 }
-body main .project-tab {
+body main .project-tab2 {
   min-height: 160px;
   border-radius: 6px;
-  background-image: url("/assets/media/tilings.svg");
   background-color: #663366;
   background-repeat: repeat;
   display: flex;
   align-items: center;
 }
-body main .project-tab a {
+body main .project-tab2 a {
   text-decoration: none;
   color: #cccccc;
   font-family: "Pompiere", sans-serif;

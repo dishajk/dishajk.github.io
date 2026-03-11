@@ -2,48 +2,68 @@
 title: Projects
 layout: default
 ---
+<div class="container px-4 py-5">
+  <h2 class="pb-2">Projects</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    {% for category in site.project_categories %}
+    <div class="col d-flex align-items-start border-bottom rounded-pill" data-aos="flip-up"
+        data-aos-duration="{{ forloop.index | times: 350 }}">
+      <div>
+        <h3 class="mb-0"><a href="/projects/{{ category | slugify }}/">{{ category }}</a></h3>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
 <div class="container pt-5">
   <h2>Projects</h2>
-              {% for category in site.project_categories %}
-              <p><a href="/projects/{{ category | slugify }}/">{{ category }}</a></p>
-              <pre>{{ category | jsonify }}</pre>
-              {% endfor %}
-</div>
-<div class="container pt-5">
-    <h2>Projects</h2>
-    <!-- {% assign categories = site.projects | map: "categories" | uniq | sort: "date" | reverse %} -->
-    
-    <div class="container text-center mb-5">
-        <div class="row row-cols-lg-5 d-flex justify-content-center">
-            {% for category in site.project_categories %}
-          <div class="col border justify-content-center project-tab" data-aos="flip-up" data-aos-duration="{{ forloop.index | times: 350 }}">
-            <a href="/projects/{{ category | slugify }}/">{{ category }}</a>
-          </div>
-          {% endfor %}
-        </div>
+  <div class="container text-center mb-5">
+    <div class="row row-cols-lg-5 d-flex justify-content-around">
+      {% for category in site.project_categories %}
+      <div class="col border justify-content-center project-tab2" data-aos="flip-up"
+        data-aos-duration="{{ forloop.index | times: 350 }}">
+        <!-- <div class="col border justify-content-center project-tab" data-aos="flip-up" data-aos-duration="{{ forloop.index | times: 350 }}"> -->
+        <a href="/projects/{{ category | slugify }}/">{{ category }}</a>
       </div>
+      {% endfor %}
+    </div>
+  </div>
 
-{% assign all_tools = "" | split: "" %}
-{% assign project_posts = site.posts | where: "type", "project" %}
-{% assign all_projects = site.projects | concat: project_posts %}
-{% assign sorted_projects = all_projects | sort: "date" | reverse %}
-<span>An incomplete list of tools used so far: </span>
-{% for project in sorted_projects %}
+  {% assign all_tools = "" | split: "" %}
+  {% assign project_posts = site.posts | where: "type", "project" %}
+  {% assign all_projects = site.projects | concat: project_posts %}
+  {% assign sorted_projects = all_projects | sort: "date" | reverse %}
+  <span>An incomplete list of tools used so far: </span>
+  {% for project in sorted_projects %}
   {% if project.tools %}
-    {% for tool in project.tools %}
-      {% unless all_tools contains tool %}
-        {% assign all_tools = all_tools | push: tool %}
-      {% endunless %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-
-<ul class="list-inline">
-  {% for tool in all_tools %}
-    <li class="list-inline-item">{{ tool }},</li>
+  {% for tool in project.tools %}
+  {% unless all_tools contains tool %}
+  {% assign all_tools = all_tools | push: tool %}
+  {% endunless %}
   {% endfor %}
-</ul>
+  {% endif %}
+  {% endfor %}
 
-    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless specified otherwise, contents in <a property="dct:title" rel="cc:attributionURL" href="https://dishajk.github.io/projects.html">this page</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://dishajk.github.io">Disha J Kuzhively</a> are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"> CC BY-NC-SA 4.0 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+  <ul class="list-inline">
+    {% for tool in all_tools %}
+    <li class="list-inline-item">{{ tool }},</li>
+    {% endfor %}
+  </ul>
+
+  <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless specified otherwise,
+    contents in <a property="dct:title" rel="cc:attributionURL" href="https://dishajk.github.io/projects.html">this
+      page</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName"
+      href="https://dishajk.github.io">Disha J Kuzhively</a> are licensed under <a
+      href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+      rel="license noopener noreferrer" style="display:inline-block;"> CC BY-NC-SA 4.0 <img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+        src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+        src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
 
 </div>

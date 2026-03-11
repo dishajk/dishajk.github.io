@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const chosenTile = bgTiles[randomIndex];
     const background = `url('/assets/media/${chosenTile}.svg')`;
   
-    document.querySelectorAll('.project-tab, .project-nav').forEach(function (el) {
+    document.querySelectorAll('.project-nav').forEach(function (el) {
       el.style.backgroundImage = background;
       el.style.backgroundRepeat = 'repeat';
 
@@ -25,6 +25,5 @@ document.addEventListener('DOMContentLoaded', function () {
       el.style.webkitMaskRepeat = 'repeat';
       el.style.webkitMaskSize = 'clamp(60px, 9vw, 100px)';
 
-    });
-    
+    });    
   });  

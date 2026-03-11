@@ -22,9 +22,7 @@ body {
 
     header {
         background-color: $colorDark;
-
         nav {
-
             .nav-link:visited,
             .navbar-brand,
             .navbar-brand:visited,
@@ -72,18 +70,21 @@ body {
             font-size: calc(1.618 * 20px);
             color: $colorHighlight2;
             margin-top: 2rem;
+            a{
+                text-decoration: none;
+            }
         }
 
         h3 {
-            font-weight: bold;
+            font-size: calc(1.414 * 20px);
+            font-family: 'Pompiere', sans-serif;
             a {
                 text-decoration: none;
             }
         }
 
         h4 {
-            font-family: 'Pompiere', sans-serif;
-            font-size: calc(1.414 * 20px);
+            font-size: calc(1.144 * 20px);
 
             a {
                 border-bottom: $colorHighlight2 solid 1px;
@@ -99,7 +100,9 @@ body {
         a {
             color: $colorHighlight2;
         }
-
+        .project-tab {
+            --bs-border-color: $colorDark;
+        }
         .project-nav {
             background-image: url('/assets/media/#{$bgtile}.svg');
             background-color: $colorHighlight2;
@@ -118,10 +121,9 @@ body {
             }
         }
 
-        .project-tab {
+        .project-tab2 {
             min-height: 160px;
             border-radius: 6px;
-            background-image: url('/assets/media/#{$bgtile}.svg');
             background-color: $colorHighlight2;
             background-repeat: repeat;
             display: flex;
