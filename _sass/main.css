@@ -14,7 +14,7 @@ body header nav .navbar-brand:visited,
 body header nav .navbar-toggler-icon,
 body header nav .nav-link,
 body header nav .nav-link.disabled {
-  color: #cccccc;
+  color: #dddddd;
   font-family: "Pompiere", sans-serif;
 }
 body header nav .nav-link:focus,
@@ -70,9 +70,6 @@ body main ion-icon {
 body main a {
   color: #663366;
 }
-body main .project-tab {
-  --bs-border-color: $colorDark;
-}
 body main .project-nav {
   background-image: url("/assets/media/ibnTulun.svg");
   background-color: #663366;
@@ -81,7 +78,7 @@ body main .project-nav {
   align-items: center;
 }
 body main .project-nav .nav-link {
-  color: #cccccc;
+  color: #dddddd;
   font-family: "Pompiere", sans-serif;
   font-size: 28.28px;
 }
@@ -95,10 +92,11 @@ body main .project-tab2 {
   background-repeat: repeat;
   display: flex;
   align-items: center;
+  --bs-border-color: $colorDark;
 }
 body main .project-tab2 a {
   text-decoration: none;
-  color: #cccccc;
+  color: #dddddd;
   font-family: "Pompiere", sans-serif;
   font-size: 32.36px;
   font-weight: 600;
@@ -136,7 +134,7 @@ body main .nav-tabs .nav-link:hover {
 }
 body main .nav-tabs .nav-link.active {
   background-color: #663366;
-  color: #cccccc;
+  color: #dddddd;
 }
 body footer {
   padding-top: 10vh;

@@ -6,11 +6,8 @@ layout: default
   <h2 class="pb-2">Projects</h2>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
     {% for category in site.project_categories %}
-    <div class="col d-flex align-items-start border-bottom rounded-pill" data-aos="flip-up"
-        data-aos-duration="{{ forloop.index | times: 350 }}">
-      <div>
+    <div class="col d-flex align-items-start" data-aos="flip-up" data-aos-duration="{{ forloop.index | times: 350 }}">
         <h3 class="mb-0"><a href="/projects/{{ category | slugify }}/">{{ category }}</a></h3>
-      </div>
     </div>
     {% endfor %}
   </div>

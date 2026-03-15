@@ -2,7 +2,7 @@
 @use "sass:list";
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Pompiere&display=swap');
 
-$colorLight: #cccccc;
+$colorLight: #dddddd;
 $colorDark: #333333;
 $colorHighlight: #99cc99;
 $colorHighlight2: #663366;
@@ -100,9 +100,6 @@ body {
         a {
             color: $colorHighlight2;
         }
-        .project-tab {
-            --bs-border-color: $colorDark;
-        }
         .project-nav {
             background-image: url('/assets/media/#{$bgtile}.svg');
             background-color: $colorHighlight2;
@@ -128,7 +125,7 @@ body {
             background-repeat: repeat;
             display: flex;
             align-items: center;
-
+            --bs-border-color: $colorDark;
             a {
                 text-decoration: none;
                 color: $colorLight;
