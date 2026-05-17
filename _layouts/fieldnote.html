@@ -8,6 +8,70 @@ layout: default
     {% if page.type == "project" %}
     <small class="text-body-secondary">tools used: {{ page.tools | join: ", " }}</small>  
     {% endif %}
+    <article class="container clearfix">
     {{ content }}
+</article>
+<div class="container">
+    <div>
+        <h4 class="fst-italic">Also read</h4>
+        <ul class="list-unstyled d-md-inline-flex">
+            {% if page.tags %}
+            {% assign page_tags = page.tags | join: "," | downcase | split: "," %}
+            {% for post in site.posts %}
+            {% unless post.url == page.url %}
+            {% for tag in post.tags %}
+            {% assign tag_lower = tag | downcase %}
+            {% if page_tags contains tag_lower %}
+            <li> <a class="d-flex flex-column flex-lg-row gap-2 flex-fill align-items-start align-items-lg-center p-2 link-body-emphasis text-decoration-none border-top"
+                    href="{{ post.url }}">
+                    {% assign first_image = post.content |
+                    split:'<img ' %}
+                                    {% if first_image.size > 1 %}
+                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>' | first }}>
+                    {% endif %}
+                    <div class="col-lg-8">
+                        <h6 class="mb-0">{{ post.title }}</h6> <small class="text-body-secondary"><time>{{ post.date |
+                                date_to_string }}</time></small>
+                    </div>
+                </a> </li>
+            {% break %}
+            {% endif %}
+            {% endfor %}
+            {% endunless %}
+            {% endfor %}
+            {% endif %}
+            {% if page.next %}
+            <li> <a class="d-flex flex-column flex-lg-row gap-2 flex-fill align-items-start align-items-lg-center p-2 link-body-emphasis text-decoration-none border-top"
+                    href="{{ page.next.url }}">
+                    {% assign first_image = page.next.content |
+                    split:'<img ' %}
+                                    {% if first_image.size > 1 %}
+                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>' | first }}>
+                    {% endif %}
+                    <div class="col-lg-8">
+                        <h6 class="mb-0">{{ page.next.title }}</h6> <small class="text-body-secondary"><time>{{ page.next.date | date_to_string }}</time></small>
+                    </div>
+                </a> </li>
+            {% endif %}
+            {% if page.previous %}
+            <li> <a class="d-flex flex-column flex-lg-row gap-2 flex-fill align-items-start align-items-lg-center p-2 link-body-emphasis text-decoration-none border-top"
+                    href="{{ page.previous.url }}"> 
+                    {% assign first_image = page.previous.content |
+                    split:'<img ' %}
+                                    {% if first_image.size > 1 %}
+                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>' | first }}>
+                    {% endif %}
+                    <div class="col-lg-8">
+                        <h6 class="mb-0">{{ page.previous.title }}</h6> <small
+                            class="text-body-secondary"><time>{{ page.previous.date | date_to_string }}</time></small>
+                    </div>
+                </a> </li>
+            {% endif %}
+
+        </ul>
+    </div>
+</div>
+<div class="container">
     <p class="fw-light fs-6 fst-italic lh-1">I am still figuring out how to code the comments section; if you have any comments, you will have to write to me. Also, unlike popular social media websites, you won’t be checking my blog regularly. You can leave your email address with me; that way, each time I write one, you will receive an email notification with a link to the new blog post.</p>
+</div>
 </div>
