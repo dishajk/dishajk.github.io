@@ -3,6 +3,7 @@ title: The House on Mango Street
 layout: fieldnote
 type: blog
 tags: [books, reading, Sandra Cisneros, The House on Mango Street, literature, women writers, book recommendations, Chennai, Bangalore, Kodaikanal, memoir, reading habits, bookstores, travel reading]
+comments: true
 ---
 <figure class="float-start col-sm-4">
 <img class="img-fluid" src="/assets/blogImages/IMG-20260502-WA0004.jpg" width="auto" height="auto" alt="hand holding a copy of the house on the mango street by sandra cisneros">
