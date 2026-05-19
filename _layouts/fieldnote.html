@@ -97,7 +97,8 @@ layout: default
 
 {% if page_time > cutoff %}
 <s>{% endif %}
-            I am still figuring out how to code the comments section; if you have any comments, you will have to write to me. Also, unlike popular social media websites, you won't be checking my blog regularly. You can leave your email address with me; that way, each time I write one, you will receive an email notification with a link to the new blog post.{% if page_time < cutoff %}
+            I am still figuring out how to code the comments section; if you have any comments, you will have to write to me. Also, unlike popular social media websites, you won't be checking my blog regularly. You can leave your email address with me; that way, each time I write one, you will receive an email notification with a link to the new blog post.
+{% if page_time > cutoff %}
 </s>{% endif %}</p>
 </div>
 </div>
