@@ -6,12 +6,12 @@ layout: default
     <h1 class="text-center">{{ page.title }}</h1>
     <p class="text-center">{{ page.date | date_to_string }}</p>
     {% if page.type == "project" %}
-    <small class="text-body-secondary">tools used: {{ page.tools | join: ", " }}</small>  
+    <small class="text-body-secondary">tools used: {{ page.tools | join: ", " }}</small>
     {% endif %}
     <article class="container clearfix">
-    {{ content }}
-</article>
-<div class="container">
+        {{ content }}
+    </article>
+    <div class="container">
         <h4 class="fst-italic">Also read</h4>
         <ul class="list-unstyled d-md-inline-flex">
             {% if page.tags %}
@@ -26,7 +26,8 @@ layout: default
                     {% assign first_image = post.content |
                     split:'<img ' %}
                                     {% if first_image.size > 1 %}
-                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>' | first }}>
+                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>'
+                    | first }}>
                     {% endif %}
                     <div class="col-lg-8">
                         <h6 class="mb-0">{{ post.title }}</h6> <small class="text-body-secondary"><time>{{ post.date |
@@ -45,60 +46,72 @@ layout: default
                     {% assign first_image = page.next.content |
                     split:'<img ' %}
                                     {% if first_image.size > 1 %}
-                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>' | first }}>
+                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>'
+                    | first }}>
                     {% endif %}
                     <div class="col-lg-8">
-                        <h6 class="mb-0">{{ page.next.title }}</h6> <small class="text-body-secondary"><time>{{ page.next.date | date_to_string }}</time></small>
+                        <h6 class="mb-0">{{ page.next.title }}</h6> <small class="text-body-secondary"><time>{{
+                                page.next.date | date_to_string }}</time></small>
                     </div>
                 </a> </li>
             {% endif %}
             {% if page.previous %}
             <li> <a class="d-flex flex-column flex-lg-row gap-2 flex-fill align-items-start align-items-lg-center p-2 link-body-emphasis text-decoration-none border-top"
-                    href="{{ page.previous.url }}"> 
+                    href="{{ page.previous.url }}">
                     {% assign first_image = page.previous.content |
                     split:'<img ' %}
                                     {% if first_image.size > 1 %}
-                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>' | first }}>
+                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>'
+                    | first }}>
                     {% endif %}
                     <div class="col-lg-8">
-                        <h6 class="mb-0">{{ page.previous.title }}</h6> <small
-                            class="text-body-secondary"><time>{{ page.previous.date | date_to_string }}</time></small>
+                        <h6 class="mb-0">{{ page.previous.title }}</h6> <small class="text-body-secondary"><time>{{
+                                page.previous.date | date_to_string }}</time></small>
                     </div>
                 </a> </li>
             {% endif %}
 
         </ul>
     </div>
-<div class="container">
-    {% if page.comments %}
-    <div id="disqus_thread"></div>
-    <script>        
-        var disqus_config = function () {
-        this.page.url = "{{ site.url }}{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        
-        (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://dishajk.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a></noscript>
+    <div class="container">
+        {% if page.comments %}
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = "{{ site.url }}{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
 
-         <p class="fw-light fs-6 fst-italic lh-1"><time>18 May, 2026.</time> Thanks to <a href="https://www.vinayjadav.com" target="_blank">Vinay</a>'s suggestion. You get to leave comments on posts now, but I am not very sure how this will work out. So if you prefer leaving comments the old way, i.e. writing to me or calling me, feel free! If this doesn't work, my next plan is to make you submit issues on GitHub.</p>
-    {% endif %}
+            (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://dishajk.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript>
 
-         <p class="fw-light fs-6 fst-italic lh-1">
-                {% assign cutoff = "2026-05-01" | date: "%s" %}
-{% assign page_time = page.date | date: "%s" %}
+        <p class="fw-light fs-6 fst-italic lh-1"><time>18 May, 2026.</time> Thanks to <a
+                href="https://www.vinayjadav.com" target="_blank">Vinay</a>'s suggestion. You get to leave comments on
+            posts now, but I am not very sure how this will work out. So if you prefer leaving comments the old way,
+            i.e. writing to me or calling me, feel free! If this doesn't work, my next plan is to make you submit issues
+            on GitHub.</p>
+        {% endif %}
 
-{% if page_time > cutoff %}
-<s>{% endif %}
-            I am still figuring out how to code the comments section; if you have any comments, you will have to write to me. Also, unlike popular social media websites, you won't be checking my blog regularly. You can leave your email address with me; that way, each time I write one, you will receive an email notification with a link to the new blog post.
-{% if page_time > cutoff %}
-</s>{% endif %}</p>
-</div>
+        <p class="fw-light fs-6 fst-italic lh-1">
+            {% assign cutoff = "2026-05-01" | date: "%s" %}
+            {% assign page_time = page.date | date: "%s" %}
+
+            {% if page_time > cutoff %}
+            <s>{% endif %}
+                I am still figuring out how to code the comments section; if you have any comments, you will have to
+                write to me. Also, unlike popular social media websites, you won't be checking my blog regularly. You
+                can leave your email address with me; that way, each time I write one, you will receive an email
+                notification with a link to the new blog post.
+                {% if page_time > cutoff %} 
+            </s>
+            {% endif %}
+        </p>
+    </div>
 </div>
