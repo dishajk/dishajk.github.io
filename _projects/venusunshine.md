@@ -6,6 +6,4 @@ tools: [html, sass, bootstrap]
 output: false
 external_url: https://venusunshine.com/
 ---
-<a href="https://venusunshine.com/" target="_blank">Venu Sunshine</a>
-
 half-finished, abandoned project done for real estate clients

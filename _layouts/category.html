@@ -47,19 +47,19 @@ layout: default
             </div>
           </div>
         {% elsif project.data.output %}
-          <a href="{{ project.url }}">{{ project.data.title }}</a>
+          <a href="{{ project.url }}" target="_blank">{{ project.data.title }}</a>
         
         {% else %}        
-        {% if page.title != "Web Design and Development" %}
-        <h4>
-            {% if page.title == "Codes" or page.title == "Editing" %}
-            <a href="{{project.external_url}}" target="_blank" title="{{ project.data.title }}">
+        {% if project.external_url %}
+            {% if project.external_url %}
+            <a href="{{project.external_url}}" target="_blank" class="border-0 link-underline link-underline-opacity-0">
             {% endif %}
-                {{ project.title }}
-            {% if page.title == "Codes" or page.title == "Editing" %}
+        <h4>
+                {{ project.title }} 
+        </h4>
+            {% if project.external_url %}
             </a>
             {% endif %}
-        </h4>
         {% endif %}
 
         {% if page.title == "Codes" %}
