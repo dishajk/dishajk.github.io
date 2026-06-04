@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.project-tab, .project-nav').forEach(function (el) {
       el.style.backgroundImage = background;
       el.style.backgroundRepeat = 'repeat';
-
     });
     document.querySelectorAll('.bottom-panel').forEach(function (el) {
       el.style.maskImage = background;

@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Pompiere&display=swap");
 body {
-  background-color: #cccccc;
+  background-color: #e6e6e6;
   font-family: "Catamaran", sans-serif;
   min-height: 100vh;
   font-size: 20px;
 }
 body header {
-  background-color: #333333;
+  background-color: #403340;
 }
 body header nav .nav-link:visited,
 body header nav .navbar-brand,
@@ -14,7 +14,7 @@ body header nav .navbar-brand:visited,
 body header nav .navbar-toggler-icon,
 body header nav .nav-link,
 body header nav .nav-link.disabled {
-  color: #cccccc;
+  color: #e6e6e6;
   font-family: "Pompiere", sans-serif;
 }
 body header nav .nav-link:focus,
@@ -68,14 +68,11 @@ body main a {
   color: #663366;
 }
 body main .project-nav {
-  background-image: url("/assets/media/ibnTulun.svg");
-  background-color: #663366;
-  background-repeat: repeat;
   display: flex;
   align-items: center;
 }
 body main .project-nav .nav-link {
-  color: #cccccc;
+  color: #e6e6e6;
   font-family: "Pompiere", sans-serif;
   font-size: 28.28px;
 }
@@ -85,15 +82,12 @@ body main .project-nav .nav-link:hover {
 body main .project-tab {
   min-height: 160px;
   border-radius: 6px;
-  background-image: url("/assets/media/ibnTulun.svg");
-  background-color: #663366;
-  background-repeat: repeat;
   display: flex;
   align-items: center;
 }
 body main .project-tab a {
   text-decoration: none;
-  color: #cccccc;
+  color: #e6e6e6;
   font-family: "Pompiere", sans-serif;
   font-size: 32.36px;
   font-weight: 600;
@@ -131,7 +125,7 @@ body main .nav-tabs .nav-link:hover {
 }
 body main .nav-tabs .nav-link.active {
   background-color: #663366;
-  color: #cccccc;
+  color: #e6e6e6;
 }
 body footer {
   padding-top: 10vh;
@@ -141,7 +135,7 @@ body footer ul {
   list-style: none;
 }
 body footer ul a {
-  color: #333333;
+  color: #403340;
 }
 body footer ul a:hover {
   color: #663366;
@@ -153,5 +147,5 @@ body .bottom-panel {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #403340;
 }/*# sourceMappingURL=main.css.map */
