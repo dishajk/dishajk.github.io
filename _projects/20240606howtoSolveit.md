@@ -1,5 +1,5 @@
 ---
-title: SSWP 2024
+title: How to Solve it? &agrave; la P&oacute;lya
 date: 2024-06-06
 categories: [Learning and Teaching Resources] 
 tools: TeX

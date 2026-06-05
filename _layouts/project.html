@@ -1,29 +1,34 @@
 ---
 layout: default
 ---
-<ul class="nav justify-content-center container-fluid project-nav mb-3">
+{% assign collection_projects = site.projects %}
+{% assign post_projects = site.posts | where: "type", "project" %}
+{% assign all_projects = collection_projects | concat: post_projects %}
+{% assign all_projects = all_projects | sort: "date" | reverse %}
+{% assign total = all_projects | size %}
+<div class="mt-2 mb-5 container">
+    <nav class="d-flex flex-wrap mb-5">
+    <a href="/projects/" data-filter="all"><button type="button" class="btn">
+        All projects<span class="badge rounded-pill text-body-secondary">{{ total }}</span>
+      </button></a>
     {% for category in site.project_categories %}
-    <li class="nav-item">
-        <a class="nav-link {% if page.category == category %}active{% endif %}"
-            href="{{ site.baseurl }}/projects/{{ category | slugify }}/">
-            {{ category }}
-        </a>
-    </li>
+    {% assign count = 0 %}
+    {% for project in all_projects %}
+    {% if project.categories contains category %}
+    {% assign count = count | plus: 1 %}
+    {% endif %}
     {% endfor %}
-</ul>
-<ul class="nav justify-content-center container-fluid project-nav mb-3">
-    {% assign categories = project_categories | map: "categories" | uniq | sort: "date" | reverse %}
-    {% for category in categories %}
-    <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/projects/{{ category | slugify }}/">
-            {{ category }}
-        </a>
-    </li>
+
+    <a href="/projects/{{ category | slugify }}/"><button type="button" class="btn">
+        {{ category }} <span class="badge rounded-pill text-body-secondary">{{ count }}</span>
+      </button></a>
     {% endfor %}
-</ul>
-<section class="mb-2 container">
+  </nav>
+    <h2>{{ page.title }}</h2>
     {{content}}
-    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless specified otherwise,
+   </div>
+   <div class="container">
+    <p class="fs-6" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless specified otherwise,
         contents in <a property="dct:title" rel="cc:attributionURL" href="https://dishajk.github.io/projects.html">this
             page</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName"
             href="https://dishajk.github.io">Disha J Kuzhively</a> are licensed under <a
@@ -37,4 +42,4 @@ layout: default
                 src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img
                 style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
                 src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
-</section>
+</div>

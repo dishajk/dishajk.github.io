@@ -102,6 +102,9 @@ body {
         }
 
         .project-nav {
+            // background-image: url('/assets/media/#{$bgtile}.svg');
+            background-color: $colorHighlight2;
+            // background-repeat: repeat;
             display: flex;
             align-items: center;
 
@@ -119,6 +122,9 @@ body {
         .project-tab {
             min-height: 160px;
             border-radius: 6px;
+            // background-image: url('/assets/media/#{$bgtile}.svg');
+            background-color: $colorHighlight2;
+            // background-repeat: repeat;
             display: flex;
             align-items: center;
 

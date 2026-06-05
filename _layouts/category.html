@@ -1,77 +1,157 @@
 ---
 layout: default
 ---
-<div class="mb-3 project-nav">
-  <nav class="nav d-flex justify-content-center"> 
-    {% assign categories = site.projects | map: "categories" | uniq | sort: "date" | reverse %}
-      {% for category in site.project_categories %}
-      <a class="nav-link" href="{{ site.baseurl }}/projects/{{ category | slugify }}/">{{ category }}</a> 
-      {% endfor %}
-  </nav> 
-</div>
-<div class="px-4">
-<h1 class="display-5 text-center">{{ page.title }}</h1>
-{% if page.title == "Poster" %}
-    <div class="d-flex flex-wrap clearfix">
-        {% assign projects = page.projects | sort: "date" | reverse %}
-        {% for project in projects %}
-        <div class="col-md-4 p-2 float-start">
-            {{ project.content }}
-            <small class="text-body-secondary">made using {{ project.tools | join: ", " }}</small>
-        </div>
-        {% endfor %}
-    </div>
-{% else %}
-  <ol>
-    {% assign projects = page.projects | sort: "date" | reverse %}
-    {% for project in projects %}
+{% assign collection_projects = site.projects %}
+{% assign post_projects = site.posts | where: "type", "project" %}
+{% assign all_projects = collection_projects | concat: post_projects %}
+{% assign all_projects = all_projects | sort: "date" | reverse %}
+{% assign total = all_projects | size %}
+<div class="container pt-3">
+  <nav class="d-flex flex-wrap mb-5">
+    <a href="/projects/" data-filter="all"><button type="button" class="btn">
+        All projects<span class="badge rounded-pill text-body-secondary">{{ total }}</span>
+      </button></a>
+    {% for category in site.project_categories %}
+    {% assign count = 0 %}
+    {% for project in all_projects %}
+    {% if project.categories contains category %}
+    {% assign count = count | plus: 1 %}
+    {% endif %}
+    {% endfor %}
 
-    <li>
-        {% if project.path contains '_posts/' %}
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <h3 class="mb-0 mt-4 fst-italic fw-medium"><a href="{{ project.url }}">{{ project.title }}</a></h3>
-                <time>{{ project.date | date_to_string }}</time>
-                <p class="card-text mb-auto">{{ project.excerpt }}</p>
-                <a href="{{ project.url }}" class="icon-link gap-1 icon-link-hover stretched-link">
-                  See more
-                </a>
-              </div>
-              <div class="col-auto d-none d-lg-block">        
-                {% assign first_image = project.content | split:'<img ' %}
+    <a href="/projects/{{ category | slugify }}/"><button type="button" class="btn">
+        {{ category }} <span class="badge rounded-pill text-body-secondary">{{ count }}</span>
+      </button></a>
+    {% endfor %}
+  </nav>
+  <h2>{{ page.title }}</h2>
+
+  {% assign slug = page.title | slugify %}
+
+  {% if slug == "poster" %}
+  {% assign layout_style = "grid" %}
+  {% elsif slug == "web-design-and-development" or slug == "resources" %}
+  {% assign layout_style = "timeline" %}
+  {% else %}
+  {% assign layout_style = "hybrid" %}
+  {% endif %}
+
+  {% assign projects = page.projects | sort: "date" | reverse %}
+  {% if layout_style == "grid" %}
+  <div class="d-flex flex-wrap clearfix">
+    {% for project in projects %}
+    <div class="col-md-4 p-2 float-start">
+      {{ project.content }}
+      <small class="text-body-secondary">made using {{ project.tools | join: ", " }}</small>
+    </div>
+    {% endfor %}
+  </div>
+  {% elsif layout_style == "timeline" %}
+  <div>
+    {% assign current_year = "" %}
+    {% for project in projects %}
+    {% assign year = project.date | date: "%Y" %}
+    {% if year != current_year %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <p>{{ year }}</p>
+    <ul class="list-unstyled">
+      {% assign current_year = year %}
+      {% endif %}
+      {% if project.external_url %}
+      {% assign href = project.external_url %}
+      {% elsif project.url %}
+      {% assign href = project.url %}
+      {% else %}
+      {% assign href = "#" %}
+      {% endif %}
+
+      <li>
+        <p class="card-title"><a href="{{ href }}" {% if project.external_url %}target="_blank" rel="noopener" {% endif
+            %} class="border-0 link-underline link-underline-opacity-0">{{ project.title }}
+            {% if project.external_url %}<ion-icon class="align-middle" name="open-outline"></ion-icon>{% endif %}
+          </a></p>
+        <p class="card-subtitle">{{ project.content }}
+        </p>
+        {% if page.title == "Web Design and Development" or page.title == "Animation" %}
+        <small class="text-body-secondary">made using {{ project.tools | join: ", " }}</small>
+        {% endif %}
+      </li>
+
+      {% if forloop.last %}
+    </ul>{% endif %}
+
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="row">
+    {% for project in projects limit: 3 %}
+    {% if project.external_url %}
+    {% assign href = project.external_url %}
+    {% elsif project.url %}
+    {% assign href = project.url %}
+    {% else %}
+    {% assign href = "#" %}
+    {% endif %}
+    <div class="{% if page.title == 'Animation' %}col-lg-12{% else %}col-md-6 col-lg-4{% endif %}">
+
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h5><a href="{{ href }}" {% if project.external_url %}target="_blank" rel="noopener" {% endif %}
+              class="border-0 link-underline link-underline-opacity-0">{{ project.title }}
+              {% if project.external_url %}<ion-icon class="align-middle" name="open-outline"></ion-icon>{% endif %}
+            </a></h5>
+
+          <p class="card-text mb-auto">{{ project.excerpt }}</p>
+          {% unless project.external_url %}
+          <a href="{{ href }}" class="icon-link gap-1 icon-link-hover stretched-link">
+            See more
+          </a> {% endunless %}
+          {% if page.title == "Codes" %}
+          <small class="text-body-secondary">language: {{ project.tools | join: ", " }}</small>
+          {% endif %}
+          <div class="card-footer text-body-secondary fs-6 fw-light">
+            <time>{{ project.date | date_to_string }}</time>
+          </div>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          {% assign first_image = project.content | split:'<img ' %}
                 {% if first_image.size > 1 %}
                 <img class="bd-placeholder-img" width="auto" height="250" {{ first_image[1] | split:'>' | first }}>
-                {% endif %}
-              </div>
-            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% assign has_older = projects | slice: 3, 1 %}
+  {% if has_older %}
+  <ul class="p-0">
+    {% for project in projects offset: 3 %}
+    {% if project.external_url %}
+    {% assign href = project.external_url %}
+    {% elsif project.url %}
+    {% assign href = project.url %}
+    {% else %}
+    {% assign href = "#" %}
+    {% endif %}
+    <li data-aos="fade-up" data-aos-duration="{{ forloop.index | times: 350 }}">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-1 shadow-sm h-md-250 position-relative">
+        <div class="col p-2 d-flex flex-column position-static">
+          <p><a href="{{ href }}" {% if project.external_url %}target="_blank" rel="noopener" {% endif %}
+              class="border-0 link-underline link-underline-opacity-0">{{ project.title }}
+              {% if project.external_url %}<ion-icon class="align-middle" name="open-outline"></ion-icon>{% endif %}
+            </a></p>
+          <div class="card-footer">
+            <small class="text-body-secondary">
+              {{ project.content }}</small>
+            <time class="fs-6 fw-light">{{ project.date | date_to_string }}</time>
           </div>
-        {% elsif project.data.output %}
-          <a href="{{ project.url }}" target="_blank">{{ project.data.title }}</a>
-        
-        {% else %}        
-        {% if project.external_url %}
-            {% if project.external_url %}
-            <a href="{{project.external_url}}" target="_blank" class="border-0 link-underline link-underline-opacity-0">
-            {% endif %}
-        <h4>
-                {{ project.title }} 
-        </h4>
-            {% if project.external_url %}
-            </a>
-            {% endif %}
-        {% endif %}
+        </div>
+      </div>
 
-        {% if page.title == "Codes" %}
-            <small class="text-body-secondary">language: {{ project.tools | join: ", " }}</small>  
-        {% endif %}
-            {{ project.content }}
-        {% if page.title == "Animation" or page.title == "Web Design and Development" %}
-            <small class="text-body-secondary">made using {{ project.tools | join: ", " }}</small>
-        {% endif %}
-        {% endif %}
     </li>
     {% endfor %}
-    </ol>
-{% endif %}
+  </ul>
+  {% endif %}
+  {% endif %}
 </div>

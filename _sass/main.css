@@ -68,6 +68,7 @@ body main a {
   color: #663366;
 }
 body main .project-nav {
+  background-color: #663366;
   display: flex;
   align-items: center;
 }
@@ -82,6 +83,7 @@ body main .project-nav .nav-link:hover {
 body main .project-tab {
   min-height: 160px;
   border-radius: 6px;
+  background-color: #663366;
   display: flex;
   align-items: center;
 }

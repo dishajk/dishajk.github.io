@@ -4,7 +4,7 @@ date: 2022-10-16
 categories: Origami
 tools: Square paper
 heroimg: "/assets/origami/dodecahedron.png"
-layout: fold
+layout: project
 ---
 <div class="col-md-4 p-2 float-start">
 <a href="/assets/origami/dodecahedron.png" data-lightbox="posters">
