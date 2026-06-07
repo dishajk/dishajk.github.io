@@ -7,7 +7,7 @@ layout: default
 {% assign all_projects = all_projects | sort: "date" | reverse %}
 {% assign total = all_projects | size %}
 <div class="mt-2 mb-5 container">
-    <nav class="d-flex flex-wrap mb-5">
+  <nav class="d-flex flex-wrap mb-5">
     <a href="/projects/" data-filter="all"><button type="button" class="btn">
         All projects<span class="badge rounded-pill text-body-secondary">{{ total }}</span>
       </button></a>
@@ -24,22 +24,23 @@ layout: default
       </button></a>
     {% endfor %}
   </nav>
-    <h2>{{ page.title }}</h2>
-    {{content}}
-   </div>
-   <div class="container">
-    <p class="fs-6" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless specified otherwise,
-        contents in <a property="dct:title" rel="cc:attributionURL" href="https://dishajk.github.io/projects.html">this
-            page</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName"
-            href="https://dishajk.github.io">Disha J Kuzhively</a> are licensed under <a
-            href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
-            rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img
-                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
-                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img
-                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img
-                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+  <h2>{{ page.title }}</h2>
+  {{ content }}
+</div>
+<div class="container">
+  <p class="fs-6" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless specified
+    otherwise,
+    contents in <a class="link-underline link-underline-opacity-0" property="dct:title" rel="cc:attributionURL" href="https://dishajk.github.io/projects.html">this
+      page</a> by <a class="link-underline link-underline-opacity-0" rel="cc:attributionURL dct:creator" property="cc:attributionName"
+      href="https://dishajk.github.io">Disha J Kuzhively</a> are licensed under <a class="link-underline link-underline-opacity-0"
+      href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+      rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+        src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+        src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
 </div>

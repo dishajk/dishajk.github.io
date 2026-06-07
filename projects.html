@@ -45,7 +45,13 @@ layout: default
           </a></h5>
           
           <time>{{ project.date | date_to_string }}</time>
-          <p class="card-text mb-auto">{{ project.excerpt }}</p>
+          <div class="col-auto d-none d-lg-block">
+          {% assign first_image = project.content | split:'<img ' %}
+                {% if first_image.size > 1 %}
+                <img class="bd-placeholder-img" width="auto" height="250" {{ first_image[1] | split:'>' | first }}>
+          {% endif %}
+        </div>
+          <p class="card-text mb-auto">{{ project.excerpt | truncatewords: 56}}</p>
           {% unless project.external_url %}
           <a href="{{ href }}" class="icon-link gap-1 icon-link-hover stretched-link">
             See more
@@ -58,12 +64,6 @@ layout: default
             </span>
             {% endfor %}
           </div>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          {% assign first_image = project.content | split:'<img ' %}
-                {% if first_image.size > 1 %}
-                <img class="bd-placeholder-img" width="auto" height="250" {{ first_image[1] | split:'>' | first }}>
-          {% endif %}
         </div>
       </div>
     </div>
