@@ -34,7 +34,10 @@ The second principle is that much of mathematics can be observed in the world ar
 For the third set, I deviated slightly and used the opportunity to introduce the artistic side of mathematics through fractals (fractals are self-similar structures, imagine Russian stacking dolls). Being who I am, how could I let go of an opportunity to get a group of people to construct a room size carpet of penrose tiling or even better, a room size tiling of the sceptre tile? Fractals also provide an non-maths-seeming entry point for people who have long since "divorced" mathematics after having a toxic-relationship with it in school.
 
 The fourth topic came from a suggestion by my supervisor and focused on minimal surfaces. Many fundamental principles in physics can be formulated in terms of optimisation, and minimal surfaces are a natural manifestation of optimisation principles. My supervisor believes—and I am beginning to understand why—that this is one of the most important mathematical ideas used in physics. In other words, we played with soap films.
-
+<figure class="float-end">
+<img class="img-fluid" src="/assets/blogImages/IMG_20260322_134940466.jpg" width="360" height="auto" alt="Poster for the Women of Mathematics exhibition.">
+<figcaption style="width:360px">From the last day of the exhibition, 22&nbsp;March&nbsp;2026.</figcaption>
+</figure>
 This post serves mainly as an introduction to what I hope will become a series of four or five posts, one devoted to each activity. I want to document what was planned, what happened during the sessions, what could have been improved, and how participants responded. Writing this here also serves as a form of accountability for myself, so that I remember to sit down and write them.
 
 References
