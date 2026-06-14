@@ -17,7 +17,8 @@ layout: default
             {% if page.tags %}
             {% assign page_tags = page.tags | join: "," | downcase | split: "," %}
             {% for post in site.posts %}
-            {% unless post.url == page.url %}
+            {% unless post.url == page.url or post.url == page.next.url
+    or post.url == page.previous.url %}
             {% for tag in post.tags %}
             {% assign tag_lower = tag | downcase %}
             {% if page_tags contains tag_lower %}
