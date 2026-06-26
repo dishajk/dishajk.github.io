@@ -12,7 +12,7 @@ layout: default
   <p>A collection of work across maths, science, art, code, craft, and everything in between.</p>
   <!-- {% assign categories = site.projects | map: "categories" | uniq | sort: "date" | reverse %} -->
   <nav class="d-flex flex-wrap mb-5">
-    <a href="/projects/" data-filter="all"><button type="button" class="btn">
+    <a href="/projects" data-filter="all"><button type="button" class="btn">
         All <span class="badge rounded-pill text-body-secondary">{{ total }}</span>
       </button></a>
     {% for category in site.project_categories %}
