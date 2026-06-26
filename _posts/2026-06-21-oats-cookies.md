@@ -9,9 +9,9 @@ comments: true
 <p><em><a href="#recipe">click here to go directly to the recipe</a></em></p>
 <p id="story"></p>
 I have a separate Instagram account where I post pictures of the food I cook. I started it when I realised I liked cooking but did not want to fill my main account with food pictures. The account is called *Foodnotes*, to go with *Fieldnotes*, this blog. The username is *food_n_oats*, a pun on "foodnotes" and "food and oats." I am not linking the account because I am planning to leave Instagram soon.
-<figure class="float-start">
-<img src="https://imgs.xkcd.com/comics/instagram.png">
-<figcaption style="width:740px">Instagram by xkcd</figcaption>
+<figure class="float-start" style="max-width: 100vw;">
+<img src="https://imgs.xkcd.com/comics/instagram.png"  height="auto">
+<figcaption>Instagram by xkcd</figcaption>
 </figure>
 Except, I hate oats. I started hating them because they were one of my go-to breakfast options in college. Once I had my own kitchen, I swore never to cook the things I survived on in college: khichdi, instant noodles, oats, cornflakes, muesli. I see any of these things, I run. Yet, every now and then, I buy oats again. I have no idea why. The quest then becomes finishing the packet before it expires. This recipe came out of that quest.
 <p id="recipe"></p>
