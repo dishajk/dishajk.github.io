@@ -1,0 +1,210 @@
+- title : "Bangalore Mathematics Teachers' Circle (BMTC)"
+  category: "Education"
+  image: "/assets/media/ibnTulun.svg"
+  summary: "Building a community where teachers explore mathematics through collaborative problem solving and inquiry."
+  audience: "Mathematics Teachers"
+  role: "Proposed and established the programme, secured institutional approval, managed participant selection and communications, coordinated with facilitators, and facilitated sessions."
+  impact: "Created a recurring teacher development programme that fosters a problem-solving and inquiry-driven mathematical culture among school teachers, equipping them to facilitate open-ended mathematical discussions and confidently engage with questions that do not have immediate or standard answers."
+  webpage: "https://icts.res.in/outreach/bmtc"
+  cv_link: "Scientific Coordinator - Outreach, ICTS-TIFR"
+  started: "2026-01-31"
+  status: "Ongoing"
+  frequency: "Bi-monthly"
+  partners: ["Maths Circle India", "Azim Premji University", "Mathematics Teachers' Association (India)", "St. Joseph's University"]
+
+- title: "Promise in Science and Mathematics (PriSM)"
+  date: "2024-05-02"
+  category: "Programme Design"
+  image: "/assets/media/ibnTulun.svg"
+  status: "Ongoing"
+  frequency: "Several editions each year"
+  summary: "Coordinating recurring hands-on science and mathematics programmes that connect school students with fundamental concepts through experiments, demonstrations, and inquiry."
+  audience: "Middle & High School Students"
+  role: Programme Coordinator. Worked closely with facilitators to plan activities, identify materials, prepare budgets, obtain approvals, coordinate procurement, update programme webpages, manage publicity and school outreach, support programme logistics, and assist with experimental setups where required.
+  impact: Coordinated %COUNT% editions of PriSM featuring researchers from leading international institutions. Enabled hundreds of students to engage directly with hands-on explorations in mathematics and science, while building an online repository of educational resources that schools can continue to use.
+  editions:
+    - "PriSM 11 — Making Sense of Wave Phenomena: from the Mechanical to the Abstract (Jun 2026)"
+    - "PriSM 09 — Getting Personal with Rainbows (Feb 2026)"
+    - "PriSM 08 — Think, Play, Prove: Hands-On Explorations in Maths (Nov 2025)"
+    - "PriSM 07 — Exploring Newton's Laws with Tug-of-War and Drag Forces (Aug 2024)"
+    - "PriSM 06 — Magnifying Science in Field Settings (May 2024)"
+  webpage: "https://www.icts.res.in/outreach/prism"
+  cv_link: "Scientific Coordinator - Outreach, ICTS-TIFR"
+  skills:
+    - Programme Design
+    - Science Outreach
+    - Educational Resource Development
+    - Stakeholder Coordination
+    - Budget Planning
+    - Event Operations
+    - Science Communication
+
+- title: "Kaapi with Kuriosity"
+  category: "Programme Management"
+  image: "/assets/media/ibnTulun.svg"
+  date: "2025-02-23"
+  status: "Ongoing"
+  frequency: "Monthly"
+  summary: "A monthly public lecture series bringing leading scientists into conversation with the wider community through accessible talks on contemporary research."
+  audience: "General Public"
+  role: "Programme Coordinator. Managed end-to-end planning for each lecture, including speaker liaison, webpage development, publicity, participant communication, AV coordination for livestreaming, local hospitality, transportation, catering, and honorarium arrangements."
+  impact: "Coordinated %COUNT% editions of the talk series. Enabled broad public engagement with contemporary research through in-person events and online livestreams."
+  partners: "Jawaharlal Nehru Planetarium"
+  skills:
+    - Science Communication
+    - Public Engagement
+    - Event Management
+    - Stakeholder Coordination
+    - Speaker Relations
+    - Digital Communications
+    - Livestream Production
+  editions:
+    - "Flexible Solutions: Lessons from Nature's Rubber Proteins — Namrata Gundiah (IISc) (Nov 2025)"
+    - "Neutron Stars: Natural Laboratories for the Universe's Smallest and Largest Scales — Sukanta Bose (Washington State University) (Oct 2025)"
+    - "Why Strings? — Rajesh Gopakumar (ICTS-TIFR) (Sep 2025)"
+    - "The Mathematics of Soap Bubbles — Franz Pedit (University of Massachusetts Amherst) (Aug 2025)"
+    - "How to Read a Genome — Michael Desai (Harvard University) (Jul 2025)"
+    - "What's in your DNA? Tales from the Human Genome — Shweta Ramdas (Centre for Brain Research, IISc) (Jun 2025)"
+    - "Coding Theory: Error-Resilience via Judicious Redundancy — Venkatesan Guruswami (University of California, Berkeley) (May 2025)"
+    - "Three Puzzles from the First Billion Years — Girish Kulkarni (TIFR Mumbai) (Apr 2025)"
+    - "Curation as Misinformation — Cailin O'Connor & James Owen Weatherall (University of California, Irvine) (Mar 2025)"
+    - "A History of Time — Spenta R. Wadia (ICTS-TIFR) (Feb 2025)"
+  webpage: "https://www.icts.res.in/outreach/kaapi-with-kuriosity"
+  cv_link: "Scientific Coordinator - Outreach, ICTS-TIFR"
+
+- title: "Einstein Lectures, and Vishveshwara Lectures"
+  category: "Programme Management"
+  image: "/assets/media/ibnTulun.svg"
+  date: "2024-01-03"
+  status: "Ongoing"
+  frequency: "Recurring"
+  summary: "Coordinating a travelling lecture series that brings internationally renowned scientists to universities and partner institutions across India."
+  audience: "University Students, Faculty, Researchers, General Public"
+  role: "Programme Coordinator. Managed institutional partnerships, coordinated with host organisations, handled speaker and venue communication, developed publicity material, managed participant communication, and ensured seamless coordination between ICTS, speakers, and partner institutions."
+  impact: "Coordinated %COUNT% lectures hosted at partner universities, strengthening collaborations between ICTS and academic institutions while bringing internationally recognised scientists to wider audiences."
+  partners: ["St. Joseph's University","PES University"]
+  skills:
+    - Partnership Development
+    - Stakeholder Coordination
+    - Science Communication
+    - Public Engagement
+    - Programme Management
+    - Event Coordination
+  editions:
+    - "Nature's Symmetries and Textures — Sidney R. Nagel (University of Chicago), hosted at St. Joseph's University (December 2025)"
+    - "Einstein's Ears: The Astronomy of Gravitational Waves — Scott Hughes (MIT), hosted at PES University (November 2025)"
+    - "Quantum Astrophysics — Roger Blandford (Stanford University) (January 2025)"
+    - "Gravitational-wave Astronomy: New Discoveries, Puzzles & Prospects — B. S. Sathyaprakash (Penn State & Cardiff University) (January 2024)"
+  webpage: "https://www.icts.res.in/outreach/lectures"
+  cv_link: "Scientific Coordinator - Outreach, ICTS-TIFR"
+
+- title: "Vigyan Adda"
+  category: "Programme Management"
+  image: "/assets/media/ibnTulun.svg"
+  date: "2026-03-31"
+  status: "Ongoing"
+  frequency: "Occasional"
+  summary: "An online seminar series connecting undergraduate students with researchers to explore contemporary scientific research and career pathways."
+  challenge: >
+    Undergraduate students often have limited opportunities to interact directly
+    with researchers and learn about current scientific research beyond the
+    classroom.
+  role: >
+    Programme Coordinator. Managed publicity, participant communication, speaker coordination, webpage, and worked with the AV team to ensure seamless delivery of online sessions.
+  impact: >
+    Introducing undergraduate students to frontier research through accessible talks by internationally recognised scientists. No. of editions so far: %COUNT%
+  audience: "Undergraduate Students, Graduate Students"
+  skills:
+    - Science Communication
+    - Public Engagement
+    - Online Event Management
+    - Stakeholder Coordination
+    - Digital Communications
+  editions:
+    - "Ultracold Atoms as a Future Quantum Technology — Dan Stamper-Kurn (University of California, Berkeley), March 2026"
+  webpage: "https://www.icts.res.in/outreach/vigyan-adda"
+  cv_link: "Scientific Coordinator - Outreach, ICTS-TIFR"
+
+- title: "Public Lectures"
+  category: "Programme Management"
+  image: "/assets/media/ibnTulun.svg"
+  summary: "Designing and coordinating public lectures that connect leading researchers with diverse audiences through accessible presentations, interdisciplinary formats, and large-scale public events."
+  role: "Managed end-to-end delivery of public science events including programme planning, speaker liaison, publicity, participant communication, webpage, institutional partnerships, venue coordination, AV, livestreaming, hospitality, transportation, and volunteer recruitment and coordination. Worked with BBMP, Bangalore City Police, Namma Metro, and external funding agencies."
+  audience: "General Public"
+  date: "2024-07-28"
+  status: "Ongoing"
+  frequency: "Occasional"
+  cv_link: "Scientific Coordinator - Outreach, ICTS-TIFR"
+  webpage: "https://www.icts.res.in/lectures/public"
+
+- title: "Maths Circle India"
+  category: "Education"
+  image: "/assets/media/ibnTulun.svg"
+  date: "2023-12-16"
+  status: "Ongoing"
+  frequency: "Twice monthly"
+  summary: >
+    Building a community where school students experience mathematics through collaborative exploration, discussion, and discovery rather than routine classroom instruction.
+  challenge: >
+    Many mathematically curious students have limited opportunities to explore
+    rich mathematical ideas beyond the school curriculum or interact regularly
+    with mathematicians and educators.
+  audience: "School Students, Mathematics Educators"
+  role: >
+    Core programme team member responsible for student selection through written evaluations and interviews, session facilitation, teaching assistance, development of outreach material, maintenance of the national Maths Circle directory, and advocacy for expanding the Maths Circle network across India.
+  impact: "%COUNT% sessions and counting"
+  editions: 
+    - MathSpark 2024
+    - MathSpark 2025
+    - Maths Circle India Session 81	Abhishek Bhattacharjee	Interactive session	18 July 2025
+    - Maths Circle India session 82	Mainak Ghosh, R. Nandagopal and B. Sury	Interactive session	22 August 2025
+    - Maths Circle India Session 83	Mainak Ghosh, R. Nandagopal and B. Sury	Interactive session	12 September 2025
+    - Maths Circle India Session 84	Utpal Chattopadhyay	Interactive session	3 October 2025
+    - Maths Circle India Session 85	Utpal Chattopadhyay	Interactive session	10 October 2025
+    - Maths Circle India Session 86	Utpal Chattopadhyay	Interactive session	24 October 2025
+    - ICTS RRI Maths Circle Session 19	Divakaran D	Interactive session	16 December 2023
+    - ICTS RRI Maths Circle Session 20	Disha Kuzhively	Interactive session	13 January 2024
+    - ICTS RRI Maths Circle Session 21	Disha Kuzhively	Interactive session	27 January 2024
+    - ICTS RRI Maths Circle Session 22	Apoorva, Khushi, Nishanth, Manu and Kshitij	Interactive session	10 February 2024
+    - ICTS RRI Maths Circle Session 23	Apoorva, Khushi, Nishanth, Manu, and Kshitij	Interactive session	18 February 2024
+    - ICTS RRI Maths Circle Session 24	Jaikumar Radhakrishnan	Interactive session	13 April 2024
+    - ICTS RRI Maths Circle Session 25	Jaikumar Radhakrishnan	Interactive session	27 April 2024
+    - ICTS RRI Maths Circle sesion 26	Yamuna Nataraj	Interactive session	11 May 2024
+    - ICTS RRI Maths Circle Session 27	Yamuna Nataraj	Interactive session	25 May 2024
+    - ICTS RRI Maths Circle Session 28	Biman Nath	Interactive session	8 June 2024
+    - ICTS RRI Maths Circle Session 29	Biman Nath	Interactive session	22 June 2024
+    - ICTS RRI Maths Circle session 30	Yamuna Nataraj	Interactive session	13 July 2024
+    - ICTS RRI Maths Circle Session 31	Ajit Bhand	Interactive session	27 July 2024
+    - ICTS RRI Maths Circle Session 32	Ashwin Guha	Interactive session	10 August 2024
+    - ICTS RRI Maths Circle Session 33	Ashwin Guha	Interactive session	24 August 2024
+    - ICTS RRI Session 34	Ashwin Guha	Interactive session	14 September 2024
+    - ICTS RRI Maths Circle Session 35	Ashwin Guha	Interactive session	28 September 2024
+    - ICTS RRI Maths Circle Session 36	Mikhail Mironov	Interactive session	9 November 2024
+    - ICTS RRI Maths Circle Session 37	Mikhail Mironov	Interactive session	23 November 2024
+    - ICTS RRI Maths Circle Session 38	Parthanil Roy	Interactive session	11 January 2025
+    - ICTS RRI Maths Circle Session 39	Parthanil Roy	Interactive session	25 January 2025
+    - ICTS RRI Maths Circle Session 40	Parthanil Roy	Interactive session	8 February 2025
+    - ICTS RRI Maths Circle Session 41	Parthanil Roy	Interactive session	22 February 2025
+    - ICTS RRI Maths Circle Session 43	Jaikumar Radhakrishnan	Interactive session	12 April 2025
+    - ICTS RRI Maths Circle session 44	Jaikumar Radhakrishnan	Interactive session	26 April 2025
+    - ICTS RRI Maths Circle session 45	Jaikumar Radhakrishnan	Interactive session	10 May 2025
+    - ICTS RRI Maths Circle session 46	Jaikumar Radhakrishnan	Interactive session	24 May 2025
+    - ICTS RRI Maths Circle session 47	Ashwin Guha	Interactive session	14 June 2025
+    - ICTS RRI Maths Circle Session 48	Ashwin Guha	Interactive session	28 June 2025
+    - ICTS RRI Maths Circle Session 49	Joseph Samuel	Interactive session	12 July 2025
+    - ICTS RRI Maths Circle Session 50	Joseph Samuel	Interactive session	26 July 2025
+    - ICTS RRI Maths Circle Session 51	Disha Kuzhively, Joseph Samuel	Interactive session	9 August 2025
+    - ICTS RRI Maths Circle Session 52	Joseph Samuel, Disha Kuzhively, Supurna Sinha, Jaikumar Radhakrishnan	Interactive session	27 September 2025
+    - ICTS RRI Maths Circle Session 53	Suvrat Raju	Interactive session	8 November 2025
+    - ICTS RRI Maths Circle Session 54	Suvrat Raju	Interactive session	22 November 2025
+    - ICTS RRI Maths Circle session 55	Yamuna Natraj	Interactive session	10 January 2026
+    - ICTS RRI Maths Circle Session 56	Yamuna Natraj	Interactive session	24 January 2026
+    - ICTS RRI Maths Circle Session 57	Abhishek Dhar	Interactive session	14 February 2026
+    - ICTS RRI Maths Circle Session 58	Jaikumar Radhakrishnan	Interactive session	11 April 2026
+    - ICTS RRI Maths Circle Session 59	Jaikumar Radhakrishnan	Interactive session	25 April 2026
+    - ICTS RRI Maths Circle Session 60	Abhishek Dhar	Interactive session	9 May 2026
+    - ICTS RRI Maths Circle Session 61	Abhishek Dhar	Interactive session	23 May 2026
+    - ICTS RRI Maths Circle Session 62	Deepak Dhar	Interactive session	13 June 2026
+    - ICTS RRI Maths Circle Session 63	Deepak Dhar	Interactive session	27 June 2026
+  cv_link: "Scientific Coordinator - Outreach, ICTS-TIFR"
+  webpage: "https://www.icts.res.in/lectures/public"

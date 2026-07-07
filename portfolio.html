@@ -1,0 +1,99 @@
+---
+title: Portfolio
+layout: default
+---
+<div class="container pt-3">
+    <h2>Portfolio</h2>
+
+    <nav class="d-flex flex-wrap mb-5">
+        <button type="button" class="btn filter-btn active fs-5" data-filter="all">
+            All
+        </button>
+        {% assign categories = site.data.portfolio | map: "category" | uniq | sort: "date" | reverse %}
+        {% for category in categories %}
+        <button type="button" class="btn filter-btn fs-5" data-filter="{{ category | slugify }}">
+            {{ category }}
+        </button>
+        {% endfor %}
+    </nav>
+    <div class="row g-4 py-1 row-cols-1 row-cols-lg-2" id="cardGrid">
+        {% for work in site.data.portfolio %}
+        <div class="col" data-cat="{{ work.category | slugify }}">
+            <div class="card" >
+                <div class="card-header">
+                    <span class="card-text"><small class="text-body-secondary">{{ work.category }}</small></span>
+                </div>
+                {% if work.image %}
+                <img src="{{ work.image }}" class="card-img-top">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ work.title }}</h5>
+                    {% if work.summary %}
+                    <p class="card-text"><em>{{ work.summary }}</em></p>
+                    {% endif %}
+                    <a class="card-link" data-bs-toggle="collapse" href="#{{ work.title | slugify }}" role="button"
+                        aria-expanded="false" aria-controls="{{ work.title | slugify }}">
+                        Details</a>
+                    <div class="collapse" id="{{ work.title | slugify }}">
+                        <ul class="list-group list-group-flush">
+                            {% if work.cv_link %}
+                            <li class="list-group-item"><small class="text-muted">Origin in CV: {{ work.cv_link
+                                    }}</small></li>
+                            {% endif %}
+                            <li class="list-group-item"><small class="text-muted">{% if work.started %}Launched: {{
+                                    work.started | date: "%b %Y" }}.{% endif %}{% if work.status %} {{ work.status }}.{%
+                                    endif %}{% if work.frequency %} {{ work.frequency }}.{% endif %}{% if work.date %} Involvement since {{ work.date | date: "%b %Y"}}.{% endif %}</small></li>
+
+                            {% if work.role %}
+                            <li class="list-group-item">{{ work.role }}</li>
+
+                            {% endif %}
+                            {% assign total_editions = work.editions | size %}
+                            {% if work.impact %}
+                            <li class="list-group-item">{{ work.impact | replace: "%COUNT%", total_editions}}</li>
+                            {% endif %}
+                            {% if work.webpage %}
+                            <li class="list-group-item"><a href="{{ work.webpage }}" target="_blank"
+                                    class="card-link">programme
+                                    website</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                    <ul class="list-inline">
+
+                        {% if work.audience %}<li class="list-inline-item">{{ work.audience }}</li> {% endif %}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+<script> 
+const buttons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('#cardGrid > .col');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+
+        buttons.forEach(b => b.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.dataset.filter;
+
+        cards.forEach(card => {
+            const category = card.dataset.cat;
+
+            if (filter === 'all' || category === filter) {
+                card.classList.remove('d-none');
+            } else {
+                card.classList.add('d-none');
+            }
+        });
+    });
+});
+</script>
