@@ -21,17 +21,17 @@ There is also the use of the color red. If my house is a colour, I think it woul
 When I posted <a href="#red1">this</a> image on my Instagram Story, more than two people asked whether it was from In the Mood for Love (2000). In the Mood for Love is a festival of red.
 
 <figure class="float-start" >
-<img src="/assets/blogImages/red2-itmfl.png" width="30%" height="auto" alt="red">
-<img src="/assets/blogImages/red3-itmfl.png" width="30%" height="auto" alt="red">
-<img src="/assets/blogImages/red4-itmfl.png" width="30%" height="auto" alt="red">
+<img src="/assets/blogImages/red2-itmfl.png" width="30%" height="auto" alt="red" style="min-width: 260px;">
+<img src="/assets/blogImages/red3-itmfl.png" width="30%" height="auto" alt="red" style="min-width: 260px;">
+<img src="/assets/blogImages/red4-itmfl.png" width="30%" height="auto" alt="red" style="min-width: 260px;">
 <figcaption>Screenshots from In the Mood for Love (2000).</figcaption>
 </figure>
 
 Chungking Express (1994), you may feel, isn't very red. I would say, it still is, every scene has an element that is red. Blonde wig lady's glasses, Cop 663's iron box, almost every signboard in the background, check-in counters at the airport, Cop 223's tie, Faye's tie, drink cups, sauce bottles, light from the traffic.
 
 <figure class="float-start">
-<img src="/assets/blogImages/red5-ce.png" width="30%" height="auto" alt="red">
-<img src="/assets/blogImages/red7-ce.png" width="30%" height="auto" alt="red">
-<img src="/assets/blogImages/red6-2046.png" width="30%" height="auto" alt="red">
+<img src="/assets/blogImages/red5-ce.png" width="30%" height="auto" alt="red" style="min-width: 260px;">
+<img src="/assets/blogImages/red7-ce.png" width="30%" height="auto" alt="red" style="min-width: 260px;">
+<img src="/assets/blogImages/red6-2046.png" width="30%" height="auto" alt="red" style="min-width: 260px;">
 <figcaption>Screenshots from Chungking Express (1994),  and 2046 (2004). May not seem red until you look for it.</figcaption>
 </figure>
