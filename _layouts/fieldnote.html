@@ -14,11 +14,15 @@ layout: default
     <div class="container">
         <h4 class="fst-italic">Also read</h4>
         <ul class="list-unstyled d-md-inline-flex">
+            {% assign found_related = false %}
             {% if page.tags %}
-            {% assign page_tags = page.tags | join: "," | downcase | split: "," %}
-            {% for post in site.posts %}
+                {% assign page_tags = page.tags | join: "," | downcase | split: "," %}
+                {% for post in site.posts %}
+                {% if found_related %}
+      {% break %}
+    {% endif %}
             {% unless post.url == page.url or post.url == page.next.url
-    or post.url == page.previous.url %}
+            or post.url == page.previous.url %}
             {% for tag in post.tags %}
             {% assign tag_lower = tag | downcase %}
             {% if page_tags contains tag_lower %}
@@ -26,8 +30,8 @@ layout: default
                     href="{{ post.url }}">
                     {% assign first_image = post.content |
                     split:'<img ' %}
-                                    {% if first_image.size > 1 %}
-                                    <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>'
+                                                {% if first_image.size > 1 %}
+                                                <img class="bd-placeholder-img" width="auto" height="96" {{ first_image[1] | split:'>'
                     | first }}>
                     {% endif %}
                     <div class="col-lg-8">
@@ -35,12 +39,14 @@ layout: default
                                 date_to_string }}</time></small>
                     </div>
                 </a> </li>
+                          {% assign found_related = true %}
             {% break %}
             {% endif %}
             {% endfor %}
             {% endunless %}
             {% endfor %}
             {% endif %}
+            
             {% if page.next %}
             <li> <a class="d-flex flex-column flex-lg-row gap-2 flex-fill align-items-start align-items-lg-center p-2 link-body-emphasis text-decoration-none border-top"
                     href="{{ page.next.url }}">

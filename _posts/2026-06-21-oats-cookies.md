@@ -6,6 +6,9 @@ categories: [Recipes]
 tags: [cooking, baking, cookies, oats, recipes, food, personal, stories, kitchen, dates, chocolate, homemade, baking experiments, fieldnotes, instagram, xkcd, oven]
 comments: true
 ---
+<figure class="float-end">
+<img src="/assets/blogImages/IMG-20260627-WA0002.jpg"  height="360px">
+</figure>
 <p><em><a href="#recipe">click here to go directly to the recipe</a></em></p>
 <p id="story"></p>
 I have a separate Instagram account where I post pictures of the food I cook. I started it when I realised I liked cooking but did not want to fill my main account with food pictures. The account is called *Foodnotes*, to go with *Fieldnotes*, this blog. The username is *food_n_oats*, a pun on "foodnotes" and "food and oats." I am not linking the account because I am planning to leave Instagram soon.
@@ -29,7 +32,7 @@ Here is the recipe, in the order that I actually made it. Following preparation 
 | optional | chocolate chips |  | Add to the mixture. Mix well. I had half a block of amul dark chocolate lying around, so I chopped that up and threw it in. |
 |  | seeds, nuts |  | After making the dates+milk mixture I realised that the packet of oats I had cames with flaxseeeds and almonds. You can add those things if you like. I would have preferred it without all thise 'healthy' ingredients |
 | ___ | ___ | ___ | ___ |
-|  |  |  | Preheat your oven to 180 C. Bake at 180 C for ~10-12 minutes. <img width="240" src="/assets/blogImages/IMG_20260621_234528901.jpg" alt="6 dollops of cookie dough on a baking tray lined with baking sheets"> |
+|  |  |  | Preheat your oven to 180 C. Bake at 180 C for ~10-12 minutes. <img width="240" style="transform: rotate(90deg);" src="/assets/blogImages/IMG_20260621_234528901.jpg" alt="6 dollops of cookie dough on a baking tray lined with baking sheets"> |
 
 I listened to Joe Hisaishi's *One Summer's Day* while typing all of this. If you have not already, give it a listen.
 <p><em><a href="#story">click here to go to the blog part of the recipe</a></em></p>

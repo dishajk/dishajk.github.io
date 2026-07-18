@@ -51,7 +51,7 @@ layout: default
                 <img class="bd-placeholder-img" width="auto" height="250" {{ first_image[1] | split:'>' | first }}>
           {% endif %}
         </div>
-          <p class="card-text mb-auto">{{ project.excerpt | truncatewords: 56}}</p>
+          <p class="card-text mb-auto">{{ project.excerpt | truncatewords: 56 | strip_html}}</p>
           {% unless project.external_url %}
           <a href="{{ href }}" class="icon-link gap-1 icon-link-hover stretched-link">
             See more
