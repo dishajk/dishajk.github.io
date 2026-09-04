@@ -15,7 +15,7 @@ Orae Oru Paarvai Paarthaen (I caught a glimpse of you)
 Puraavae Nillunu Sonnen (Bird, stop, I said)
 
 Kanaavaay Oadi Maranjae (but you slipped away like a dream)
-<figure style="max-width: 100vw;" class="float-start">
+<figure style="max-width: 80vw;" class="float-start">
 <video width="400" controls autoplay loop muted>
   <source src="/assets/blogImages/VID_20260831_124026090.mp4" type="video/mp4">
 </video>
@@ -25,12 +25,12 @@ The song is from an old Tamil movie that I haven't watched. I haven't watched th
 
 The river bank I imagined was the kind that you see when you pass by large rivers over a railway or highway bridge, with a large sandy bank on each side. These were the only kind of rivers I had known. I had seen tiny streams, but Varaha is a river, a large one that floods at times and is in the news for it. I imagined that it would be difficult for the woman to slip away like a dream on a large bank; one has to sprint, and it's not easy to do that on a sandy bank.
 
-<figure style="max-width: 100vw;" class="float-start">
+<figure style="max-width: 80vw;" class="float-start">
 <img src="/assets/blogImages/IMG_20190530_105116.jpg" width="400" height="auto" alt="Uhl river with a rocky bank and hills on both side">
 <figcaption style="width:400px">Uhl river, Himachal Pradesh, May 2019.</figcaption>
 </figure>
 The next set of rivers I saw were in Northern India. These glacier-fed rivers have rocky banks and hills on both sides. They run quite shallow during the first half of the day and rise during the night. It takes that long for the melted glacier water to come down. Varaha isn't in the north; hypothetically, even if it were, sprinting on a rocky bank isn't very fun.
-<figure style="max-width: 100vw;" class="float-end">
+<figure style="max-width: 80vw;" class="float-end">
 <img src="/assets/blogImages/IMG_20260901_115055764.jpg" width="400" height="auto" alt="Netravati river with a jungle on both side">
 <figcaption style="width:400px">Netravati, Chikkamagaluru, September 2026.</figcaption>
 </figure>
