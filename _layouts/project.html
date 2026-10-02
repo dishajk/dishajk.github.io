@@ -8,7 +8,7 @@ layout: default
 {% assign total = all_projects | size %}
 <div class="mt-2 mb-5 container">
   <nav class="d-flex flex-wrap mb-5">
-    <a href="/projects/" data-filter="all"><button type="button" class="btn">
+    <a href="/projects.html" data-filter="all"><button type="button" class="btn">
         All projects<span class="badge rounded-pill text-body-secondary">{{ total }}</span>
       </button></a>
     {% for category in site.project_categories %}
