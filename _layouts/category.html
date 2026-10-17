@@ -106,7 +106,7 @@ layout: default
                 <img class="bd-placeholder-img" width="auto" height="250" {{ first_image[1] | split:'>' | first }}>
             {% endif %}
           </div>
-          {% unless page.title == 'Digital Art' %}
+          {% unless page.title == 'Digital Art' or page.title == 'Recipes' or page.title== 'Origami'%}
           <p class="card-text mb-auto">{{ project.excerpt | truncatewords: 56}}</p>
           {% endunless %}
           {% unless project.external_url %}
@@ -145,8 +145,8 @@ layout: default
               {% if project.external_url %}<ion-icon class="align-middle" name="open-outline"></ion-icon>{% endif %}
             </a></p>
           <div class="card-footer">
-            <small class="text-body-secondary">
-              {{ project.content }}</small>
+            <!-- <small class="text-body-secondary">
+              {{ project.content }}</small> -->
             <time class="fs-6 fw-light">{{ project.date | date_to_string }}</time>
           </div>
         </div>
