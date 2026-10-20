@@ -74,7 +74,7 @@ layout: default
   <div>
     {% assign current_month = "" %}
     {% for project in all_projects offset: 3 %}
-      {% unless project.categories contains "Poster" or project.categories contains "Resources" %}
+      {% unless project.categories contains "Poster" or project.categories contains "Resources" project.categories contains "Web Design and Development" %}
     {% assign month = project.date | date: "%B %Y" %}
     {% if month != current_month %}
     {% unless forloop.first %}</ul>{% endunless %}
@@ -93,7 +93,7 @@ layout: default
     <li data-aos="fade-up" data-aos-duration="{{ forloop.index | times: 350 }}">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-1 shadow-sm h-md-250 position-relative">
         <div class="col p-2 d-flex flex-column position-static">
-          <p><a href="{{ href }}" {% if project.external_url %}target="_blank" rel="noopener"{% endif %} class="border-0 link-underline link-underline-opacity-0">{{ project.title }}
+          <p><a href="{{ href }}" {% if project.external_url %}target="_blank" rel="noopener"{% endif %} class="border-0 link-underline link-underline-opacity-0">{{ project.title }} 
             {% if project.external_url %}<ion-icon class="align-middle" name="open-outline"></ion-icon>{% endif %}
           </a></p>
           <div class="card-footer">

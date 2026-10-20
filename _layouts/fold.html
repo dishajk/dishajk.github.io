@@ -1,8 +1,13 @@
 ---
 layout: project
 ---
-
-<h1>{{ page.name }}</h1>
-<h4>Type: {{ page.type }}</h4>
-<img src="{{ page.heroimg }}" alt="{{ page.name }},  {{ page.type }}" class="figure-img img-fluid rounded origami">
+<small>
+<time>{{ page.date | date_to_string }}</time></small>
 {{ content }}
+<div class="p-2">
+<img src="{{ page.heroimg }}" class="mx-auto" width="100%" alt="{{ page.title }}">
+</div>
+<p class="text-body-secondary">{% if page.tools %}{{ page.tools | join: ", " }}.{% endif %} {% if page.type %}{{ page.type | join: ", " }}.{% endif %}</p>
+{% if page.remarks %}<p class="text-body-secondary">{{ page.remarks }}</p>{% endif %}
+{% if page.reference %}<a href="{{ page.reference }}">Reference</a>{% endif %}
+{% if page.external_url %}<a href="{{ page.external_url }}" target="_blank">Reference</a>{% endif %}

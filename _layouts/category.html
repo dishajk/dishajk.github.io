@@ -32,6 +32,10 @@ layout: default
   {% assign layout_style = "grid" %}
   {% elsif slug == "web-design-and-development" or slug == "resources" %}
   {% assign layout_style = "timeline" %}
+  {% elsif slug == "origami" or slug == "paper-construction-models"%}
+  {% assign layout_style = "origami" %}
+  {% elsif slug == "digital-art"%}
+  {% assign layout_style = "gallery" %}
   {% else %}
   {% assign layout_style = "hybrid" %}
   {% endif %}
@@ -70,8 +74,8 @@ layout: default
             %} class="border-0 link-underline link-underline-opacity-0">{{ project.title }}
             {% if project.external_url %}<ion-icon class="align-middle" name="open-outline"></ion-icon>{% endif %}
           </a></p>
-        <p class="card-subtitle">{{ project.content }}
-        </p>
+        <div class="card-subtitle">{{ project.content }}
+        </div>
         {% if page.title == "Web Design and Development" or page.title == "Animation" %}
         <small class="text-body-secondary">made using {{ project.tools | join: ", " }}</small>
         {% endif %}
@@ -80,6 +84,74 @@ layout: default
       {% if forloop.last %}
     </ul>{% endif %}
 
+    {% endfor %}
+  </div>
+  {% elsif layout_style == "origami" %}
+  <div class="py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      {% for project in projects %}
+      <div class="col">
+          <a href="{{ project.heroimg }}" data-lightbox="origami">
+            <img src="{{ project.heroimg }}" class="card-img-top " alt="{{ project.title }}">
+          </a>
+    <p class="mb-0"><a href="{{ project.url }}" class="border-0 link-underline link-underline-opacity-0">{{ project.title }}</a></p>
+    <p class="card-text mb-auto">{% if project.type %}<small class="text-body-secondary">{{ project.type | join: ", " }}.</small>{% endif %}{% if project.tools %} <small class="text-body-secondary">{{ project.tools | join: ", " }}.</small>{% endif %}</p> 
+         {% if project.reference %}
+                  <a href="{{ project.reference }}" class="icon-link gap-1 icon-link-hover">
+        Reference</a>
+                  {% endif %}
+          {% if project.external_url %}
+                  <a href="{{ project.external_url }}" class="icon-link gap-1 icon-link-hover" target="_blank">
+        Reference</a>
+                  {% endif %}
+            <div class="mb-1 text-body-secondary"><small><time>{{ project.date | date_to_string }}</time></small></div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+    {% elsif layout_style == "gallery" %}
+      <div class="row">
+    {% for project in projects %}
+    {% if project.external_url %}
+    {% assign href = project.external_url %}
+    {% elsif project.url %}
+    {% assign href = project.url %}
+    {% else %}
+    {% assign href = "#" %}
+    {% endif %}
+    <div class="{% if page.title == 'Animation' %}col-lg-12{% else %}col-md-6 col-lg-4{% endif %}">
+
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h5><a href="{{ href }}" {% if project.external_url %}target="_blank" rel="noopener" {% endif %}
+              class="border-0 link-underline link-underline-opacity-0">{{ project.title }}
+              {% if project.external_url %}<ion-icon class="align-middle" name="open-outline"></ion-icon>{% endif %}
+            </a></h5>
+          <div class="col-auto d-none d-lg-block">
+            {% assign first_image = project.content | split:'<img ' %}
+                {% if first_image.size > 1 %}
+                <img class="bd-placeholder-img" width="auto" height="250" {{ first_image[1] | split:'>' | first }}>
+            {% endif %}
+          </div>
+          {% unless page.title == 'Digital Art' or page.title == 'Recipes' %}
+          <p class="card-text mb-auto">{{ project.excerpt | truncatewords: 56}}</p>
+          {% endunless %}
+          {% unless project.external_url %}
+          <a href="{{ href }}" class="icon-link gap-1 icon-link-hover stretched-link">
+            See more
+          </a> {% endunless %}
+          {% if page.title == "Codes" %}
+          <small class="text-body-secondary">language: {{ project.tools | join: ", " }}</small>
+          {% endif %}
+          <div class="card-footer text-body-secondary fs-6 fw-light">
+            <time>{{ project.date | date_to_string }}</time>
+          </div>
+        </div>
+
+      </div>
+    </div>
     {% endfor %}
   </div>
   {% else %}
@@ -106,7 +178,7 @@ layout: default
                 <img class="bd-placeholder-img" width="auto" height="250" {{ first_image[1] | split:'>' | first }}>
             {% endif %}
           </div>
-          {% unless page.title == 'Digital Art' or page.title == 'Recipes' or page.title== 'Origami'%}
+          {% unless page.title == 'Digital Art' or page.title == 'Recipes' %}
           <p class="card-text mb-auto">{{ project.excerpt | truncatewords: 56}}</p>
           {% endunless %}
           {% unless project.external_url %}
