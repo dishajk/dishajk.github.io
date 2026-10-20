@@ -74,7 +74,7 @@ layout: default
   <div>
     {% assign current_month = "" %}
     {% for project in all_projects offset: 3 %}
-      {% unless project.categories contains "Poster" or project.categories contains "Resources" project.categories contains "Web Design and Development" %}
+      {% unless project.categories contains "Poster" or project.categories contains "Resources" or project.categories contains "Web Design and Development" %}
     {% assign month = project.date | date: "%B %Y" %}
     {% if month != current_month %}
     {% unless forloop.first %}</ul>{% endunless %}
