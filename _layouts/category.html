@@ -136,7 +136,7 @@ layout: default
             {% endif %}
           </div>
           {% unless page.title == 'Digital Art' or page.title == 'Recipes' %}
-          <p class="card-text mb-auto">{{ project.excerpt | truncatewords: 56}}</p>
+          <p class="card-text mb-auto">{{ project.excerpt | strip_html | truncatewords: 56}}</p>
           {% endunless %}
           {% unless project.external_url %}
           <a href="{{ href }}" class="icon-link gap-1 icon-link-hover stretched-link">
@@ -179,7 +179,7 @@ layout: default
             {% endif %}
           </div>
           {% unless page.title == 'Digital Art' or page.title == 'Recipes' %}
-          <p class="card-text mb-auto">{{ project.excerpt | truncatewords: 56}}</p>
+          <p class="card-text mb-auto">{{ project.excerpt  | strip_html | truncatewords: 56}}</p>
           {% endunless %}
           {% unless project.external_url %}
           <a href="{{ href }}" class="icon-link gap-1 icon-link-hover stretched-link">
